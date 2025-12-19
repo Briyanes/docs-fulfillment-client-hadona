@@ -35,7 +35,7 @@ export default function ArticleLayout({
         </Link>
         <h1 className="text-4xl font-bold">{title}</h1>
       </div>
-      <ShareButtons />
+      <ShareButtons title={title} />
       <div className="prose">{children}</div>
       {(prevHref || nextHref) && (
         <div className="mt-12 flex items-center justify-between border-t border-gray-200 pt-8">
