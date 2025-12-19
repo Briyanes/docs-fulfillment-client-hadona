@@ -28,7 +28,7 @@ export default function HelpAndFollow() {
           {/* Desktop: Title and social media in one row */}
           <div className="hidden md:flex items-center gap-6 w-full">
             <h3 className="text-base font-bold text-gray-900 flex-shrink-0">Follow Us</h3>
-            <div className="flex flex-wrap gap-4 items-center flex-1">
+            <div className="flex gap-4 items-center flex-1 flex-nowrap">
             {/* Instagram */}
             <a
               href="https://instagram.com/hadona.id"
@@ -82,7 +82,7 @@ export default function HelpAndFollow() {
           {/* Mobile: Title and social media stacked */}
           <div className="flex flex-col gap-4 md:hidden w-full">
             <h3 className="text-base font-bold text-gray-900 text-center">Follow Us</h3>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex gap-4 justify-center flex-nowrap overflow-x-auto">
             {/* Instagram */}
             <a
               href="https://instagram.com/hadona.id"
