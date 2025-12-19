@@ -142,7 +142,8 @@ export default function SearchBox() {
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => query.length >= 2 && setIsOpen(true)}
           placeholder="Search documentation... (⌘K or Ctrl+K)"
-          className="w-full rounded-lg border border-gray-300 bg-white py-3 pl-12 pr-12 text-base placeholder:text-gray-400 shadow-sm transition-all focus:border-hadona-primary focus:outline-none focus:ring-2 focus:ring-hadona-primary/20 dark:border-hadona-primary/30 dark:bg-hadona-bg-darker dark:text-gray-100 dark:placeholder:text-gray-400"
+          className="w-full rounded-lg border border-gray-300 bg-white py-3 pl-12 pr-12 text-base placeholder:text-gray-400 shadow-sm transition-all focus:border-hadona-primary focus:outline-none focus:ring-2 focus:ring-hadona-primary/20"
+          style={{ backgroundColor: '#ffffff' }}
         />
         {query ? (
           <button
@@ -157,7 +158,7 @@ export default function SearchBox() {
           </button>
         ) : (
           /* Keyboard shortcut hint */
-          <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 items-center gap-1 rounded border border-gray-200 bg-gray-50 px-2 py-1 text-xs text-gray-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 md:flex">
+          <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 items-center gap-1 rounded border border-gray-200 bg-gray-50 px-2 py-1 text-xs text-gray-500 md:flex" style={{ backgroundColor: '#f9fafb' }}>
             <kbd className="rounded bg-white px-1.5 py-0.5 font-mono text-xs shadow dark:bg-gray-700">⌘</kbd>
             <kbd className="rounded bg-white px-1.5 py-0.5 font-mono text-xs shadow dark:bg-gray-700">K</kbd>
           </div>
@@ -166,7 +167,7 @@ export default function SearchBox() {
 
       {/* Search Results Dropdown */}
       {isOpen && (query.length >= 2 || results.length > 0) && (
-        <div className="absolute top-full z-50 mt-2 w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl dark:border-hadona-primary/30 dark:bg-hadona-bg-darker">
+        <div className="absolute top-full z-50 mt-2 w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl" style={{ backgroundColor: '#ffffff' }}>
           {isLoading ? (
             <div className="px-4 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
               Searching...
@@ -188,15 +189,15 @@ export default function SearchBox() {
                       onClick={() => handleResultClick(result)}
                       className={`block border-b border-gray-100 px-4 py-3 transition-colors last:border-b-0 dark:border-gray-700 ${
                         isSelected
-                          ? 'bg-hadona-primary/10 text-hadona-primary dark:bg-hadona-primary/20'
-                          : 'hover:bg-gray-50 dark:hover:bg-gray-700'
+                          ? 'bg-hadona-primary/10 text-hadona-primary'
+                          : 'hover:bg-gray-50'
                       }`}
                     >
                       <div className="flex items-start gap-3">
                         <FileText className="mt-0.5 h-4 w-4 flex-shrink-0 text-gray-400 dark:text-gray-500" />
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2">
-                            <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
+                            <span className="text-sm font-medium text-gray-900">
                               {result.title}
                             </span>
                             {result.type && (
@@ -206,23 +207,23 @@ export default function SearchBox() {
                             )}
                           </div>
                           {result.description && (
-                            <p className="mt-1 line-clamp-2 text-xs text-gray-500 dark:text-gray-400">
+                            <p className="mt-1 line-clamp-2 text-xs text-gray-500">
                               {result.description}
                             </p>
                           )}
                           {result.category_name && (
-                            <p className="mt-1 text-xs text-gray-400 dark:text-gray-500">
+                            <p className="mt-1 text-xs text-gray-400">
                               {result.category_name}
                             </p>
                           )}
                         </div>
-                        <ArrowRight className="h-4 w-4 flex-shrink-0 text-gray-300 dark:text-gray-600" />
+                            <ArrowRight className="h-4 w-4 flex-shrink-0 text-gray-300" />
                       </div>
                     </Link>
                   )
                 })}
               </div>
-              <div className="border-t border-gray-200 px-4 py-2 text-xs text-gray-500 dark:border-gray-700 dark:text-gray-400">
+              <div className="border-t border-gray-200 px-4 py-2 text-xs text-gray-500">
                 Use ↑↓ to navigate, Enter to select, Esc to close
               </div>
             </>
