@@ -34,11 +34,11 @@ export default function HelpAndFollow() {
               href="https://instagram.com/hadona.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
             >
-              <i className="bi bi-instagram" style={{ fontSize: '24px', color: '#ec4899' }}></i>
-              <span className="text-xs font-semibold text-gray-900">Instagram</span>
+              <i className="bi bi-instagram" style={{ fontSize: '20px', color: '#ec4899' }}></i>
+              <span className="text-sm font-semibold text-gray-900">Instagram</span>
             </a>
 
             {/* LinkedIn */}
@@ -46,11 +46,11 @@ export default function HelpAndFollow() {
               href="https://linkedin.com/company/hadona-digital-media"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
             >
-              <i className="bi bi-linkedin" style={{ fontSize: '24px', color: '#0077b5' }}></i>
-              <span className="text-xs font-semibold text-gray-900">LinkedIn</span>
+              <i className="bi bi-linkedin" style={{ fontSize: '20px', color: '#0077b5' }}></i>
+              <span className="text-sm font-semibold text-gray-900">LinkedIn</span>
             </a>
 
             {/* Facebook */}
@@ -58,11 +58,11 @@ export default function HelpAndFollow() {
               href="https://facebook.com/hadonadigitalmedia"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
             >
-              <i className="bi bi-facebook" style={{ fontSize: '24px', color: '#1877f2' }}></i>
-              <span className="text-xs font-semibold text-gray-900">Facebook</span>
+              <i className="bi bi-facebook" style={{ fontSize: '20px', color: '#1877f2' }}></i>
+              <span className="text-sm font-semibold text-gray-900">Facebook</span>
             </a>
 
             {/* TikTok */}
@@ -70,11 +70,11 @@ export default function HelpAndFollow() {
               href="https://tiktok.com/@hadona.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
             >
-              <i className="bi bi-tiktok" style={{ fontSize: '24px', color: '#000000' }}></i>
-              <span className="text-xs font-semibold text-gray-900">TikTok</span>
+              <i className="bi bi-tiktok" style={{ fontSize: '20px', color: '#000000' }}></i>
+              <span className="text-sm font-semibold text-gray-900">TikTok</span>
             </a>
             </div>
           </div>
@@ -88,11 +88,11 @@ export default function HelpAndFollow() {
               href="https://instagram.com/hadona.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
             >
-              <i className="bi bi-instagram" style={{ fontSize: '24px', color: '#ec4899' }}></i>
-              <span className="text-xs font-semibold text-gray-900">Instagram</span>
+              <i className="bi bi-instagram" style={{ fontSize: '20px', color: '#ec4899' }}></i>
+              <span className="text-sm font-semibold text-gray-900">Instagram</span>
             </a>
 
             {/* LinkedIn */}
@@ -100,11 +100,11 @@ export default function HelpAndFollow() {
               href="https://linkedin.com/company/hadona-digital-media"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
             >
-              <i className="bi bi-linkedin" style={{ fontSize: '24px', color: '#0077b5' }}></i>
-              <span className="text-xs font-semibold text-gray-900">LinkedIn</span>
+              <i className="bi bi-linkedin" style={{ fontSize: '20px', color: '#0077b5' }}></i>
+              <span className="text-sm font-semibold text-gray-900">LinkedIn</span>
             </a>
 
             {/* Facebook */}
@@ -112,11 +112,11 @@ export default function HelpAndFollow() {
               href="https://facebook.com/hadonadigitalmedia"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
             >
-              <i className="bi bi-facebook" style={{ fontSize: '24px', color: '#1877f2' }}></i>
-              <span className="text-xs font-semibold text-gray-900">Facebook</span>
+              <i className="bi bi-facebook" style={{ fontSize: '20px', color: '#1877f2' }}></i>
+              <span className="text-sm font-semibold text-gray-900">Facebook</span>
             </a>
 
             {/* TikTok */}
@@ -124,11 +124,11 @@ export default function HelpAndFollow() {
               href="https://tiktok.com/@hadona.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
             >
-              <i className="bi bi-tiktok" style={{ fontSize: '24px', color: '#000000' }}></i>
-              <span className="text-xs font-semibold text-gray-900">TikTok</span>
+              <i className="bi bi-tiktok" style={{ fontSize: '20px', color: '#000000' }}></i>
+              <span className="text-sm font-semibold text-gray-900">TikTok</span>
             </a>
             </div>
           </div>
