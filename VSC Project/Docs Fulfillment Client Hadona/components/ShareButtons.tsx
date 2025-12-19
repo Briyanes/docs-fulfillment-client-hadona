@@ -1,12 +1,25 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { Copy, Check, MessageCircle } from 'lucide-react'
 
-export default function ShareButtons() {
+interface ShareButtonsProps {
+  title?: string
+}
+
+export default function ShareButtons({ title }: ShareButtonsProps = {}) {
   const pathname = usePathname()
   const [copied, setCopied] = useState(false)
+  const [pageTitle, setPageTitle] = useState('')
+
+  // Get page title from document
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const docTitle = document.title || title || 'Hadona Docs'
+      setPageTitle(docTitle.replace(' - Hadona Docs', '').replace(' | Hadona Docs', ''))
+    }
+  }, [title])
 
   // Get full URL
   const getFullUrl = () => {
@@ -40,7 +53,8 @@ export default function ShareButtons() {
   // Share via WhatsApp
   const shareViaWhatsApp = () => {
     const url = getFullUrl()
-    const text = `Check out this documentation: ${url}`
+    const articleTitle = pageTitle || 'Artikel Dokumentasi'
+    const text = `📚 ${articleTitle}\n\n${url}`
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text)}`
     window.open(whatsappUrl, '_blank')
   }

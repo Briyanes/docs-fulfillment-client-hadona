@@ -62,7 +62,7 @@ export default function DocLayout({
           )}
 
           {/* Share Buttons */}
-          <ShareButtons />
+          <ShareButtons title={title} />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
