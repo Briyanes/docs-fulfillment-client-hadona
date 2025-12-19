@@ -38,7 +38,7 @@ export default function HelpAndFollow() {
             >
               <i className="bi bi-instagram" style={{ fontSize: '18px', color: '#ec4899' }}></i>
               <div>
-                <p className="font-semibold text-xs text-gray-900">Social Media</p>
+                <p className="font-semibold text-xs text-gray-900">Instagram</p>
                 <p className="text-xs text-gray-600">@hadona.id</p>
               </div>
             </a>
@@ -101,7 +101,7 @@ export default function HelpAndFollow() {
             >
               <i className="bi bi-instagram" style={{ fontSize: '18px', color: '#ec4899' }}></i>
               <div>
-                <p className="font-semibold text-xs text-gray-900">Social Media</p>
+                <p className="font-semibold text-xs text-gray-900">Instagram</p>
                 <p className="text-xs text-gray-600">@hadona.id</p>
               </div>
             </a>
