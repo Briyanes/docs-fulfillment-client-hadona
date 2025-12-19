@@ -34,14 +34,11 @@ export default function HelpAndFollow() {
               href="https://instagram.com/hadona.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-3 transition-opacity hover:opacity-80"
+              className="transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
+              aria-label="Instagram @hadona.id"
             >
-              <i className="bi bi-instagram" style={{ fontSize: '20px', color: '#ec4899', flexShrink: 0 }}></i>
-              <div>
-                <p className="font-semibold text-sm text-gray-900">Instagram</p>
-                <p className="text-xs text-gray-600">@hadona.id</p>
-              </div>
+              <i className="bi bi-instagram" style={{ fontSize: '24px', color: '#ec4899' }}></i>
             </a>
 
             {/* LinkedIn */}
@@ -49,14 +46,11 @@ export default function HelpAndFollow() {
               href="https://linkedin.com/company/hadona-digital-media"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-3 transition-opacity hover:opacity-80"
+              className="transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
+              aria-label="LinkedIn PT. Hadona Digital Media"
             >
-              <i className="bi bi-linkedin" style={{ fontSize: '20px', color: '#0077b5', flexShrink: 0 }}></i>
-              <div>
-                <p className="font-semibold text-sm text-gray-900">LinkedIn</p>
-                <p className="text-xs text-gray-600">PT. Hadona Digital Media</p>
-              </div>
+              <i className="bi bi-linkedin" style={{ fontSize: '24px', color: '#0077b5' }}></i>
             </a>
 
             {/* Facebook */}
@@ -64,14 +58,11 @@ export default function HelpAndFollow() {
               href="https://facebook.com/hadonadigitalmedia"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-3 transition-opacity hover:opacity-80"
+              className="transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
+              aria-label="Facebook Hadona Digital Media"
             >
-              <i className="bi bi-facebook" style={{ fontSize: '20px', color: '#1877f2', flexShrink: 0 }}></i>
-              <div>
-                <p className="font-semibold text-sm text-gray-900">Facebook</p>
-                <p className="text-xs text-gray-600">Hadona Digital Media</p>
-              </div>
+              <i className="bi bi-facebook" style={{ fontSize: '24px', color: '#1877f2' }}></i>
             </a>
 
             {/* TikTok */}
@@ -79,14 +70,11 @@ export default function HelpAndFollow() {
               href="https://tiktok.com/@hadona.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-3 transition-opacity hover:opacity-80"
+              className="transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
+              aria-label="TikTok @hadona.id"
             >
-              <i className="bi bi-tiktok" style={{ fontSize: '20px', color: '#000000', flexShrink: 0 }}></i>
-              <div>
-                <p className="font-semibold text-sm text-gray-900">TikTok</p>
-                <p className="text-xs text-gray-600">@hadona.id</p>
-              </div>
+              <i className="bi bi-tiktok" style={{ fontSize: '24px', color: '#000000' }}></i>
             </a>
             </div>
           </div>
@@ -94,20 +82,17 @@ export default function HelpAndFollow() {
           {/* Mobile: Title and social media stacked */}
           <div className="flex flex-col gap-4 md:hidden w-full">
             <h3 className="text-base font-bold text-gray-900 text-center">Follow Us</h3>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
             {/* Instagram */}
             <a
               href="https://instagram.com/hadona.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-3 transition-opacity hover:opacity-80"
+              className="transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
+              aria-label="Instagram @hadona.id"
             >
-              <i className="bi bi-instagram" style={{ fontSize: '20px', color: '#ec4899', flexShrink: 0 }}></i>
-              <div>
-                <p className="font-semibold text-sm text-gray-900">Instagram</p>
-                <p className="text-xs text-gray-600">@hadona.id</p>
-              </div>
+              <i className="bi bi-instagram" style={{ fontSize: '24px', color: '#ec4899' }}></i>
             </a>
 
             {/* LinkedIn */}
@@ -115,14 +100,11 @@ export default function HelpAndFollow() {
               href="https://linkedin.com/company/hadona-digital-media"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-3 transition-opacity hover:opacity-80"
+              className="transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
+              aria-label="LinkedIn PT. Hadona Digital Media"
             >
-              <i className="bi bi-linkedin" style={{ fontSize: '20px', color: '#0077b5', flexShrink: 0 }}></i>
-              <div>
-                <p className="font-semibold text-sm text-gray-900">LinkedIn</p>
-                <p className="text-xs text-gray-600">PT. Hadona Digital Media</p>
-              </div>
+              <i className="bi bi-linkedin" style={{ fontSize: '24px', color: '#0077b5' }}></i>
             </a>
 
             {/* Facebook */}
@@ -130,14 +112,11 @@ export default function HelpAndFollow() {
               href="https://facebook.com/hadonadigitalmedia"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-3 transition-opacity hover:opacity-80"
+              className="transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
+              aria-label="Facebook Hadona Digital Media"
             >
-              <i className="bi bi-facebook" style={{ fontSize: '20px', color: '#1877f2', flexShrink: 0 }}></i>
-              <div>
-                <p className="font-semibold text-sm text-gray-900">Facebook</p>
-                <p className="text-xs text-gray-600">Hadona Digital Media</p>
-              </div>
+              <i className="bi bi-facebook" style={{ fontSize: '24px', color: '#1877f2' }}></i>
             </a>
 
             {/* TikTok */}
@@ -145,14 +124,11 @@ export default function HelpAndFollow() {
               href="https://tiktok.com/@hadona.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-3 transition-opacity hover:opacity-80"
+              className="transition-opacity hover:opacity-80"
               style={{ textDecoration: 'none' }}
+              aria-label="TikTok @hadona.id"
             >
-              <i className="bi bi-tiktok" style={{ fontSize: '20px', color: '#000000', flexShrink: 0 }}></i>
-              <div>
-                <p className="font-semibold text-sm text-gray-900">TikTok</p>
-                <p className="text-xs text-gray-600">@hadona.id</p>
-              </div>
+              <i className="bi bi-tiktok" style={{ fontSize: '24px', color: '#000000' }}></i>
             </a>
             </div>
           </div>
