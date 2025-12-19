@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, Instagram, Linkedin, Facebook } from 'lucide-react'
+import { Instagram, Linkedin, Facebook } from 'lucide-react'
 
 export default function HelpAndFollow() {
   return (
@@ -7,25 +7,7 @@ export default function HelpAndFollow() {
         {/* Need Help Card - 30% */}
         <div className="rounded-lg border-2 border-red-500 bg-white p-6 shadow-sm md:col-span-3">
           <h3 className="mb-6 text-lg font-bold text-gray-900">Need Help?</h3>
-          <div className="space-y-4">
-            {/* Email Support */}
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100">
-                  <Mail className="h-5 w-5 text-blue-600" />
-                </div>
-              </div>
-              <div className="flex-1">
-                <p className="font-semibold text-gray-900">Email Support</p>
-                <a
-                  href="mailto:support@hadona.id"
-                  className="text-sm text-gray-600 hover:text-hadona-primary transition-colors"
-                >
-                  support@hadona.id
-                </a>
-              </div>
-            </div>
-
+          <div>
             {/* WhatsApp */}
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
