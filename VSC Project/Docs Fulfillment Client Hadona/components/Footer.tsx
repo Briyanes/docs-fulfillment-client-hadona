@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import HelpAndFollow from './HelpAndFollow'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,8 +12,12 @@ export default function Footer() {
         background: '#ffffff'
       }}
     >
+      {/* Help & Follow Section */}
+      <HelpAndFollow />
+
+      {/* Copyright Section */}
       <div 
-        className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8" 
+        className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 border-t border-gray-200" 
         style={{ 
           backgroundColor: '#ffffff',
           background: '#ffffff'
