@@ -35,9 +35,9 @@ export default function DocLayout({
   const next = nextLink || (nextHref && nextTitle ? { href: nextHref, title: nextTitle } : undefined)
 
   return (
-    <div className="lg:ml-64 pt-16 pb-12 min-h-screen bg-gray-50">
-      <article className="max-w-4xl mx-auto px-6 lg:px-8 py-8">
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+    <div className="lg:ml-64 pt-16 pb-12 min-h-screen bg-white dark:bg-gray-950">
+      <article className="max-w-4xl mx-auto px-6 lg:px-8 py-12">
+        <div className="bg-white dark:bg-gray-900">
           {/* Breadcrumb */}
           {categoryHref && categoryName && (
             <nav className="text-sm text-gray-500 mb-6">
@@ -50,12 +50,12 @@ export default function DocLayout({
           )}
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-6 tracking-tight">
             {title}
           </h1>
           
           {description && (
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
               {description}
             </p>
           )}
@@ -67,30 +67,30 @@ export default function DocLayout({
 
           {/* Navigation */}
           {(prev || next) && (
-            <div className="mt-12 pt-8 border-t border-gray-200">
+            <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800">
               <div className="flex flex-col sm:flex-row justify-between gap-4">
                 {prev && (
                   <Link
                     href={prev.href}
-                    className="group flex items-center space-x-2 px-4 py-3 border border-gray-200 rounded-lg hover:border-hadona-blue hover:bg-blue-50 transition-colors"
+                    className="group flex items-center space-x-2 px-4 py-2.5 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                   >
-                    <ChevronLeft className="w-5 h-5 text-gray-400 group-hover:text-hadona-blue" />
+                    <ChevronLeft className="w-4 h-4 text-gray-400 group-hover:text-hadona-primary dark:group-hover:text-hadona-light" />
                     <div>
-                      <div className="text-sm text-gray-500 group-hover:text-hadona-blue">Previous</div>
-                      <div className="font-semibold text-gray-900 group-hover:text-hadona-blue">{prev.title}</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400 group-hover:text-hadona-primary dark:group-hover:text-hadona-light">Previous</div>
+                      <div className="text-sm font-medium text-gray-900 dark:text-gray-100 group-hover:text-hadona-primary dark:group-hover:text-hadona-light">{prev.title}</div>
                     </div>
                   </Link>
                 )}
                 {next && (
                   <Link
                     href={next.href}
-                    className="group flex items-center space-x-2 px-4 py-3 border border-gray-200 rounded-lg hover:border-hadona-blue hover:bg-blue-50 transition-colors sm:ml-auto"
+                    className="group flex items-center space-x-2 px-4 py-2.5 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors sm:ml-auto"
                   >
                     <div className="text-right">
-                      <div className="text-sm text-gray-500 group-hover:text-hadona-blue">Next</div>
-                      <div className="font-semibold text-gray-900 group-hover:text-hadona-blue">{next.title}</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400 group-hover:text-hadona-primary dark:group-hover:text-hadona-light">Next</div>
+                      <div className="text-sm font-medium text-gray-900 dark:text-gray-100 group-hover:text-hadona-primary dark:group-hover:text-hadona-light">{next.title}</div>
                     </div>
-                    <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-hadona-blue" />
+                    <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-hadona-primary dark:group-hover:text-hadona-light" />
                   </Link>
                 )}
               </div>
