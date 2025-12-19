@@ -12,6 +12,8 @@ module.exports = {
           primary: '#2B46BB',
           dark: '#1E3190',
           light: '#4A6AE8',
+          'bg-dark': '#0F1A5C', // Dark blue for backgrounds
+          'bg-darker': '#0A1240', // Darker blue for deeper backgrounds
         },
       },
       typography: {

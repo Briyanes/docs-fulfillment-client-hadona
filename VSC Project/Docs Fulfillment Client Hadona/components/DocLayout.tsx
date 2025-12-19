@@ -35,9 +35,9 @@ export default function DocLayout({
   const next = nextLink || (nextHref && nextTitle ? { href: nextHref, title: nextTitle } : undefined)
 
   return (
-    <div className="lg:ml-64 pt-16 pb-12 min-h-screen bg-white dark:bg-gray-950">
+    <div className="lg:ml-64 pt-16 pb-12 min-h-screen bg-white dark:bg-hadona-bg-dark">
       <article className="max-w-4xl mx-auto px-6 lg:px-8 py-12">
-        <div className="bg-white dark:bg-gray-900">
+        <div className="bg-white dark:bg-hadona-bg-dark/50">
           {/* Breadcrumb */}
           {categoryHref && categoryName && (
             <nav className="text-sm text-gray-500 mb-6">

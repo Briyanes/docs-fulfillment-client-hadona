@@ -83,7 +83,7 @@ export default function Sidebar({ items, title }: SidebarProps) {
   }
 
   return (
-    <aside className="sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto border-r border-gray-200 bg-white px-4 py-6 dark:border-gray-800 dark:bg-gray-900">
+    <aside className="sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto border-r border-gray-200 bg-white px-4 py-6 dark:border-hadona-primary/20 dark:bg-hadona-bg-dark">
       {title && (
         <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-gray-100">
           {title}

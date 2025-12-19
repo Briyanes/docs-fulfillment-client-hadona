@@ -142,7 +142,7 @@ export default function SearchBox() {
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => query.length >= 2 && setIsOpen(true)}
           placeholder="Search documentation... (⌘K or Ctrl+K)"
-          className="w-full rounded-lg border border-gray-300 bg-white py-3 pl-12 pr-12 text-base placeholder:text-gray-400 shadow-sm transition-all focus:border-hadona-primary focus:outline-none focus:ring-2 focus:ring-hadona-primary/20 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:placeholder:text-gray-500"
+          className="w-full rounded-lg border border-gray-300 bg-white py-3 pl-12 pr-12 text-base placeholder:text-gray-400 shadow-sm transition-all focus:border-hadona-primary focus:outline-none focus:ring-2 focus:ring-hadona-primary/20 dark:border-hadona-primary/30 dark:bg-hadona-bg-darker dark:text-gray-100 dark:placeholder:text-gray-400"
         />
         {query ? (
           <button
@@ -166,7 +166,7 @@ export default function SearchBox() {
 
       {/* Search Results Dropdown */}
       {isOpen && (query.length >= 2 || results.length > 0) && (
-        <div className="absolute top-full z-50 mt-2 w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl dark:border-gray-700 dark:bg-gray-800">
+        <div className="absolute top-full z-50 mt-2 w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl dark:border-hadona-primary/30 dark:bg-hadona-bg-darker">
           {isLoading ? (
             <div className="px-4 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
               Searching...
