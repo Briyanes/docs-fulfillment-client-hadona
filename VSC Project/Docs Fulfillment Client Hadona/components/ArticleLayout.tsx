@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import ShareButtons from './ShareButtons'
 
 interface ArticleLayoutProps {
   title: string
@@ -34,6 +35,7 @@ export default function ArticleLayout({
         </Link>
         <h1 className="text-4xl font-bold">{title}</h1>
       </div>
+      <ShareButtons />
       <div className="prose">{children}</div>
       {(prevHref || nextHref) && (
         <div className="mt-12 flex items-center justify-between border-t border-gray-200 pt-8">
