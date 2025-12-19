@@ -114,9 +114,10 @@ export default function SearchBox() {
   }, [isOpen, results, selectedIndex])
 
   const handleResultClick = (result: SearchResult) => {
-    const href = result.category_slug 
+    // Use path from result if available, otherwise construct it
+    const href = (result as any).path || (result.category_slug 
       ? `/${result.type}/${result.category_slug}/${result.slug}`
-      : `/${result.type}/${result.slug}`
+      : `/${result.type}/${result.slug}`)
     
     router.push(href)
     setIsOpen(false)
