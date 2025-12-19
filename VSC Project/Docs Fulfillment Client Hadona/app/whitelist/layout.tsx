@@ -11,7 +11,7 @@ export default function WhitelistLayout({
       <div className="hidden w-64 flex-shrink-0 lg:block">
         <Sidebar items={whitelistSidebarItems} title="Client Whitelist" />
       </div>
-      <div className="flex-1 px-4 py-8 lg:px-8">
+      <div className="flex-1 px-4 sm:px-6 py-6 sm:py-8 lg:px-8">
         <div className="mx-auto max-w-4xl">{children}</div>
       </div>
     </div>

@@ -37,7 +37,7 @@ export default function DocLayout({
 
   return (
     <div className="lg:ml-64 pt-16 pb-12 min-h-screen bg-white" style={{ backgroundColor: '#ffffff' }}>
-      <article className="max-w-4xl mx-auto px-6 lg:px-8 py-12">
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="bg-white" style={{ backgroundColor: '#ffffff' }}>
           {/* Breadcrumb */}
           {categoryHref && categoryName && (
@@ -51,12 +51,12 @@ export default function DocLayout({
           )}
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 tracking-tight">
             {title}
           </h1>
           
           {description && (
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
               {description}
             </p>
           )}
@@ -65,7 +65,7 @@ export default function DocLayout({
           <ShareButtons title={title} />
 
           {/* Content */}
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
             {children}
           </div>
 

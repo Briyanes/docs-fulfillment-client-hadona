@@ -25,18 +25,18 @@ export default function ArticleLayout({
 }: ArticleLayoutProps) {
   return (
     <article>
-      <div className="mb-8">
+      <div className="mb-6 sm:mb-8">
         <Link
           href={categoryHref}
-          className="mb-4 inline-flex items-center gap-1 text-sm text-gray-600 hover:text-hadona-primary"
+          className="mb-3 sm:mb-4 inline-flex items-center gap-1 text-xs sm:text-sm text-gray-600 hover:text-hadona-primary"
         >
           <ChevronLeft className="h-4 w-4" />
           Kembali ke {categoryName}
         </Link>
-        <h1 className="text-4xl font-bold">{title}</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold">{title}</h1>
       </div>
       <ShareButtons title={title} />
-      <div className="prose">{children}</div>
+      <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">{children}</div>
       {(prevHref || nextHref) && (
         <div className="mt-12 flex items-center justify-between border-t border-gray-200 pt-8">
           {prevHref && prevTitle ? (

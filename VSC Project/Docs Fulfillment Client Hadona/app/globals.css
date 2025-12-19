@@ -166,6 +166,70 @@
   .prose h4 {
     @apply mt-6 mb-2;
   }
+
+  /* Responsive prose sizes */
+  .prose-sm {
+    font-size: 0.875rem;
+  }
+
+  .prose-sm p {
+    @apply mb-4 leading-6;
+    font-size: 0.875rem;
+  }
+
+  .prose-sm h2 {
+    @apply text-2xl mt-8 mb-3;
+  }
+
+  .prose-sm h3 {
+    @apply text-xl mt-6 mb-2;
+  }
+
+  .prose-sm h4 {
+    @apply text-lg mt-4 mb-2;
+  }
+
+  @media (min-width: 640px) {
+    .prose-base {
+      font-size: 1rem;
+    }
+
+    .prose-base p {
+      @apply mb-5 leading-7;
+      font-size: 1rem;
+    }
+
+    .prose-base h2 {
+      @apply text-3xl mt-9 mb-4;
+    }
+
+    .prose-base h3 {
+      @apply text-2xl mt-7 mb-3;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .prose-lg {
+      font-size: 1.125rem;
+    }
+
+    .prose-lg p {
+      @apply mb-6 leading-7;
+      font-size: 1.125rem;
+    }
+
+    .prose-lg h2 {
+      @apply text-3xl mt-10 mb-4;
+    }
+
+    .prose-lg h3 {
+      @apply text-2xl mt-8 mb-3;
+    }
+
+    .prose-lg h4 {
+      @apply text-xl mt-6 mb-2;
+    }
+  }
 }
 
 @layer utilities {
