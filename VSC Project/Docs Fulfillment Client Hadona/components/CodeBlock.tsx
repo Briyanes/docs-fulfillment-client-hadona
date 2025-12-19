@@ -23,16 +23,16 @@ export default function CodeBlock({ code, language = 'text', filename }: CodeBlo
   }
 
   return (
-    <div className="relative my-6 rounded-lg border border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
+    <div className="relative my-6 rounded-lg border border-gray-200 bg-gray-50">
       {filename && (
-        <div className="border-b border-gray-200 bg-gray-100 px-4 py-2 text-sm text-gray-600 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-400">
+        <div className="border-b border-gray-200 bg-gray-100 px-4 py-2 text-sm text-gray-600">
           {filename}
         </div>
       )}
       <div className="relative">
         <button
           onClick={copyToClipboard}
-          className="absolute right-2 top-2 rounded-md bg-gray-200 p-2 text-gray-600 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+          className="absolute right-2 top-2 rounded-md bg-gray-200 p-2 text-gray-600 hover:bg-gray-300"
           aria-label="Copy code"
         >
           {copied ? (

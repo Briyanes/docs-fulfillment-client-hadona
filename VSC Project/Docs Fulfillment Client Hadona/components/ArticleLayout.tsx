@@ -27,16 +27,16 @@ export default function ArticleLayout({
       <div className="mb-8">
         <Link
           href={categoryHref}
-          className="mb-4 inline-flex items-center gap-1 text-sm text-gray-600 hover:text-hadona-primary dark:text-gray-400"
+          className="mb-4 inline-flex items-center gap-1 text-sm text-gray-600 hover:text-hadona-primary"
         >
           <ChevronLeft className="h-4 w-4" />
           Kembali ke {categoryName}
         </Link>
         <h1 className="text-4xl font-bold">{title}</h1>
       </div>
-      <div className="prose dark:prose-invert">{children}</div>
+      <div className="prose">{children}</div>
       {(prevHref || nextHref) && (
-        <div className="mt-12 flex items-center justify-between border-t border-gray-200 pt-8 dark:border-gray-800">
+        <div className="mt-12 flex items-center justify-between border-t border-gray-200 pt-8">
           {prevHref && prevTitle ? (
             <Link
               href={prevHref}
