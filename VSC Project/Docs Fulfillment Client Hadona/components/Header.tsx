@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import SearchBox from './SearchBox'
 
 export default function Header() {
   const pathname = usePathname()
@@ -42,6 +43,10 @@ export default function Header() {
           </div>
         </div>
         <div className="flex items-center gap-4">
+          {/* Search Box */}
+          <div className="hidden md:block">
+            <SearchBox />
+          </div>
           <a
             href="https://hadona.id"
             target="_blank"
@@ -66,6 +71,10 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="border-t border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900 md:hidden">
           <div className="space-y-1 px-4 pb-4 pt-2">
+            {/* Mobile Search */}
+            <div className="mb-4">
+              <SearchBox />
+            </div>
             {navigation.map((item) => {
               const isActive = pathname?.startsWith(item.href)
               return (
