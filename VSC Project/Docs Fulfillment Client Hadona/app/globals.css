@@ -6,8 +6,6 @@
   --hadona-primary: #2B46BB;
   --hadona-dark: #1E3190;
   --hadona-light: #4A6AE8;
-  --hadona-bg-dark: #0F1A5C;
-  --hadona-bg-darker: #0A1240;
 }
 
 @layer base {
@@ -18,13 +16,7 @@
   body {
     @apply bg-white text-gray-900 antialiased;
     font-feature-settings: 'rlig' 1, 'calt' 1;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: var(--hadona-bg-dark);
-      color: #f3f4f6;
-    }
+    background-color: #ffffff;
   }
 
   h1,
@@ -127,15 +119,9 @@
   }
 
   .prose blockquote {
-    @apply my-6 border-l-4 border-hadona-primary bg-gray-50 py-3 pl-5 italic;
+    @apply my-6 border-l-4 border-hadona-primary bg-gray-50 py-3 pl-5 italic dark:bg-gray-900;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .prose blockquote {
-      background-color: rgba(15, 26, 92, 0.5);
-    }
   }
 
   .prose blockquote p {
@@ -147,25 +133,11 @@
   }
 
   .prose th {
-    @apply border border-gray-200 bg-gray-50 px-4 py-3 text-left text-sm font-semibold text-gray-900;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .prose th {
-      border-color: rgba(43, 70, 187, 0.3);
-      background-color: rgba(15, 26, 92, 0.5);
-      color: #f3f4f6;
-    }
+    @apply border border-gray-200 bg-gray-50 px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100;
   }
 
   .prose td {
-    @apply border border-gray-200 px-4 py-3 text-sm;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .prose td {
-      border-color: rgba(43, 70, 187, 0.3);
-    }
+    @apply border border-gray-200 px-4 py-3 text-sm dark:border-gray-700;
   }
 
   .prose img {
