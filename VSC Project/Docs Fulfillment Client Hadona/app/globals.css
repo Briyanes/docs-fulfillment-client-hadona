@@ -146,11 +146,11 @@
   }
 
   .prose hr {
-    @apply my-8 border-gray-200 dark:border-gray-700;
+    @apply my-8 border-gray-200;
   }
 
   .prose a {
-    @apply text-hadona-primary font-medium hover:text-hadona-dark dark:text-hadona-light dark:hover:text-hadona-primary;
+    @apply text-hadona-primary font-medium hover:text-hadona-dark;
     text-decoration: underline;
     text-underline-offset: 2px;
   }
