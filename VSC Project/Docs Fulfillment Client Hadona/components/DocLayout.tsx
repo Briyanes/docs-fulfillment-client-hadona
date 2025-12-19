@@ -84,7 +84,7 @@ export default function DocLayout({
                 {next && (
                   <Link
                     href={next.href}
-                    className="group flex items-center space-x-2 px-4 py-2.5 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors sm:ml-auto"
+                    className="group flex items-center space-x-2 px-4 py-2.5 rounded-md hover:bg-gray-50 transition-colors sm:ml-auto"
                   >
                     <div className="text-right">
                       <div className="text-xs text-gray-500 group-hover:text-hadona-primary">Next</div>

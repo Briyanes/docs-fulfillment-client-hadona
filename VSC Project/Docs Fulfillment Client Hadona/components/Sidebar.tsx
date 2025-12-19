@@ -71,7 +71,7 @@ export default function Sidebar({ items, title }: SidebarProps) {
             className={`flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
               active
                 ? 'bg-hadona-primary/10 text-hadona-primary'
-                : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800'
+                : 'text-gray-700 hover:bg-gray-100'
             }`}
           >
             <FileText className="h-4 w-4" />
