@@ -17,6 +17,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
+      {/* Top Navigation */}
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center gap-2">
@@ -43,10 +44,6 @@ export default function Header() {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          {/* Search Box */}
-          <div className="hidden md:block">
-            <SearchBox />
-          </div>
           <a
             href="https://hadona.id"
             target="_blank"
@@ -68,13 +65,16 @@ export default function Header() {
           </button>
         </div>
       </nav>
+      
+      {/* Search Box Section - Always Visible */}
+      <div className="border-t border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800/50">
+        <div className="mx-auto max-w-4xl px-4 py-3 sm:px-6 lg:px-8">
+          <SearchBox />
+        </div>
+      </div>
       {mobileMenuOpen && (
         <div className="border-t border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900 md:hidden">
           <div className="space-y-1 px-4 pb-4 pt-2">
-            {/* Mobile Search */}
-            <div className="mb-4">
-              <SearchBox />
-            </div>
             {navigation.map((item) => {
               const isActive = pathname?.startsWith(item.href)
               return (

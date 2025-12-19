@@ -130,36 +130,42 @@ export default function SearchBox() {
   }
 
   return (
-    <div ref={searchRef} className="relative w-full max-w-md">
+    <div ref={searchRef} className="relative w-full">
       {/* Search Input */}
       <div className="relative">
-        <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+        <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400 dark:text-gray-500" />
         <input
           ref={inputRef}
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => query.length >= 2 && setIsOpen(true)}
-          placeholder="Search documentation... (⌘K)"
-          className="w-full rounded-lg border border-gray-200 bg-white py-2 pl-10 pr-10 text-sm placeholder:text-gray-400 focus:border-hadona-primary focus:outline-none focus:ring-2 focus:ring-hadona-primary/20 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100 dark:placeholder:text-gray-500"
+          placeholder="Search documentation... (⌘K or Ctrl+K)"
+          className="w-full rounded-lg border border-gray-300 bg-white py-3 pl-12 pr-12 text-base placeholder:text-gray-400 shadow-sm transition-all focus:border-hadona-primary focus:outline-none focus:ring-2 focus:ring-hadona-primary/20 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:placeholder:text-gray-500"
         />
-        {query && (
+        {query ? (
           <button
             onClick={() => {
               setQuery('')
               setIsOpen(false)
               inputRef.current?.focus()
             }}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+            className="absolute right-4 top-1/2 -translate-y-1/2 rounded p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-700 dark:hover:text-gray-300"
           >
             <X className="h-4 w-4" />
           </button>
+        ) : (
+          /* Keyboard shortcut hint */
+          <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 items-center gap-1 rounded border border-gray-200 bg-gray-50 px-2 py-1 text-xs text-gray-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 md:flex">
+            <kbd className="rounded bg-white px-1.5 py-0.5 font-mono text-xs shadow dark:bg-gray-700">⌘</kbd>
+            <kbd className="rounded bg-white px-1.5 py-0.5 font-mono text-xs shadow dark:bg-gray-700">K</kbd>
+          </div>
         )}
       </div>
 
       {/* Search Results Dropdown */}
       {isOpen && (query.length >= 2 || results.length > 0) && (
-        <div className="absolute top-full z-50 mt-2 w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800">
+        <div className="absolute top-full z-50 mt-2 w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl dark:border-gray-700 dark:bg-gray-800">
           {isLoading ? (
             <div className="px-4 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
               Searching...
