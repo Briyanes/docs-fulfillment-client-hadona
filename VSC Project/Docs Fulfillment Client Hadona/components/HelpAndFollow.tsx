@@ -3,9 +3,9 @@ import { Mail, MessageCircle, Instagram, Linkedin, Facebook } from 'lucide-react
 export default function HelpAndFollow() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
-      <div className="grid gap-6 md:grid-cols-2">
-        {/* Need Help Card */}
-        <div className="rounded-lg border-2 border-red-500 bg-white p-6 shadow-sm">
+      <div className="grid gap-6 md:grid-cols-10">
+        {/* Need Help Card - 30% */}
+        <div className="rounded-lg border-2 border-red-500 bg-white p-6 shadow-sm md:col-span-3">
           <h3 className="mb-6 text-lg font-bold text-gray-900">Need Help?</h3>
           <div className="space-y-4">
             {/* Email Support */}
