@@ -90,7 +90,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-200 pt-8 dark:border-gray-800">
+        <div className="mt-8 border-t border-gray-200 pt-8 dark:border-hadona-primary/20">
           <p className="text-center text-sm text-gray-600 dark:text-gray-400">
             © {currentYear} Hadona Digital Media. All rights reserved.
           </p>
