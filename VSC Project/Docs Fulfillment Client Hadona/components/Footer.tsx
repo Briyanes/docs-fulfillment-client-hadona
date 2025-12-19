@@ -4,8 +4,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-gray-200 bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <footer className="border-t border-gray-200 bg-white" style={{ backgroundColor: '#ffffff' }}>
+      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="text-center space-y-1">
           <p className="text-sm text-gray-600">
             © {currentYear} Hadona Docs. Powered by{' '}
