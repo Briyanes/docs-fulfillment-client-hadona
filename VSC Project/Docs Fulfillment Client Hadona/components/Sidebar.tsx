@@ -109,3 +109,14 @@ export default function Sidebar({ items, title }: SidebarProps) {
 }
 
 
+
+          {title}
+        </h2>
+      )}
+      <nav>
+        <ul className="space-y-0">{items.map((item) => renderItem(item))}</ul>
+      </nav>
+    </aside>
+  )
+}
+

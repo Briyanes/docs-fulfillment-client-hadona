@@ -273,3 +273,276 @@
 }
 
 
+
+@tailwind utilities;
+
+:root {
+  --hadona-primary: #2B46BB;
+  --hadona-dark: #1E3190;
+  --hadona-light: #4A6AE8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold text-gray-900;
+    letter-spacing: -0.025em;
+  }
+
+  h1 {
+    @apply text-3xl font-bold leading-tight;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  h2 {
+    @apply text-2xl leading-tight;
+    margin-top: 2rem;
+    margin-bottom: 0.875rem;
+  }
+
+  h3 {
+    @apply text-xl leading-snug;
+    margin-top: 1.5rem;
+    margin-bottom: 0.625rem;
+  }
+
+  h4 {
+    @apply text-lg leading-snug;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    @apply text-hadona-primary transition-colors hover:text-hadona-dark;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  code {
+    @apply rounded bg-gray-100 px-1.5 py-0.5 text-sm font-mono text-gray-800;
+    font-size: 0.875em;
+  }
+
+  pre {
+    @apply overflow-x-auto rounded-lg;
+    background-color: #1e293b;
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  pre code {
+    @apply bg-transparent p-0 text-gray-100;
+    font-size: 0.875rem;
+    line-height: 1.75;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply max-w-none;
+    color: #374151;
+  }
+
+  .prose p {
+    @apply mb-6 leading-7 text-gray-700;
+    font-size: 1rem;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply mb-6 space-y-2;
+    margin-left: 1.25rem;
+    padding-left: 0;
+    list-style-position: outside;
+  }
+
+  .prose ul {
+    @apply list-disc;
+  }
+
+  .prose ol {
+    @apply list-decimal;
+  }
+
+  .prose li {
+    @apply text-gray-700 leading-7;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .prose li > p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+
+  .prose blockquote {
+    @apply my-6 border-l-4 border-hadona-primary bg-gray-50 py-3 pl-5 italic;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .prose blockquote p {
+    margin-bottom: 0;
+  }
+
+  .prose table {
+    @apply my-6 w-full border-collapse;
+  }
+
+  .prose th {
+    @apply border border-gray-200 bg-gray-50 px-4 py-3 text-left text-sm font-semibold text-gray-900;
+  }
+
+  .prose td {
+    @apply border border-gray-200 px-4 py-3 text-sm;
+  }
+
+  .prose img {
+    @apply my-8 rounded-lg;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .prose hr {
+    @apply my-8 border-gray-200;
+  }
+
+  .prose a {
+    @apply text-hadona-primary font-medium hover:text-hadona-dark;
+    text-decoration: none;
+  }
+  
+  .prose a:hover {
+    text-decoration: none;
+  }
+
+  .prose h2 {
+    @apply mt-10 mb-4;
+  }
+
+  .prose h3 {
+    @apply mt-8 mb-3;
+  }
+
+  .prose h4 {
+    @apply mt-6 mb-2;
+  }
+
+  /* Responsive prose sizes */
+  .prose-sm {
+    font-size: 0.875rem;
+  }
+
+  .prose-sm p {
+    @apply mb-4 leading-6;
+    font-size: 0.875rem;
+  }
+
+  .prose-sm h2 {
+    @apply text-2xl mt-8 mb-3;
+  }
+
+  .prose-sm h3 {
+    @apply text-xl mt-6 mb-2;
+  }
+
+  .prose-sm h4 {
+    @apply text-lg mt-4 mb-2;
+  }
+
+  @media (min-width: 640px) {
+    .prose-base {
+      font-size: 1rem;
+    }
+
+    .prose-base p {
+      @apply mb-5 leading-7;
+      font-size: 1rem;
+    }
+
+    .prose-base h2 {
+      @apply text-3xl mt-9 mb-4;
+    }
+
+    .prose-base h3 {
+      @apply text-2xl mt-7 mb-3;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .prose-lg {
+      font-size: 1.125rem;
+    }
+
+    .prose-lg p {
+      @apply mb-6 leading-7;
+      font-size: 1.125rem;
+    }
+
+    .prose-lg h2 {
+      @apply text-3xl mt-10 mb-4;
+    }
+
+    .prose-lg h3 {
+      @apply text-2xl mt-8 mb-3;
+    }
+
+    .prose-lg h4 {
+      @apply text-xl mt-6 mb-2;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Header navigation wrapper - padding responsive (desktop only) */
+  .header-nav-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    .header-nav-wrapper {
+      padding-left: calc(48px + 256px + 32px);
+      padding-right: 48px;
+    }
+  }
+
+  /* Search box wrapper - padding responsive (desktop only) */
+  .search-box-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    .search-box-wrapper {
+      padding-left: calc(48px + 256px + 32px);
+      padding-right: 48px;
+    }
+  }
+}
+
