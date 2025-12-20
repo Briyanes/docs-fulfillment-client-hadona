@@ -20,7 +20,7 @@ Jika Anda ingin menggunakan database di masa depan:
 
 ### 1. Buka Supabase Dashboard
 - Login ke https://supabase.com/dashboard
-- Pilih project: `pdamwotvomagbnphilby.supabase.co`
+- Pilih project: `zlqkqmxhjalaenkjpmeq.supabase.co`
 
 ### 2. Jalankan Schema SQL
 - Pergi ke **SQL Editor**
