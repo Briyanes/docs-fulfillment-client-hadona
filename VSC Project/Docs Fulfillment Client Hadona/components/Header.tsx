@@ -73,10 +73,8 @@ export default function Header() {
       
       {/* Search Box Section - Always Visible */}
       <div className="border-t border-gray-200 w-full bg-hadona-primary" style={{ backgroundColor: '#2B46BB' }}>
-        <div className="search-box-wrapper py-3 px-4 sm:px-6 lg:px-[48px]">
-          <div className="max-w-4xl mx-auto">
-            <SearchBox />
-          </div>
+        <div className="search-box-wrapper py-3 sm:py-4 px-4 sm:px-6 lg:px-[48px]">
+          <SearchBox />
         </div>
       </div>
       {mobileMenuOpen && (
