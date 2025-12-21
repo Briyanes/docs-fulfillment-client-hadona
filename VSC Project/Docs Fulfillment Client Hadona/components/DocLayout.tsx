@@ -38,7 +38,7 @@ export default function DocLayout({
   const next = nextLink || (nextHref && nextTitle ? { href: nextHref, title: nextTitle } : undefined)
 
   return (
-    <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start w-full lg:mr-64">
+    <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start w-full">
       {/* Main Content */}
       <article className="flex-1 min-w-0 w-full overflow-x-hidden">
         <div className="bg-white w-full px-3 sm:px-6 lg:px-[48px] overflow-x-hidden" style={{ backgroundColor: '#ffffff' }}>

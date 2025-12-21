@@ -7,11 +7,11 @@ export default function AgencyLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="w-full">
-      <div className="hidden lg:block">
+    <div className="w-full flex">
+      <div className="hidden lg:block flex-shrink-0">
         <Sidebar items={agencySidebarItems} title="Client Agency" />
       </div>
-      <div className="w-full lg:ml-64 lg:mr-64 px-3 sm:px-6 py-6 sm:py-8 lg:px-[48px]">
+      <div className="flex-1 min-w-0 px-3 sm:px-6 py-6 sm:py-8 lg:px-[48px]">
         {children}
       </div>
     </div>

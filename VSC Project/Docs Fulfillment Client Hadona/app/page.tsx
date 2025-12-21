@@ -72,14 +72,11 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="w-full">
-      {/* Sidebar - Fixed */}
-      <div className="hidden lg:block">
+    <div className="w-full flex">
+      <div className="hidden lg:block flex-shrink-0">
         <Sidebar items={homeSidebarItems} title="Documentation" />
       </div>
-
-      {/* Main Content */}
-      <div className="w-full lg:ml-64 lg:mr-64 lg:px-[48px]">
+      <div className="flex-1 min-w-0 lg:px-[48px]">
         {/* Hero Section */}
         <div className="w-full px-3 sm:px-6 py-16 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
