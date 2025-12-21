@@ -33,6 +33,7 @@ export default function Header() {
             />
             <span className="text-base sm:text-lg md:text-xl font-bold tracking-tight whitespace-nowrap flex-shrink-0">
               <span className="font-bold">HADONA</span>
+              <span className="font-normal"> DIGITAL MEDIA</span>
               <span className="font-thin"> DOCS</span>
             </span>
           </Link>
