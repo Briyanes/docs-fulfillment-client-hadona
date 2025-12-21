@@ -56,7 +56,7 @@ export default function Page() {
         <li>Dokumentasikan naming convention</li>
       </ul>
 
-      <h3.3. Use Separators</h3>
+      <h3>3. Use Separators</h3>
       <ul>
         <li>Gunakan underscores (_) untuk memisahkan kata</li>
         <li>Hindari spaces atau special characters</li>
