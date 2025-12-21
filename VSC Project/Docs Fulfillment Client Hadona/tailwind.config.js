@@ -14,8 +14,8 @@ module.exports = {
           light: '#4A6AE8',
           'bg-dark': '#0F1A5C', // Dark blue for backgrounds
           'bg-darker': '#0A1240', // Darker blue for deeper backgrounds
-          yellow: '#FFC107', // Hadona yellow
-          'yellow-dark': '#FFA000', // Darker yellow for hover
+          yellow: '#EDD947', // Hadona yellow (same as Copy Link button)
+          'yellow-dark': '#E5D03D', // Darker yellow for hover (same as Copy Link button)
         },
       },
       typography: {
