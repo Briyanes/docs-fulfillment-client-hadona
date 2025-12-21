@@ -81,7 +81,7 @@ export default function HomePage() {
       {/* Main Content */}
       <div className="flex-1 w-full">
         {/* Hero Section */}
-        <div className="w-full px-4 sm:px-6 py-16 lg:px-8">
+        <div className="w-full px-3 sm:px-6 py-16 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-5 leading-tight">
               Dokumentasi Lengkap<br />
@@ -97,7 +97,7 @@ export default function HomePage() {
         </div>
 
         {/* Quick Links Section */}
-        <div className="w-full px-4 sm:px-6 py-12 lg:px-8 bg-gray-50">
+        <div className="w-full px-3 sm:px-6 py-12 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Pilih Dokumentasi Anda
@@ -132,7 +132,7 @@ export default function HomePage() {
       </div>
 
         {/* Categories Section */}
-        <div className="w-full px-4 sm:px-6 py-16 lg:px-8">
+        <div className="w-full px-3 sm:px-6 py-16 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Kategori Dokumentasi
@@ -184,7 +184,7 @@ export default function HomePage() {
       </div>
 
         {/* Help & Follow Section */}
-        <div className="w-full px-4 sm:px-6 py-8 lg:px-8">
+        <div className="w-full px-3 sm:px-6 py-8 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <HelpAndFollow />
           </div>
