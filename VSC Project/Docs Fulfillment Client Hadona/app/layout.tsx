@@ -82,6 +82,10 @@ export default function RootLayout({
       <head>
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
+        />
       </head>
       <body className={inter.className}>
         <Header />
@@ -89,15 +93,6 @@ export default function RootLayout({
           <main className="flex-1 overflow-x-hidden pt-[110px] sm:pt-[130px]">{children}</main>
           <Footer />
         </div>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
-          media="print"
-          onLoad="this.media='all'"
-        />
-        <noscript>
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" />
-        </noscript>
       </body>
     </html>
   )
