@@ -78,19 +78,20 @@ export default function HomePage() {
       </div>
       <div className="flex-1 min-w-0">
         {/* Hero Section */}
-        <div className="w-full px-4 sm:px-6 lg:px-[48px] pt-[65px] pb-8 sm:pt-12 sm:pb-12 lg:py-[85px]">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-5 leading-tight">
-              Dokumentasi Lengkap<br />
-              <span className="text-hadona-primary">Hadona Digital Media</span>
-            </h1>
-            <p className="text-base sm:text-lg text-gray-600 mb-3 max-w-3xl mx-auto leading-relaxed">
-              Panduan komprehensif untuk Client Agency dan Client Whitelist dalam mengoptimalkan kampanye Meta Ads dan Google Ads
-            </p>
-            <p className="text-sm sm:text-base text-gray-500 mb-6 max-w-2xl mx-auto">
-              Dokumentasi ini dibuat untuk memberikan panduan lengkap, step-by-step, dan best practices dalam setup, konfigurasi, dan optimasi platform Meta Ads (Facebook & Instagram Ads) serta Google Ads untuk memaksimalkan performa kampanye digital marketing Anda.
-            </p>
+        <div className="w-full bg-white lg:bg-hadona-primary pt-[65px] pb-8 sm:pt-12 sm:pb-12 lg:pt-[85px] lg:pb-0">
+          <div className="px-4 sm:px-6 lg:px-[48px] lg:pb-[85px]">
+            <div className="text-center max-w-4xl mx-auto">
+              <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-bold text-gray-900 lg:text-white mb-5 lg:mb-6 leading-tight">
+                Dokumentasi Lengkap<br />
+                <span className="text-hadona-primary lg:text-white">Hadona Digital Media</span>
+              </h1>
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 lg:text-white/90 mb-3 max-w-3xl mx-auto leading-relaxed">
+                Panduan komprehensif untuk Client Agency dan Client Whitelist dalam mengoptimalkan kampanye Meta Ads dan Google Ads
+              </p>
+            </div>
           </div>
+          {/* Orange Strip - Desktop Only */}
+          <div className="hidden lg:block h-1 bg-orange-500"></div>
         </div>
 
         {/* Quick Links Section */}
