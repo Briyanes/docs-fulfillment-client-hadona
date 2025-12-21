@@ -76,9 +76,9 @@ export default function HomePage() {
       <div className="hidden lg:block flex-shrink-0 self-stretch">
         <Sidebar items={homeSidebarItems} title="Documentation" />
       </div>
-      <div className="flex-1 min-w-0 lg:px-[48px]">
+      <div className="flex-1 min-w-0">
         {/* Hero Section */}
-        <div className="w-full px-3 sm:px-6 py-16 lg:px-8">
+        <div className="w-full px-3 sm:px-6 lg:px-[48px] py-16">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-5 leading-tight">
               Dokumentasi Lengkap<br />
@@ -94,7 +94,7 @@ export default function HomePage() {
         </div>
 
         {/* Quick Links Section */}
-        <div className="w-full px-3 sm:px-6 py-12 lg:px-8 bg-gray-50">
+        <div className="w-full px-3 sm:px-6 py-12 lg:px-[48px] bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Pilih Dokumentasi Anda
@@ -129,7 +129,7 @@ export default function HomePage() {
       </div>
 
         {/* Categories Section */}
-        <div className="w-full px-3 sm:px-6 py-16 lg:px-8">
+        <div className="w-full px-3 sm:px-6 lg:px-[48px] py-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Kategori Dokumentasi
@@ -156,7 +156,7 @@ export default function HomePage() {
       </div>
 
         {/* Features Section */}
-        <div className="w-full px-4 sm:px-6 py-16 lg:px-8 bg-gray-50">
+        <div className="w-full px-3 sm:px-6 lg:px-[48px] py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Fitur Dokumentasi
@@ -181,7 +181,7 @@ export default function HomePage() {
       </div>
 
         {/* Help & Follow Section */}
-        <div className="w-full px-3 sm:px-6 py-8 lg:px-8">
+        <div className="w-full px-3 sm:px-6 lg:px-[48px] py-8">
           <div className="max-w-7xl mx-auto">
             <HelpAndFollow />
           </div>
