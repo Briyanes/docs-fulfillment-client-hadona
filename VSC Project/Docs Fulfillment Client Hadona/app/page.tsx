@@ -104,7 +104,7 @@ export default function HomePage() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="group rounded-xl border-2 border-gray-200 bg-white p-8 transition-all hover:border-hadona-primary hover:shadow-lg no-underline hover:no-underline"
+                className="group rounded-xl border-2 border-hadona-primary bg-hadona-primary p-8 transition-all hover:border-hadona-dark hover:bg-hadona-dark hover:shadow-lg no-underline hover:no-underline"
                 style={{ textDecoration: 'none' }}
               >
                 <div className="mb-3 flex items-center gap-3">
