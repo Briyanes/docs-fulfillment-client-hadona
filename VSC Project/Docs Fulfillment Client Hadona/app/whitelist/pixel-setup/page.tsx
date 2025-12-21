@@ -13,7 +13,7 @@ export default function PixelSetupPage() {
   ]
 
   return (
-    <div className="lg:mr-64">
+    <div className="lg:mr-64 pt-4 sm:pt-6">
       <h1 className="mb-4 text-4xl font-bold">Pixel Setup</h1>
       <p className="mb-8 text-lg text-gray-600">
         Setup dan instalasi Meta Pixel
