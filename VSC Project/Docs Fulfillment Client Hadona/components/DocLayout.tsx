@@ -5,7 +5,6 @@ import ShareButtons from './ShareButtons'
 import HelpAndFollow from './HelpAndFollow'
 
 const TableOfContentsWrapper = dynamic(() => import('./TableOfContentsWrapper'), {
-  ssr: false,
   loading: () => <div className="hidden lg:block w-64" />
 })
 
