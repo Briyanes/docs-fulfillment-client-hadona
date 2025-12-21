@@ -72,7 +72,7 @@ export default function ShareButtons({ title }: ShareButtonsProps) {
   }
 
   return (
-    <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-8 pt-4 border-t border-gray-200">
+    <div className="flex flex-row items-center gap-3 mb-8 pt-4 border-t border-gray-200">
       <button
         onClick={copyLink}
         className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-gray-900 transition-all shadow-sm hover:shadow text-sm sm:text-base"
