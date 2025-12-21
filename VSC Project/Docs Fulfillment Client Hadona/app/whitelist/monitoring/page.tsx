@@ -34,10 +34,3 @@ export default function MonitoringPage() {
   )
 }
 
-
-
-
-
-
-
-
