@@ -78,7 +78,7 @@ export default function HomePage() {
       </div>
       <div className="flex-1 min-w-0">
         {/* Hero Section */}
-        <div className="w-full px-4 sm:px-6 lg:px-[48px] pt-[65px] pb-8 sm:pt-12 sm:pb-12 lg:py-[85px]">
+        <div className="w-full px-4 sm:px-6 lg:px-[48px] pt-[65px] pb-8 sm:pt-12 sm:pb-12 lg:pt-[85px] lg:pb-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-bold text-gray-900 mb-6 lg:mb-8 leading-[1.2]">
               Dokumentasi Lengkap<br className="lg:block" />
