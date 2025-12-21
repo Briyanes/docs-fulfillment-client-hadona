@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -90,16 +89,15 @@ export default function RootLayout({
           <main className="flex-1 overflow-x-hidden pt-[110px] sm:pt-[130px]">{children}</main>
           <Footer />
         </div>
-        <Script
-          src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
-          strategy="lazyOnload"
-          onLoad={() => {
-            const link = document.createElement('link')
-            link.rel = 'stylesheet'
-            link.href = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css'
-            document.head.appendChild(link)
-          }}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
+          media="print"
+          onLoad="this.media='all'"
         />
+        <noscript>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" />
+        </noscript>
       </body>
     </html>
   )
