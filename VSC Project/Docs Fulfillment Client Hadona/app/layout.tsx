@@ -89,8 +89,8 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Header />
-        <div className="flex min-h-screen flex-col overflow-x-hidden">
-          <main className="flex-1 overflow-x-hidden pt-[110px] sm:pt-[130px]">{children}</main>
+        <div className="flex min-h-screen flex-col">
+          <main className="flex-1 pt-[110px] sm:pt-[130px]">{children}</main>
           <Footer />
         </div>
       </body>

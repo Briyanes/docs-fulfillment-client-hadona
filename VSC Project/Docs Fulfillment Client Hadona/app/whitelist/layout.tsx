@@ -7,8 +7,8 @@ export default function WhitelistLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="w-full flex">
-      <div className="hidden lg:block flex-shrink-0">
+    <div className="w-full flex items-start">
+      <div className="hidden lg:block flex-shrink-0 self-stretch">
         <Sidebar items={whitelistSidebarItems} title="Client Whitelist" />
       </div>
       <div className="flex-1 min-w-0 px-3 sm:px-6 py-6 sm:py-8 lg:px-[48px]">

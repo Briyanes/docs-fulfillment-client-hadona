@@ -72,8 +72,8 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="w-full flex">
-      <div className="hidden lg:block flex-shrink-0">
+    <div className="w-full flex items-start">
+      <div className="hidden lg:block flex-shrink-0 self-stretch">
         <Sidebar items={homeSidebarItems} title="Documentation" />
       </div>
       <div className="flex-1 min-w-0 lg:px-[48px]">
