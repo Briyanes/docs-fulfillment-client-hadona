@@ -81,8 +81,8 @@ export default function HomePage() {
         <div className="w-full px-4 sm:px-6 lg:px-[48px] pt-[65px] pb-8 sm:pt-12 sm:pb-12 lg:py-[85px]">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-bold text-gray-900 mb-6 lg:mb-8 leading-tight">
-              Dokumentasi Lengkap<br />
-              <span className="text-hadona-primary">Hadona Digital Media</span>
+              Dokumentasi Lengkap<br className="lg:block" />
+              <span className="text-hadona-primary block mt-2 lg:mt-4">Hadona Digital Media</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-4 lg:mb-6 max-w-3xl mx-auto leading-relaxed">
               Panduan komprehensif untuk Client Agency dan Client Whitelist dalam mengoptimalkan kampanye Meta Ads dan Google Ads
