@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ChevronRight, FileText } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 
 interface SidebarItem {
   title: string
@@ -20,21 +20,23 @@ export default function Sidebar({ items, title }: SidebarProps) {
   const pathname = usePathname()
   const [openSections, setOpenSections] = useState<Set<string>>(new Set())
 
-  const toggleSection = (href: string) => {
-    const newOpenSections = new Set(openSections)
-    if (newOpenSections.has(href)) {
-      newOpenSections.delete(href)
-    } else {
-      newOpenSections.add(href)
-    }
-    setOpenSections(newOpenSections)
-  }
+  const toggleSection = useCallback((href: string) => {
+    setOpenSections((prev) => {
+      const newOpenSections = new Set(prev)
+      if (newOpenSections.has(href)) {
+        newOpenSections.delete(href)
+      } else {
+        newOpenSections.add(href)
+      }
+      return newOpenSections
+    })
+  }, [])
 
-  const isActive = (href: string) => {
+  const isActive = useCallback((href: string) => {
     return pathname === href || pathname?.startsWith(`${href}/`)
-  }
+  }, [pathname])
 
-  const renderItem = (item: SidebarItem, level = 0) => {
+  const renderItem = useCallback((item: SidebarItem, level = 0) => {
     const hasChildren = item.children && item.children.length > 0
     const isOpen = openSections.has(item.href)
     const active = isActive(item.href)
@@ -46,53 +48,66 @@ export default function Sidebar({ items, title }: SidebarProps) {
           <>
             <button
               onClick={() => toggleSection(item.href)}
-              className={`flex w-full items-center justify-between py-2 text-sm transition-colors ${
+              className={`flex w-full items-center justify-between py-2 text-sm transition-colors duration-150 ease-out ${
                 isCategory 
                   ? 'font-bold text-gray-900' 
                   : 'font-medium text-gray-700 hover:text-hadona-primary'
               }`}
+              style={{ willChange: 'color' }}
             >
               <span>{item.title}</span>
               <ChevronRight
-                className={`h-4 w-4 transition-transform flex-shrink-0 ml-2 ${
+                className={`h-4 w-4 transition-transform duration-200 ease-out flex-shrink-0 ml-2 ${
                   isOpen ? 'rotate-90' : ''
                 } ${isCategory ? 'text-gray-400' : 'text-gray-400'}`}
+                style={{ willChange: 'transform' }}
               />
             </button>
             {isOpen && (
               <ul className="mt-2 space-y-0.5 ml-0">
-                {item.children?.map((child) => (
-                  <li key={child.href}>
-                    <Link
-                      href={child.href}
-                      className={`block py-1.5 text-sm transition-colors ${
-                        isActive(child.href)
-                          ? 'text-hadona-primary font-medium'
-                          : 'text-gray-600 hover:text-hadona-primary'
-                      }`}
-                    >
-                      {child.title}
-                    </Link>
-                  </li>
-                ))}
+                {item.children?.map((child) => {
+                  const childActive = isActive(child.href)
+                  return (
+                    <li key={child.href}>
+                      <Link
+                        href={child.href}
+                        prefetch={true}
+                        className={`block py-1.5 text-sm transition-colors duration-150 ease-out ${
+                          childActive
+                            ? 'text-hadona-primary font-medium'
+                            : 'text-gray-600 hover:text-hadona-primary'
+                        }`}
+                        style={{ willChange: 'color' }}
+                      >
+                        {child.title}
+                      </Link>
+                    </li>
+                  )
+                })}
               </ul>
             )}
           </>
         ) : (
           <Link
             href={item.href}
-            className={`block py-2 text-sm transition-colors ${
+            prefetch={true}
+            className={`block py-2 text-sm transition-colors duration-150 ease-out ${
               active
                 ? 'text-hadona-primary font-medium'
                 : 'text-gray-700 hover:text-hadona-primary'
             } ${isCategory ? 'font-bold' : ''}`}
+            style={{ willChange: 'color' }}
           >
             {item.title}
           </Link>
         )}
       </li>
     )
-  }
+  }, [openSections, isActive, toggleSection])
+
+  const renderedItems = useMemo(() => {
+    return items.map((item) => renderItem(item))
+  }, [items, renderItem])
 
   return (
     <aside className="sticky top-[110px] sm:top-[100px] lg:top-[90px] h-[calc(100vh-110px)] sm:h-[calc(100vh-100px)] lg:h-[calc(100vh-90px)] w-64 overflow-y-auto border-r border-gray-200 bg-white pl-[48px] pr-[48px] py-6 z-50" style={{ backgroundColor: '#ffffff' }}>
@@ -102,7 +117,9 @@ export default function Sidebar({ items, title }: SidebarProps) {
         </h2>
       )}
       <nav>
-        <ul className="space-y-0">{items.map((item) => renderItem(item))}</ul>
+        <ul className="space-y-0">
+          {renderedItems}
+        </ul>
       </nav>
     </aside>
   )
