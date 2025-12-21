@@ -79,7 +79,7 @@ export default function HomePage() {
       </div>
 
       {/* Main Content */}
-      <div className="w-full lg:ml-64 lg:px-[48px]">
+      <div className="w-full lg:ml-64 lg:mr-64 lg:px-[48px]">
         {/* Hero Section */}
         <div className="w-full px-3 sm:px-6 py-16 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
