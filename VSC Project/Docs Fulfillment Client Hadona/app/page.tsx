@@ -94,7 +94,7 @@ export default function HomePage() {
         </div>
 
         {/* Quick Links Section */}
-        <div className="w-full px-4 sm:px-6 py-12 lg:px-[48px] bg-gray-50">
+        <div className="w-full px-4 sm:px-6 pt-4 pb-12 lg:px-[48px] bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Pilih Dokumentasi Anda
