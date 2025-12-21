@@ -156,7 +156,7 @@ export default function HomePage() {
       </div>
 
         {/* Features Section */}
-        <div className="w-full px-4 sm:px-6 lg:px-[48px] py-16 bg-gray-50">
+        <div className="w-full px-4 sm:px-6 lg:px-[48px] pt-4 pb-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Fitur Dokumentasi
