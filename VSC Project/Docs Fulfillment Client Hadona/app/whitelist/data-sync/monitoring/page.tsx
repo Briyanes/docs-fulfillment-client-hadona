@@ -43,7 +43,7 @@ export default function Page() {
       <h3>3. Latency</h3>
       <ul>
         <li>Time antara event di Meta Pixel dan muncul di GA4</li>
-        <li>Target: < 5 minutes untuk real-time sync</li>
+        <li>Target: &lt; 5 minutes untuk real-time sync</li>
         <li>Monitor untuk delays</li>
       </ul>
 
