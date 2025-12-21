@@ -41,8 +41,8 @@ export default function CodeBlock({ code, language = 'text', filename }: CodeBlo
             <Copy className="h-4 w-4" />
           )}
         </button>
-        <pre className="overflow-x-auto p-4 text-sm">
-          <code className={`language-${language}`}>{code}</code>
+        <pre className="overflow-x-auto p-4 text-sm break-words whitespace-pre-wrap" style={{ wordBreak: 'break-all', overflowWrap: 'break-word' }}>
+          <code className={`language-${language}`} style={{ wordBreak: 'break-all', overflowWrap: 'break-word', whiteSpace: 'pre-wrap' }}>{code}</code>
         </pre>
       </div>
     </div>

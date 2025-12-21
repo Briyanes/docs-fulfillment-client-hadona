@@ -73,12 +73,20 @@
     background-color: #1e293b;
     padding: 1rem;
     margin: 1.5rem 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
   }
 
   pre code {
     @apply bg-transparent p-0 text-gray-100;
     font-size: 0.875rem;
     line-height: 1.75;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
   }
 }
 
@@ -344,12 +352,20 @@
     background-color: #1e293b;
     padding: 1rem;
     margin: 1.5rem 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
   }
 
   pre code {
     @apply bg-transparent p-0 text-gray-100;
     font-size: 0.875rem;
     line-height: 1.75;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
   }
 }
 
