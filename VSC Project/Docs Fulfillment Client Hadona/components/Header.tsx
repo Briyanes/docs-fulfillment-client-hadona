@@ -19,13 +19,17 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white" style={{ backgroundColor: '#ffffff' }}>
       {/* Top Navigation */}
       <nav className="header-nav-wrapper flex w-full items-center justify-between py-3 sm:py-5 px-4 sm:px-6 lg:px-[48px]">
-        <div className="flex items-center gap-4 sm:gap-8">
-          <Link href="/" className="flex items-center gap-2 no-underline">
+        <div className="flex items-center gap-3 sm:gap-8">
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 no-underline">
             <img 
               src="/images/logo-hadona.png" 
               alt="Hadona Logo" 
-              className="h-8 sm:h-12 w-auto"
+              className="h-10 sm:h-12 w-auto"
             />
+            <span className="text-lg sm:text-xl font-bold tracking-tight">
+              <span className="font-bold">HADONA</span>
+              <span className="font-thin"> DOCS</span>
+            </span>
           </Link>
           <div className="hidden gap-6 md:flex">
             {navigation.map((item) => {
