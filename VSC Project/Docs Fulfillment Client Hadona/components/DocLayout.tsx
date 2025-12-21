@@ -40,8 +40,8 @@ export default function DocLayout({
   return (
     <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start w-full">
       {/* Main Content */}
-      <article className="flex-1 min-w-0 w-full">
-        <div className="bg-white w-full px-4 sm:px-6 lg:px-0" style={{ backgroundColor: '#ffffff' }}>
+      <article className="flex-1 min-w-0 w-full overflow-x-hidden">
+        <div className="bg-white w-full px-4 sm:px-6 lg:px-0 overflow-x-hidden" style={{ backgroundColor: '#ffffff' }}>
             {/* Breadcrumb */}
             {categoryHref && categoryName && (
               <nav className="text-sm text-gray-500 mb-4 sm:mb-6">
@@ -68,7 +68,7 @@ export default function DocLayout({
             <ShareButtons title={title} />
 
             {/* Content */}
-            <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none w-full">
+            <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none w-full overflow-x-hidden break-words">
               {children}
             </div>
 

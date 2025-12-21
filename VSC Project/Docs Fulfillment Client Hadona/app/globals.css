@@ -17,6 +17,7 @@
     @apply bg-white text-gray-900 antialiased;
     font-feature-settings: 'rlig' 1, 'calt' 1;
     background-color: #ffffff;
+    overflow-x: hidden;
   }
 
   h1,
@@ -90,6 +91,9 @@
   .prose p {
     @apply mb-6 leading-7 text-gray-700;
     font-size: 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   .prose ul,
@@ -112,6 +116,9 @@
     @apply text-gray-700 leading-7;
     padding-left: 0;
     margin-left: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   .prose li > p {
@@ -287,6 +294,7 @@
     @apply bg-white text-gray-900 antialiased;
     font-feature-settings: 'rlig' 1, 'calt' 1;
     background-color: #ffffff;
+    overflow-x: hidden;
   }
 
   h1,
@@ -360,6 +368,9 @@
   .prose p {
     @apply mb-6 leading-7 text-gray-700;
     font-size: 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   .prose ul,
@@ -382,6 +393,9 @@
     @apply text-gray-700 leading-7;
     padding-left: 0;
     margin-left: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   .prose li > p {
