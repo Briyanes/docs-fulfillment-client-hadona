@@ -12,7 +12,7 @@ export default function UTMConfigurationPage() {
   ]
 
   return (
-    <div>
+    <div className="lg:mr-64">
       <h1 className="mb-4 text-4xl font-bold">UTM Configuration</h1>
       <p className="mb-8 text-lg text-gray-600">
         Konfigurasi UTM untuk tracking
@@ -32,4 +32,5 @@ export default function UTMConfigurationPage() {
     </div>
   )
 }
+
 

@@ -12,7 +12,7 @@ export default function DataSyncPage() {
   ]
 
   return (
-    <div>
+    <div className="lg:mr-64">
       <h1 className="mb-4 text-4xl font-bold">Data Sync</h1>
       <p className="mb-8 text-lg text-gray-600">
         Sinkronisasi data ke GA4
@@ -32,11 +32,5 @@ export default function DataSyncPage() {
     </div>
   )
 }
-
-
-
-
-
-
 
 

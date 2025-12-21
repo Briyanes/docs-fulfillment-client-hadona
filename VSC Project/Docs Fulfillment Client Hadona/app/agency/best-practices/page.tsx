@@ -16,7 +16,7 @@ export default function BestPracticesPage() {
   ]
 
   return (
-    <div>
+    <div className="lg:mr-64">
       <h1 className="mb-4 text-4xl font-bold">Best Practices</h1>
       <p className="mb-8 text-lg text-gray-600">
         Tips dan best practices
@@ -36,6 +36,8 @@ export default function BestPracticesPage() {
     </div>
   )
 }
+
+
 
 
 

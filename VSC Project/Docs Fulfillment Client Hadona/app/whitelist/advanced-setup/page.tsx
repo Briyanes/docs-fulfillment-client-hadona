@@ -14,7 +14,7 @@ export default function AdvancedSetupPage() {
   ]
 
   return (
-    <div>
+    <div className="lg:mr-64">
       <h1 className="mb-4 text-4xl font-bold">Advanced Setup</h1>
       <p className="mb-8 text-lg text-gray-600">
         Setup lanjutan dan optimasi
@@ -34,4 +34,5 @@ export default function AdvancedSetupPage() {
     </div>
   )
 }
+
 

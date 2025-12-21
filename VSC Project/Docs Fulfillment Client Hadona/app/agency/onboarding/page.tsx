@@ -11,7 +11,7 @@ export default function OnboardingPage() {
   ]
 
   return (
-    <div>
+    <div className="lg:mr-64">
       <h1 className="mb-4 text-4xl font-bold">Onboarding</h1>
       <p className="mb-8 text-lg text-gray-600">
         Panduan lengkap untuk memulai perjalanan Anda dengan Hadona
@@ -31,6 +31,8 @@ export default function OnboardingPage() {
     </div>
   )
 }
+
+
 
 
 

@@ -18,7 +18,7 @@ export default function AdsSetupPage() {
   ]
 
   return (
-    <div>
+    <div className="lg:mr-64">
       <h1 className="mb-4 text-4xl font-bold">Ads Setup</h1>
       <p className="mb-8 text-lg text-gray-600">
         Panduan setup dan optimasi iklan
@@ -38,6 +38,8 @@ export default function AdsSetupPage() {
     </div>
   )
 }
+
+
 
 
 

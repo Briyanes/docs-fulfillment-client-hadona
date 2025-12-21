@@ -15,7 +15,7 @@ export default function GoogleIntegrationPage() {
   ]
 
   return (
-    <div>
+    <div className="lg:mr-64">
       <h1 className="mb-4 text-4xl font-bold">Google Integration</h1>
       <p className="mb-8 text-lg text-gray-600">
         Integrasi dengan Google Analytics 4
@@ -35,4 +35,5 @@ export default function GoogleIntegrationPage() {
     </div>
   )
 }
+
 
