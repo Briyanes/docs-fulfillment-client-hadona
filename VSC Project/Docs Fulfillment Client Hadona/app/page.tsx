@@ -142,10 +142,14 @@ export default function HomePage() {
                 className="group rounded-lg border border-gray-200 bg-white p-6 transition-all hover:border-hadona-primary hover:shadow-md no-underline hover:no-underline"
                 style={{ textDecoration: 'none' }}
               >
-                <i className={`bi ${category.icon} mb-3 text-2xl text-hadona-primary block`}></i>
-                <h3 className="mb-2 text-base font-semibold text-gray-900">
-                  {category.title}
-                </h3>
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="rounded-lg bg-hadona-primary/10 p-2">
+                    <i className={`bi ${category.icon} text-lg text-hadona-primary`}></i>
+                  </div>
+                  <h3 className="text-base font-semibold text-gray-900">
+                    {category.title}
+                  </h3>
+                </div>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {category.description}
                 </p>
@@ -167,10 +171,14 @@ export default function HomePage() {
                 key={index}
                 className="rounded-lg border border-gray-200 bg-white p-6"
               >
-                <i className={`bi ${feature.icon} mb-3 text-2xl text-hadona-primary block`}></i>
-                <h3 className="mb-2 text-base font-semibold text-gray-900">
-                  {feature.title}
-                </h3>
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="rounded-lg bg-hadona-primary/10 p-2">
+                    <i className={`bi ${feature.icon} text-lg text-hadona-primary`}></i>
+                  </div>
+                  <h3 className="text-base font-semibold text-gray-900">
+                    {feature.title}
+                  </h3>
+                </div>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {feature.description}
                 </p>
