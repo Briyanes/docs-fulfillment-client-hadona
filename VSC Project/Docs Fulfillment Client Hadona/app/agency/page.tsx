@@ -42,7 +42,7 @@ export default function AgencyPage() {
 
   return (
     <div>
-      <div className="mb-8 sm:mb-12">
+      <div className="pt-4 sm:pt-6 mb-8 sm:mb-12">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
           Client Agency Documentation
         </h1>
