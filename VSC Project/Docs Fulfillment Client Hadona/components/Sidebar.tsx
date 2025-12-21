@@ -51,7 +51,7 @@ export default function Sidebar({ items, title }: SidebarProps) {
               className={`flex w-full items-center justify-between py-2 text-sm transition-colors duration-150 ease-out ${
                 isCategory 
                   ? 'font-bold text-gray-900' 
-                  : 'font-medium text-gray-700 hover:text-hadona-primary'
+                  : 'font-medium text-gray-900 hover:text-gray-800'
               }`}
               style={{ willChange: 'color' }}
             >
@@ -59,7 +59,7 @@ export default function Sidebar({ items, title }: SidebarProps) {
               <ChevronRight
                 className={`h-4 w-4 transition-transform duration-200 ease-out flex-shrink-0 ml-2 ${
                   isOpen ? 'rotate-90' : ''
-                } ${isCategory ? 'text-gray-400' : 'text-gray-400'}`}
+                } text-gray-800`}
                 style={{ willChange: 'transform' }}
               />
             </button>
@@ -74,8 +74,8 @@ export default function Sidebar({ items, title }: SidebarProps) {
                         prefetch={true}
                         className={`block py-1.5 text-sm transition-colors duration-150 ease-out ${
                           childActive
-                            ? 'text-hadona-primary font-medium'
-                            : 'text-gray-600 hover:text-hadona-primary'
+                            ? 'text-hadona-dark font-semibold'
+                            : 'text-gray-800 hover:text-gray-900'
                         }`}
                         style={{ willChange: 'color' }}
                       >
@@ -93,8 +93,8 @@ export default function Sidebar({ items, title }: SidebarProps) {
             prefetch={true}
             className={`block py-2 text-sm transition-colors duration-150 ease-out ${
               active
-                ? 'text-hadona-primary font-medium'
-                : 'text-gray-700 hover:text-hadona-primary'
+                ? 'text-hadona-dark font-semibold'
+                : 'text-gray-900 hover:text-gray-800'
             } ${isCategory ? 'font-bold' : ''}`}
             style={{ willChange: 'color' }}
           >
