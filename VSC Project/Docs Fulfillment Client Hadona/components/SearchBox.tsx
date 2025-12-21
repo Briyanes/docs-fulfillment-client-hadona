@@ -131,7 +131,7 @@ export default function SearchBox() {
   }
 
   return (
-    <div ref={searchRef} className="relative w-full max-w-2xl mx-auto lg:max-w-3xl">
+    <div ref={searchRef} className="relative w-full max-w-2xl mx-auto lg:max-w-none">
       {/* Search Input */}
       <div className="relative">
         <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />

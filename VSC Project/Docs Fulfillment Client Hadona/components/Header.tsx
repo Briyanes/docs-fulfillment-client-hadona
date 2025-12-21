@@ -58,10 +58,8 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-4">
           {/* Search Box - Desktop: Inline with header */}
-          <div className="hidden lg:block flex-1 max-w-md ml-8">
-            <div className="bg-hadona-primary rounded-lg px-4 py-2" style={{ backgroundColor: '#2B46BB' }}>
-              <SearchBox />
-            </div>
+          <div className="hidden lg:block flex-1 max-w-lg ml-8">
+            <SearchBox />
           </div>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
