@@ -35,10 +35,3 @@ export default function AdvancedSetupPage() {
   )
 }
 
-
-
-
-
-
-
-

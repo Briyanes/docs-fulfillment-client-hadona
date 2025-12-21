@@ -43,31 +43,3 @@ export default function Page() {
     </DocLayout>
   )
 }
-
-      <h2>Use Cases</h2>
-      <ul>
-        <li>Sync data antara platforms</li>
-        <li>Real-time event processing</li>
-        <li>Automated workflows</li>
-        <li>Third-party integrations</li>
-      </ul>
-
-      <h2>Setup Webhook</h2>
-      <ol>
-        <li>Create webhook endpoint di server</li>
-        <li>Configure webhook URL di source system</li>
-        <li>Setup authentication/verification</li>
-        <li>Handle webhook payload</li>
-        <li>Process dan forward events</li>
-      </ol>
-
-      <h2>Security</h2>
-      <ul>
-        <li>Use HTTPS untuk webhook URLs</li>
-        <li>Implement signature verification</li>
-        <li>Use authentication tokens</li>
-        <li>Validate payload structure</li>
-      </ul>
-    </DocLayout>
-  )
-}

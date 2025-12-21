@@ -48,36 +48,3 @@ export default function Page() {
     </DocLayout>
   )
 }
-
-      <h2>Kapan Menggunakan Custom Events?</h2>
-      <ul>
-        <li>Track interactions yang tidak ada di standard events</li>
-        <li>Track business-specific actions</li>
-        <li>Track micro-conversions</li>
-        <li>Track user engagement metrics</li>
-      </ul>
-
-      <h2>Creating Custom Events</h2>
-      <h3>Meta Pixel</h3>
-      <pre><code>{`fbq('trackCustom', 'VideoPlay', {
-  content_name: 'Product Demo',
-  content_category: 'Video'
-});`}</code></pre>
-
-      <h3>GA4</h3>
-      <pre><code>{`gtag('event', 'video_play', {
-  video_title: 'Product Demo',
-  video_category: 'Video'
-});`}</code></pre>
-
-      <h2>Best Practices</h2>
-      <ul>
-        <li>Use descriptive event names</li>
-        <li>Follow naming conventions (lowercase, underscores)</li>
-        <li>Include relevant parameters</li>
-        <li>Document all custom events</li>
-        <li>Test thoroughly sebelum production</li>
-      </ul>
-    </DocLayout>
-  )
-}
