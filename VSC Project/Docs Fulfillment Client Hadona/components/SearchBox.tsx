@@ -131,7 +131,7 @@ export default function SearchBox() {
   }
 
   return (
-    <div ref={searchRef} className="relative w-full">
+    <div ref={searchRef} className="relative w-full max-w-2xl mx-auto lg:max-w-3xl">
       {/* Search Input */}
       <div className="relative">
         <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
@@ -142,7 +142,7 @@ export default function SearchBox() {
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => query.length >= 2 && setIsOpen(true)}
           placeholder="Search documentation... (⌘K or Ctrl+K)"
-          className="w-full rounded-lg border border-gray-300 bg-white py-3 pl-12 pr-12 text-base placeholder:text-gray-400 shadow-sm transition-all focus:border-hadona-primary focus:outline-none focus:ring-2 focus:ring-hadona-primary/20"
+          className="w-full rounded-lg border border-white/20 bg-white py-3 pl-12 pr-12 text-base placeholder:text-gray-400 shadow-sm transition-all focus:border-white/40 focus:outline-none focus:ring-2 focus:ring-white/30 lg:py-3.5"
           style={{ backgroundColor: '#ffffff' }}
         />
         {query ? (
@@ -158,9 +158,9 @@ export default function SearchBox() {
           </button>
         ) : (
           /* Keyboard shortcut hint */
-          <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 items-center gap-1 rounded border border-gray-200 bg-gray-50 px-2 py-1 text-xs text-gray-500 md:flex" style={{ backgroundColor: '#f9fafb' }}>
-            <kbd className="rounded bg-white px-1.5 py-0.5 font-mono text-xs shadow">⌘</kbd>
-            <kbd className="rounded bg-white px-1.5 py-0.5 font-mono text-xs shadow">K</kbd>
+          <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 items-center gap-1 rounded border border-white/30 bg-white/10 backdrop-blur-sm px-2 py-1 text-xs text-white/80 md:flex" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
+            <kbd className="rounded bg-white/20 px-1.5 py-0.5 font-mono text-xs text-white shadow-sm">⌘</kbd>
+            <kbd className="rounded bg-white/20 px-1.5 py-0.5 font-mono text-xs text-white shadow-sm">K</kbd>
           </div>
         )}
       </div>
