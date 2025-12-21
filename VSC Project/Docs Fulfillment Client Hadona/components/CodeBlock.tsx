@@ -23,16 +23,16 @@ export default function CodeBlock({ code, language = 'text', filename }: CodeBlo
   }
 
   return (
-    <div className="relative my-6 rounded-lg border border-gray-200 bg-gray-50">
+    <div className="relative my-6 rounded-lg border border-gray-200 bg-gray-50 overflow-hidden max-w-full">
       {filename && (
         <div className="border-b border-gray-200 bg-gray-100 px-4 py-2 text-sm text-gray-600">
           {filename}
         </div>
       )}
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <button
           onClick={copyToClipboard}
-          className="absolute right-2 top-2 rounded-md bg-gray-200 p-2 text-gray-600 hover:bg-gray-300"
+          className="absolute right-2 top-2 z-10 rounded-md bg-gray-200 p-2 text-gray-600 hover:bg-gray-300"
           aria-label="Copy code"
         >
           {copied ? (
@@ -41,7 +41,7 @@ export default function CodeBlock({ code, language = 'text', filename }: CodeBlo
             <Copy className="h-4 w-4" />
           )}
         </button>
-        <pre className="overflow-x-auto p-4 text-sm break-words whitespace-pre-wrap" style={{ wordBreak: 'break-all', overflowWrap: 'break-word' }}>
+        <pre className="overflow-x-auto p-4 text-sm break-words whitespace-pre-wrap max-w-full" style={{ wordBreak: 'break-all', overflowWrap: 'break-word' }}>
           <code className={`language-${language}`} style={{ wordBreak: 'break-all', overflowWrap: 'break-word', whiteSpace: 'pre-wrap' }}>{code}</code>
         </pre>
       </div>
