@@ -247,8 +247,8 @@
 
   /* Header navigation wrapper - padding responsive (desktop only) */
   .header-nav-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: 1024px) {
@@ -260,8 +260,8 @@
 
   /* Search box wrapper - padding responsive (desktop only) */
   .search-box-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: 1024px) {
@@ -271,10 +271,6 @@
     }
   }
 }
-
-
-
-@tailwind utilities;
 
 :root {
   --hadona-primary: #2B46BB;
@@ -521,8 +517,8 @@
 
   /* Header navigation wrapper - padding responsive (desktop only) */
   .header-nav-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: 1024px) {
@@ -534,8 +530,8 @@
 
   /* Search box wrapper - padding responsive (desktop only) */
   .search-box-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: 1024px) {

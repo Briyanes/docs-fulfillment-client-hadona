@@ -38,13 +38,13 @@ export default function DocLayout({
   const next = nextLink || (nextHref && nextTitle ? { href: nextHref, title: nextTitle } : undefined)
 
   return (
-    <div className="flex gap-12 items-start w-full">
+    <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start w-full">
       {/* Main Content */}
-      <article className="flex-1 min-w-0">
-        <div className="bg-white w-full" style={{ backgroundColor: '#ffffff' }}>
+      <article className="flex-1 min-w-0 w-full">
+        <div className="bg-white w-full px-4 sm:px-6 lg:px-0" style={{ backgroundColor: '#ffffff' }}>
             {/* Breadcrumb */}
             {categoryHref && categoryName && (
-              <nav className="text-sm text-gray-500 mb-6">
+              <nav className="text-sm text-gray-500 mb-4 sm:mb-6">
                 <Link href="/" className="hover:text-hadona-blue">Home</Link>
                 <span className="mx-2">/</span>
                 <Link href={categoryHref} className="hover:text-hadona-blue">{categoryName}</Link>
