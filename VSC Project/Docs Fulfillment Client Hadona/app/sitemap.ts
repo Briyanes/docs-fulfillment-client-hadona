@@ -1,0 +1,150 @@
+import { MetadataRoute } from 'next'
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://docs.hadona.id'
+
+  // Static routes
+  const routes = [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/agency`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/whitelist`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+  ]
+
+  // Agency routes
+  const agencyRoutes = [
+    '/agency/onboarding',
+    '/agency/business-manager',
+    '/agency/ads-setup',
+    '/agency/user-management',
+    '/agency/best-practices',
+    '/agency/ads-setup/ab-testing',
+    '/agency/ads-setup/creative-best-practices',
+    '/agency/ads-setup/instagram-ads',
+    '/agency/ads-setup/instagram-whatsapp-linking',
+    '/agency/ads-setup/membuat-campaign',
+    '/agency/ads-setup/mengatur-budget',
+    '/agency/ads-setup/optimasi-campaign',
+    '/agency/ads-setup/reporting-analytics',
+    '/agency/ads-setup/setup-ads-manager',
+    '/agency/ads-setup/setup-audience',
+    '/agency/ads-setup/troubleshooting',
+    '/agency/ads-setup/whatsapp-ads',
+    '/agency/best-practices/budget-management',
+    '/agency/best-practices/community',
+    '/agency/best-practices/content-strategy',
+    '/agency/best-practices/faq',
+    '/agency/best-practices/keamanan-akun',
+    '/agency/best-practices/kontak-support',
+    '/agency/best-practices/optimasi-performance',
+    '/agency/best-practices/resources',
+    '/agency/best-practices/troubleshooting-umum',
+    '/agency/best-practices/updates',
+    '/agency/business-manager/2fa',
+    '/agency/business-manager/membuat-business-manager',
+    '/agency/business-manager/menautkan-ad-account',
+    '/agency/business-manager/menautkan-instagram',
+    '/agency/business-manager/menautkan-page',
+    '/agency/business-manager/permission',
+    '/agency/business-manager/troubleshooting',
+    '/agency/business-manager/verifikasi',
+    '/agency/onboarding/kickoff-meeting',
+    '/agency/onboarding/mengapa-hadona',
+    '/agency/onboarding/persiapan',
+    '/agency/onboarding/proses-onboarding',
+    '/agency/onboarding/selamat-datang',
+    '/agency/user-management/audit-log',
+    '/agency/user-management/menambahkan-team',
+    '/agency/user-management/mengatur-akses',
+    '/agency/user-management/menghapus-user',
+    '/agency/user-management/monitoring',
+    '/agency/user-management/role-permission',
+  ]
+
+  // Whitelist routes
+  const whitelistRoutes = [
+    '/whitelist/pixel-setup',
+    '/whitelist/pixel-setup/pengenalan',
+    '/whitelist/pixel-setup/membuat-pixel',
+    '/whitelist/pixel-setup/instalasi-manual',
+    '/whitelist/pixel-setup/instalasi-partner',
+    '/whitelist/pixel-setup/testing',
+    '/whitelist/pixel-setup/verifikasi',
+    '/whitelist/pixel-setup/troubleshooting',
+    '/whitelist/google-integration',
+    '/whitelist/google-integration/pengenalan-ga4',
+    '/whitelist/google-integration/setup-ga4',
+    '/whitelist/google-integration/linking-google-ads',
+    '/whitelist/google-integration/authentication',
+    '/whitelist/google-integration/event-mapping',
+    '/whitelist/google-integration/verifikasi',
+    '/whitelist/google-integration/custom-dimensions',
+    '/whitelist/google-integration/troubleshooting',
+    '/whitelist/google-integration/best-practices',
+    '/whitelist/utm-configuration',
+    '/whitelist/utm-configuration/pengenalan',
+    '/whitelist/utm-configuration/setup-meta-ads',
+    '/whitelist/utm-configuration/utm-source',
+    '/whitelist/utm-configuration/utm-medium',
+    '/whitelist/utm-configuration/utm-campaign',
+    '/whitelist/utm-configuration/utm-id',
+    '/whitelist/advanced-setup',
+    '/whitelist/advanced-setup/conversions-api',
+    '/whitelist/advanced-setup/custom-events',
+    '/whitelist/advanced-setup/server-side-tracking',
+    '/whitelist/advanced-setup/webhooks',
+    '/whitelist/advanced-setup/advanced-events',
+    '/whitelist/advanced-setup/data-layer',
+    '/whitelist/advanced-setup/privacy-compliance',
+    '/whitelist/advanced-setup/performance',
+    '/whitelist/data-sync',
+    '/whitelist/data-sync/import-ga4',
+    '/whitelist/data-sync/auto-sync',
+    '/whitelist/data-sync/mapping-events',
+    '/whitelist/data-sync/data-validation',
+    '/whitelist/data-sync/troubleshooting',
+    '/whitelist/data-sync/monitoring',
+    '/whitelist/monitoring',
+    '/whitelist/monitoring/events-manager',
+    '/whitelist/monitoring/ga4-data',
+    '/whitelist/monitoring/interpretasi-metrics',
+    '/whitelist/monitoring/custom-reports',
+    '/whitelist/monitoring/data-export',
+    '/whitelist/monitoring/alerts',
+    '/whitelist/monitoring/troubleshooting',
+  ]
+
+  // Generate sitemap entries for all routes
+  const allRoutes = [
+    ...routes,
+    ...agencyRoutes.map((route) => ({
+      url: `${baseUrl}${route}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+    ...whitelistRoutes.map((route) => ({
+      url: `${baseUrl}${route}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+  ]
+
+  return allRoutes
+}
+
