@@ -108,17 +108,17 @@ export default function HomePage() {
                 style={{ textDecoration: 'none' }}
               >
                 <div className="mb-3 flex items-center gap-3">
-                  <div className={`rounded-lg ${link.color} p-2.5`}>
-                    <i className={`bi ${link.icon} text-lg`}></i>
+                  <div className="rounded-lg bg-white/20 p-2.5">
+                    <i className={`bi ${link.icon} text-lg text-white`}></i>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <h3 className="text-xl font-bold text-white">
                     {link.title}
                   </h3>
                 </div>
-                <p className="mb-4 text-sm text-gray-600 leading-relaxed">
+                <p className="mb-4 text-sm text-white/90 leading-relaxed">
                   {link.description}
                 </p>
-                <div className="flex items-center gap-2 text-hadona-primary">
+                <div className="flex items-center gap-2 text-white">
                   <span className="text-sm font-medium">Mulai belajar</span>
                   <i className="bi bi-arrow-right text-sm"></i>
                 </div>
