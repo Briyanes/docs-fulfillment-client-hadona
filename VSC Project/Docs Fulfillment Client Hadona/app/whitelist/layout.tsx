@@ -11,7 +11,7 @@ export default function WhitelistLayout({
       <div className="hidden lg:block">
         <Sidebar items={whitelistSidebarItems} title="Client Whitelist" />
       </div>
-      <div className="w-full lg:ml-64 px-3 sm:px-6 py-6 sm:py-8 lg:px-8">
+      <div className="w-full lg:ml-64 px-3 sm:px-6 py-6 sm:py-8 lg:px-[48px]">
         {children}
       </div>
     </div>

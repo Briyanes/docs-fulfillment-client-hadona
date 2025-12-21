@@ -41,7 +41,7 @@ export default function DocLayout({
     <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start w-full lg:mr-64">
       {/* Main Content */}
       <article className="flex-1 min-w-0 w-full overflow-x-hidden">
-        <div className="bg-white w-full px-3 sm:px-6 lg:px-0 overflow-x-hidden" style={{ backgroundColor: '#ffffff' }}>
+        <div className="bg-white w-full px-3 sm:px-6 lg:px-[48px] overflow-x-hidden" style={{ backgroundColor: '#ffffff' }}>
             {/* Breadcrumb */}
             {categoryHref && categoryName && (
               <nav className="text-sm text-gray-500 mb-4 sm:mb-6">
