@@ -73,8 +73,8 @@ export default function HomePage() {
 
   return (
     <div className="flex w-full lg:px-[48px]">
-      {/* Sidebar */}
-      <div className="hidden w-64 flex-shrink-0 lg:block">
+      {/* Sidebar - Fixed */}
+      <div className="hidden lg:block w-64 flex-shrink-0">
         <Sidebar items={homeSidebarItems} title="Documentation" />
       </div>
 

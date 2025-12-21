@@ -115,7 +115,7 @@ export default function TableOfContents() {
   }
 
   return (
-    <aside className="hidden lg:block sticky top-32 h-[calc(100vh-8rem)] overflow-y-auto border-l border-gray-200 bg-white pl-6 pr-4 py-6 w-64 flex-shrink-0" style={{ backgroundColor: '#ffffff' }}>
+    <aside className="hidden lg:block fixed top-[120px] sm:top-[140px] right-0 h-[calc(100vh-120px)] sm:h-[calc(100vh-140px)] overflow-y-auto border-l border-gray-200 bg-white pl-6 pr-4 py-6 w-64 flex-shrink-0 z-50" style={{ backgroundColor: '#ffffff' }}>
       <div className="mb-4">
         <h3 className="text-sm font-semibold text-gray-900 mb-3 flex items-center gap-2">
           <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
