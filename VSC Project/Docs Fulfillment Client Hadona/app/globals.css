@@ -86,6 +86,10 @@
   .prose {
     @apply max-w-none;
     color: #374151;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
   }
 
   .prose p {
@@ -363,6 +367,10 @@
   .prose {
     @apply max-w-none;
     color: #374151;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
   }
 
   .prose p {
