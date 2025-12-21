@@ -69,7 +69,7 @@ export default function Page() {
             klien dengan paket premium.
           </p>
           <p className="text-xs font-semibold text-gray-700">Phone:</p>
-          <p className="text-xs text-gray-600">+62 XXX-XXXX-XXXX</p>
+          <p className="text-xs text-gray-600">+62 851-5800-0123</p>
           <p className="mt-2 text-xs font-semibold text-gray-700">Jam Operasi:</p>
           <p className="text-xs text-gray-600">Senin - Jumat, 09:00 - 18:00 WIB</p>
         </div>
@@ -298,7 +298,7 @@ export default function Page() {
         </p>
         <ul className="mt-2">
           <li>
-            <strong>Phone (Urgent)</strong>: +62 XXX-XXXX-XXXX (24/7 untuk emergency)
+            <strong>Phone (Urgent)</strong>: +62 851-5800-0123 (24/7 untuk emergency)
           </li>
           <li>
             <strong>Email (Urgent)</strong>: urgent@hadona.id (subject: [URGENT])
