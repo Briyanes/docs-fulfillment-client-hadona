@@ -57,6 +57,12 @@ export default function Header() {
           </div>
         </div>
         <div className="flex items-center gap-4">
+          {/* Search Box - Desktop: Inline with header */}
+          <div className="hidden lg:block flex-1 max-w-md ml-8">
+            <div className="bg-hadona-primary rounded-lg px-4 py-2" style={{ backgroundColor: '#2B46BB' }}>
+              <SearchBox />
+            </div>
+          </div>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden"
@@ -71,9 +77,9 @@ export default function Header() {
         </div>
       </nav>
       
-      {/* Search Box Section - Always Visible */}
-      <div className="border-t border-gray-200 w-full bg-hadona-primary" style={{ backgroundColor: '#2B46BB' }}>
-        <div className="search-box-wrapper py-3 sm:py-4 px-4 sm:px-6 lg:px-[48px]">
+      {/* Search Box Section - Mobile/Tablet: Below header */}
+      <div className="border-t border-gray-200 w-full bg-hadona-primary lg:hidden" style={{ backgroundColor: '#2B46BB' }}>
+        <div className="search-box-wrapper py-3 sm:py-4 px-4 sm:px-6">
           <SearchBox />
         </div>
       </div>
