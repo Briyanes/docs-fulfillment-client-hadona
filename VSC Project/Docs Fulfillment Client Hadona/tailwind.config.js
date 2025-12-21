@@ -14,6 +14,8 @@ module.exports = {
           light: '#4A6AE8',
           'bg-dark': '#0F1A5C', // Dark blue for backgrounds
           'bg-darker': '#0A1240', // Darker blue for deeper backgrounds
+          yellow: '#FFC107', // Hadona yellow
+          'yellow-dark': '#FFA000', // Darker yellow for hover
         },
       },
       typography: {

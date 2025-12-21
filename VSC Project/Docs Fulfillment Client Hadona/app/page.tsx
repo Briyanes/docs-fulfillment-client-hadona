@@ -139,18 +139,18 @@ export default function HomePage() {
               <Link
                 key={category.href}
                 href={category.href}
-                className="group rounded-lg border border-gray-200 bg-white p-6 transition-all hover:border-hadona-primary hover:shadow-md no-underline hover:no-underline"
+                className="group rounded-lg border-2 border-hadona-yellow bg-hadona-yellow p-6 transition-all hover:border-hadona-yellow-dark hover:bg-hadona-yellow-dark hover:shadow-md no-underline hover:no-underline"
                 style={{ textDecoration: 'none' }}
               >
                 <div className="mb-3 flex items-center gap-3">
-                  <div className="rounded-lg bg-hadona-primary/10 p-2">
-                    <i className={`bi ${category.icon} text-lg text-hadona-primary`}></i>
+                  <div className="rounded-lg bg-white/20 p-2">
+                    <i className={`bi ${category.icon} text-lg text-gray-900`}></i>
                   </div>
                   <h3 className="text-base font-semibold text-gray-900">
                     {category.title}
                   </h3>
                 </div>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-800 leading-relaxed">
                   {category.description}
                 </p>
               </Link>
