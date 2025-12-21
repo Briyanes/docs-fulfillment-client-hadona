@@ -1,8 +1,13 @@
 import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import dynamic from 'next/dynamic'
 import ShareButtons from './ShareButtons'
 import HelpAndFollow from './HelpAndFollow'
-import TableOfContentsWrapper from './TableOfContentsWrapper'
+
+const TableOfContentsWrapper = dynamic(() => import('./TableOfContentsWrapper'), {
+  ssr: false,
+  loading: () => <div className="hidden lg:block w-64" />
+})
 
 interface DocLayoutProps {
   children: React.ReactNode

@@ -1,10 +1,16 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-inter',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://docs.hadona.id'),
@@ -75,7 +81,8 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
       </head>
       <body className={inter.className}>
         <Header />
@@ -83,8 +90,17 @@ export default function RootLayout({
           <main className="flex-1 overflow-x-hidden pt-[110px] sm:pt-[130px]">{children}</main>
           <Footer />
         </div>
+        <Script
+          src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
+          strategy="lazyOnload"
+          onLoad={() => {
+            const link = document.createElement('link')
+            link.rel = 'stylesheet'
+            link.href = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css'
+            document.head.appendChild(link)
+          }}
+        />
       </body>
     </html>
   )
 }
-

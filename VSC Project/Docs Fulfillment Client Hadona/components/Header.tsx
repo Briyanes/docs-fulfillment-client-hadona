@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
@@ -21,10 +22,14 @@ export default function Header() {
       <nav className="header-nav-wrapper flex w-full items-center justify-between py-3 sm:py-5 px-4 sm:px-6 lg:px-[48px]">
         <div className="flex items-center gap-2 sm:gap-8 flex-shrink-0">
           <Link href="/" className="flex items-center gap-2 sm:gap-3 no-underline flex-shrink-0 min-w-0">
-            <img 
+            <Image 
               src="/images/logo-hadona.png" 
               alt="Hadona Logo" 
+              width={48}
+              height={48}
               className="h-10 sm:h-12 w-auto flex-shrink-0"
+              priority
+              loading="eager"
             />
             <span className="text-base sm:text-lg md:text-xl font-bold tracking-tight whitespace-nowrap flex-shrink-0">
               <span className="font-bold">HADONA</span>
