@@ -95,7 +95,7 @@ export default function Sidebar({ items, title }: SidebarProps) {
   }
 
   return (
-    <aside className="sticky top-[110px] sm:top-[130px] h-[calc(100vh-110px)] sm:h-[calc(100vh-130px)] w-64 overflow-y-auto border-r border-gray-200 bg-white pl-[48px] pr-[48px] py-6 z-50" style={{ backgroundColor: '#ffffff' }}>
+    <aside className="sticky top-[110px] sm:top-[100px] lg:top-[90px] h-[calc(100vh-110px)] sm:h-[calc(100vh-100px)] lg:h-[calc(100vh-90px)] w-64 overflow-y-auto border-r border-gray-200 bg-white pl-[48px] pr-[48px] py-6 z-50" style={{ backgroundColor: '#ffffff' }}>
       {title && (
         <h2 className="mb-6 text-base font-bold text-gray-900">
           {title}

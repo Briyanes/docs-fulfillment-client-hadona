@@ -90,7 +90,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         <div className="flex min-h-screen flex-col">
-          <main className="flex-1 pt-[110px] sm:pt-[130px]">{children}</main>
+          <main className="flex-1 pt-[110px] sm:pt-[100px] lg:pt-[90px]">{children}</main>
           <Footer />
         </div>
       </body>
