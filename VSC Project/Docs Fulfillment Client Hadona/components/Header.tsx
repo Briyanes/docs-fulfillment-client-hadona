@@ -16,7 +16,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-[100] border-b border-gray-200 bg-white shadow-sm" style={{ backgroundColor: '#ffffff' }}>
+    <header className="fixed top-0 left-0 right-0 z-[100] border-b border-gray-200 bg-white shadow-sm" style={{ backgroundColor: '#ffffff' }}>
       {/* Top Navigation */}
       <nav className="header-nav-wrapper flex w-full items-center justify-between py-3 sm:py-5 px-4 sm:px-6 lg:px-[48px]">
         <div className="flex items-center gap-3 sm:gap-8">

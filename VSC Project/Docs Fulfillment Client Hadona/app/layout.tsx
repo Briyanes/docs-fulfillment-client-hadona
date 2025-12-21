@@ -78,9 +78,9 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" />
       </head>
       <body className={inter.className}>
+        <Header />
         <div className="flex min-h-screen flex-col overflow-x-hidden">
-          <Header />
-          <main className="flex-1 overflow-x-hidden">{children}</main>
+          <main className="flex-1 overflow-x-hidden pt-[120px] sm:pt-[140px]">{children}</main>
           <Footer />
         </div>
       </body>
