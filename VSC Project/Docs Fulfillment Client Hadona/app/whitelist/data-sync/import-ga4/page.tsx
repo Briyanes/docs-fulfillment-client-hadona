@@ -114,4 +114,7 @@ export default function Page() {
     "value": 100.00,
     "currency": "USD"
   }
+}`}</code></pre>
+    </DocLayout>
+  )
 }
