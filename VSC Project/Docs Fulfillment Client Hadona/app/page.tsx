@@ -147,8 +147,8 @@ export default function HomePage() {
                     <i className={`bi ${category.icon} text-lg text-gray-900`}></i>
                   </div>
                   <h3 className="text-base font-semibold text-gray-900">
-                    {category.title}
-                  </h3>
+                  {category.title}
+                </h3>
                 </div>
                 <p className="text-sm text-gray-800 leading-relaxed">
                   {category.description}
@@ -176,8 +176,8 @@ export default function HomePage() {
                     <i className={`bi ${feature.icon} text-lg text-hadona-primary`}></i>
                   </div>
                   <h3 className="text-base font-semibold text-gray-900">
-                    {feature.title}
-                  </h3>
+                  {feature.title}
+                </h3>
                 </div>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {feature.description}

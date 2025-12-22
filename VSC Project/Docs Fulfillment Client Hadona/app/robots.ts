@@ -7,7 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://docs.hadona.id/sitemap.xml',
+    sitemap: 'https://hadona-docs.vercel.app/sitemap.xml',
   }
 }
-

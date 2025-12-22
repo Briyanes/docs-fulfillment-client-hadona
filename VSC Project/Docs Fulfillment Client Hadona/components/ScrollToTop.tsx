@@ -7,19 +7,13 @@ export default function ScrollToTop() {
   const pathname = usePathname()
 
   useEffect(() => {
-    // Only scroll to top on mobile/tablet views
-    const isMobile = window.innerWidth < 1024 // lg breakpoint
-    
-    if (isMobile) {
-      // Scroll to top smoothly
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      })
-    }
+    // Scroll to top when pathname changes
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
   }, [pathname])
 
   return null
 }
-

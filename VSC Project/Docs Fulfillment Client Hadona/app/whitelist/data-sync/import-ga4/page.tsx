@@ -118,3 +118,5 @@ export default function Page() {
     </DocLayout>
   )
 }
+
+      <h2>Jenis Data yang Dapat Diimport</h2>

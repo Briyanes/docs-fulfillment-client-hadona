@@ -78,7 +78,7 @@ export default function Header() {
       {/* Search Box Section - Mobile/Tablet: Below header */}
       <div className="border-t border-gray-200 w-full bg-hadona-primary lg:hidden" style={{ backgroundColor: '#2B46BB' }}>
         <div className="search-box-wrapper py-3 sm:py-4 px-4 sm:px-6">
-          <SearchBox />
+            <SearchBox />
         </div>
       </div>
       {mobileMenuOpen && (

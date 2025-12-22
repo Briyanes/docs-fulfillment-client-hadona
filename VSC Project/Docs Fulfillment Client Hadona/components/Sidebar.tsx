@@ -23,11 +23,11 @@ export default function Sidebar({ items, title }: SidebarProps) {
   const toggleSection = useCallback((href: string) => {
     setOpenSections((prev) => {
       const newOpenSections = new Set(prev)
-      if (newOpenSections.has(href)) {
-        newOpenSections.delete(href)
-      } else {
-        newOpenSections.add(href)
-      }
+    if (newOpenSections.has(href)) {
+      newOpenSections.delete(href)
+    } else {
+      newOpenSections.add(href)
+    }
       return newOpenSections
     })
   }, [])
@@ -68,20 +68,20 @@ export default function Sidebar({ items, title }: SidebarProps) {
                 {item.children?.map((child) => {
                   const childActive = isActive(child.href)
                   return (
-                    <li key={child.href}>
-                      <Link
-                        href={child.href}
+                  <li key={child.href}>
+                    <Link
+                      href={child.href}
                         prefetch={true}
                         className={`block py-1.5 text-sm transition-colors duration-150 ease-out ${
                           childActive
                             ? 'text-hadona-dark font-semibold'
                             : 'text-gray-800 hover:text-gray-900'
-                        }`}
+                      }`}
                         style={{ willChange: 'color' }}
-                      >
-                        {child.title}
-                      </Link>
-                    </li>
+                    >
+                      {child.title}
+                    </Link>
+                  </li>
                   )
                 })}
               </ul>

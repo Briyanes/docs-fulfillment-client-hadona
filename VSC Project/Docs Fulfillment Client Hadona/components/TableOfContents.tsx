@@ -41,14 +41,14 @@ export default function TableOfContents() {
       headingElements.forEach((heading) => {
         const text = heading.textContent || ''
         if (!text) return
-        
+
         const id = text
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, '-')
           .replace(/^-|-$/g, '')
-        
+
         if (!id) return
-        
+
         // Set id if not already set
         if (!heading.id) {
           heading.id = id
