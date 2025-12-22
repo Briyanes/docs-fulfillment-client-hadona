@@ -38,7 +38,7 @@ export interface ZaiError {
 // Z.ai API Configuration
 const ZAI_CONFIG = {
   baseURL: 'https://api.z.ai/api/paas/v4',
-  model: 'glm-4.5-air', // Cost-effective model
+  model: 'glm-4.6', // GLM-4.6 model
   timeout: 5000, // 5 seconds
   maxRetries: 2,
   retryDelay: 1000, // Base delay in ms
@@ -62,7 +62,8 @@ export class ZaiAPIError extends Error {
  * Check if Z.ai API is configured
  */
 export function isZaiAvailable(): boolean {
-  return !!process.env.ZAI_API_KEY && process.env.ZAI_API_KEY !== 'your_zai_api_key_here'
+  const apiKey = process.env.ZAI_API_KEY
+  return !!apiKey && apiKey !== 'your_zai_api_key_here'
 }
 
 /**
