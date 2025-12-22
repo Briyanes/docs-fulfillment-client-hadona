@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { Search, X, FileText, ArrowRight } from 'lucide-react'
+import { Search, X, FileText, ArrowRight, Sparkles } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
@@ -13,11 +13,21 @@ interface SearchResult {
   category_slug?: string
   category_name?: string
   type?: 'agency' | 'whitelist'
+  path?: string
+  relevance_score?: number
+  is_ai_enhanced?: boolean
+}
+
+interface SearchMeta {
+  ai_enhanced: boolean
+  total_results: number
+  query: string
 }
 
 export default function SearchBox() {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<SearchResult[]>([])
+  const [meta, setMeta] = useState<SearchMeta | null>(null)
   const [isOpen, setIsOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [selectedIndex, setSelectedIndex] = useState(-1)
@@ -63,6 +73,7 @@ export default function SearchBox() {
   useEffect(() => {
     if (!query.trim() || query.length < 2) {
       setResults([])
+      setMeta(null)
       setIsOpen(false)
       return
     }
@@ -74,12 +85,14 @@ export default function SearchBox() {
         if (response.ok) {
           const data = await response.json()
           setResults(data.results || [])
+          setMeta(data.meta || null)
           setIsOpen(true)
           setSelectedIndex(-1)
         }
       } catch (error) {
         console.error('Search error:', error)
         setResults([])
+        setMeta(null)
       } finally {
         setIsLoading(false)
       }
@@ -115,13 +128,14 @@ export default function SearchBox() {
 
   const handleResultClick = (result: SearchResult) => {
     // Use path from result if available, otherwise construct it
-    const href = (result as any).path || (result.category_slug 
+    const href = result.path || (result.category_slug
       ? `/${result.type}/${result.category_slug}/${result.slug}`
       : `/${result.type}/${result.slug}`)
-    
+
     router.push(href)
     setIsOpen(false)
     setQuery('')
+    setMeta(null)
     inputRef.current?.blur()
   }
 
@@ -170,18 +184,30 @@ export default function SearchBox() {
         <div className="absolute top-full z-50 mt-2 w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl" style={{ backgroundColor: '#ffffff' }}>
           {isLoading ? (
             <div className="px-4 py-8 text-center text-sm text-gray-500">
-              Searching...
+              {meta?.ai_enhanced ? 'Searching with AI...' : 'Searching...'}
             </div>
           ) : results.length > 0 ? (
             <>
+              {/* AI Badge Header */}
+              {meta?.ai_enhanced && (
+                <div className="flex items-center justify-between border-b border-gray-200 bg-purple-50 px-4 py-2">
+                  <div className="flex items-center gap-1.5 text-xs font-medium text-purple-700">
+                    <Sparkles className="h-3.5 w-3.5" />
+                    <span>AI-Powered Search</span>
+                  </div>
+                  <span className="text-xs text-purple-600">
+                    {meta.total_results} results
+                  </span>
+                </div>
+              )}
               <div className="max-h-96 overflow-y-auto">
                 {results.map((result, index) => {
-                  const href = result.category_slug 
+                  const href = result.category_slug
                     ? `/${result.type}/${result.category_slug}/${result.slug}`
                     : `/${result.type}/${result.slug}`
-                  
+
                   const isSelected = index === selectedIndex
-                  
+
                   return (
                     <Link
                       key={result.id}
@@ -196,13 +222,18 @@ export default function SearchBox() {
                       <div className="flex items-start gap-3">
                         <FileText className="mt-0.5 h-4 w-4 flex-shrink-0 text-gray-400" />
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-2 flex-wrap">
                             <span className="text-sm font-medium text-gray-900">
                               {result.title}
                             </span>
                             {result.type && (
                               <span className="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600">
                                 {result.type === 'agency' ? 'Agency' : 'Whitelist'}
+                              </span>
+                            )}
+                            {result.is_ai_enhanced && result.relevance_score !== undefined && (
+                              <span className="rounded-full bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-700">
+                                {result.relevance_score}% match
                               </span>
                             )}
                           </div>
@@ -217,7 +248,7 @@ export default function SearchBox() {
                             </p>
                           )}
                         </div>
-                            <ArrowRight className="h-4 w-4 flex-shrink-0 text-gray-300" />
+                        <ArrowRight className="h-4 w-4 flex-shrink-0 text-gray-300" />
                       </div>
                     </Link>
                   )
