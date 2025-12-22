@@ -58,12 +58,12 @@ export default function DocLayout({
             )}
 
             {/* Title */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-gray-900 mb-4 sm:mb-6 tracking-tight" style={{ lineHeight: '1.2' }}>
               {title}
             </h1>
 
             {description && (
-              <p className="text-lg sm:text-xl text-gray-600 mb-4 sm:mb-5 leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 {description}
               </p>
             )}
