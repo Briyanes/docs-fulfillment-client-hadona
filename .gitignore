@@ -35,7 +35,28 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Exclude Local Sites and other unrelated projects
-../../Local Sites/
+# cache & temporary files
+.cache/
+*.cache
+*.tmp
+*.temp
 
+# Browser & Editor files (Chrome, Puppeteer)
+*.pak
+locale.pak
+resources.pak
+.puppeteer/
 
+# Cursor/VS Code
+.cursor/
+.cursor-worktrees/
+.vscode/
+*.vsix
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+
+# Claude Code
+.claude/
