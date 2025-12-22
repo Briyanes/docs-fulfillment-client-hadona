@@ -1,6 +1,17 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "framework": "nextjs"
+  "installCommand": "npm install --legacy-peer-deps",
+  "framework": "nextjs",
+  "nodeVersion": "18.x",
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
+  },
+  "functions": {
+    "app/api/search/route.ts": {
+      "runtime": "nodejs18.x"
+    }
+  }
 }
