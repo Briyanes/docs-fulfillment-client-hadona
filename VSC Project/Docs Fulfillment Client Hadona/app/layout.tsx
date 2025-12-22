@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     default: 'Hadona Docs - Dokumentasi Lengkap untuk Client Agency & Whitelist',
     template: '%s | Hadona Docs',
   },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/icon.png',
+  },
   description:
     'Dokumentasi lengkap untuk Client Agency dan Client Whitelist Hadona Digital Media. Panduan setup Meta Ads, Google Analytics 4, best practices, dan troubleshooting.',
   keywords: [
