@@ -23,6 +23,50 @@ module.exports = {
           css: {
             maxWidth: 'none',
             color: '#1f2937',
+            lineHeight: '1.6',
+            'h2': {
+              marginTop: '1.5rem',
+              marginBottom: '0.75rem',
+              fontWeight: '600',
+            },
+            'h3': {
+              marginTop: '1.25rem',
+              marginBottom: '0.5rem',
+              fontWeight: '600',
+            },
+            'h4': {
+              marginTop: '1rem',
+              marginBottom: '0.5rem',
+              fontWeight: '600',
+            },
+            p: {
+              marginTop: '0.5rem',
+              marginBottom: '0.75rem',
+            },
+            ul: {
+              marginTop: '0.5rem',
+              marginBottom: '0.75rem',
+            },
+            ol: {
+              marginTop: '0.5rem',
+              marginBottom: '0.75rem',
+            },
+            'li > ul': {
+              marginTop: '0.25rem',
+              marginBottom: '0.25rem',
+            },
+            'li > ol': {
+              marginTop: '0.25rem',
+              marginBottom: '0.25rem',
+            },
+            table: {
+              marginTop: '0.75rem',
+              marginBottom: '0.75rem',
+            },
+            pre: {
+              marginTop: '0.75rem',
+              marginBottom: '0.75rem',
+            },
             a: {
               color: '#2B46BB',
               '&:hover': {
