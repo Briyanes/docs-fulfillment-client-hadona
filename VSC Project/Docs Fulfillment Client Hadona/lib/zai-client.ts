@@ -176,12 +176,7 @@ export async function callZaiAPI(
  * Log Z.ai API error for monitoring
  */
 export function logZaiError(error: Error, context: string): void {
-  console.error({
-    source: 'zai-api',
-    error: error.message,
-    context,
-    timestamp: new Date().toISOString(),
-  })
+  console.error(`[Z.ai API Error] ${context}:`, error.message)
 
   // Optional: Send to monitoring service (e.g., Sentry, Vercel Analytics)
 }
