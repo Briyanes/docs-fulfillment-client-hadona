@@ -18,7 +18,10 @@ interface SidebarProps {
 
 export default function Sidebar({ items, title }: SidebarProps) {
   const pathname = usePathname()
-  const [openSections, setOpenSections] = useState<Set<string>>(new Set())
+  // Initialize with all sections expanded
+  const [openSections, setOpenSections] = useState<Set<string>>(
+    new Set(items.filter(item => item.children && item.children.length > 0).map(item => item.href))
+  )
 
   const toggleSection = useCallback((href: string) => {
     setOpenSections((prev) => {
