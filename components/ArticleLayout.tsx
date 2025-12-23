@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import ShareButtons from './ShareButtons'
 import HelpAndFollow from './HelpAndFollow'
 import TableOfContentsWrapper from './TableOfContentsWrapper'
+import Breadcrumb from './Breadcrumb'
 
 interface ArticleLayoutProps {
   title: string
@@ -27,20 +28,20 @@ export default function ArticleLayout({
   description,
   children,
 }: ArticleLayoutProps) {
+  // Generate breadcrumb items based on the current path
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: categoryName, href: categoryHref },
+  ]
+
   return (
     <div className="flex gap-12 items-start">
       {/* Main Content */}
       <article className="flex-1 min-w-0">
+        <Breadcrumb items={breadcrumbItems} currentItem={title} />
         <div className="mb-6 sm:mb-8">
-        <Link
-          href={categoryHref}
-            className="mb-3 sm:mb-4 inline-flex items-center gap-1 text-xs sm:text-sm text-gray-600 hover:text-hadona-primary"
-        >
-          <ChevronLeft className="h-4 w-4" />
-          Kembali ke {categoryName}
-        </Link>
           <h1 className="text-3xl sm:text-4xl font-bold">{title}</h1>
-      </div>
+        </div>
         <ShareButtons title={title} description={description} />
         <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">{children}</div>
       {(prevHref || nextHref) && (

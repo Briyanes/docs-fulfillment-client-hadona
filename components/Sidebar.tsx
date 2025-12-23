@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { ChevronRight, FileText } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import { useState, useMemo, useCallback } from 'react'
 
 interface SidebarItem {
@@ -48,14 +48,14 @@ export default function Sidebar({ items, title }: SidebarProps) {
           <>
             <button
               onClick={() => toggleSection(item.href)}
-              className={`flex w-full items-center justify-between py-2 text-sm transition-colors duration-150 ease-out ${
-                isCategory 
-                  ? 'font-bold text-gray-900' 
+              className={`flex w-full items-center justify-between py-2 text-sm transition-colors duration-150 ease-out whitespace-nowrap ${
+                isCategory
+                  ? 'font-bold text-gray-900'
                   : 'font-medium text-gray-900 hover:text-gray-800'
               }`}
               style={{ willChange: 'color' }}
             >
-              <span>{item.title}</span>
+              <span className="truncate">{item.title}</span>
               <ChevronRight
                 className={`h-4 w-4 transition-transform duration-200 ease-out flex-shrink-0 ml-2 ${
                   isOpen ? 'rotate-90' : ''
@@ -72,7 +72,7 @@ export default function Sidebar({ items, title }: SidebarProps) {
                     <Link
                       href={child.href}
                         prefetch={true}
-                        className={`block py-1.5 text-sm transition-colors duration-150 ease-out ${
+                        className={`block py-1.5 text-sm transition-colors duration-150 ease-out whitespace-nowrap ${
                           childActive
                             ? 'text-hadona-dark font-semibold'
                             : 'text-gray-800 hover:text-gray-900'
@@ -91,7 +91,7 @@ export default function Sidebar({ items, title }: SidebarProps) {
           <Link
             href={item.href}
             prefetch={true}
-            className={`block py-2 text-sm transition-colors duration-150 ease-out ${
+            className={`block py-2 text-sm transition-colors duration-150 ease-out whitespace-nowrap ${
               active
                 ? 'text-hadona-dark font-semibold'
                 : 'text-gray-900 hover:text-gray-800'
@@ -110,7 +110,7 @@ export default function Sidebar({ items, title }: SidebarProps) {
   }, [items, renderItem])
 
   return (
-    <aside className="sticky top-[110px] sm:top-[100px] lg:top-[90px] h-[calc(100vh-110px)] sm:h-[calc(100vh-100px)] lg:h-[calc(100vh-90px)] w-64 overflow-y-auto border-r border-hadona-yellow-dark bg-hadona-yellow pl-[48px] pr-[48px] py-6 z-50" style={{ backgroundColor: '#EDD947' }}>
+    <aside className="sticky top-[110px] sm:top-[100px] lg:top-[90px] h-[calc(100vh-110px)] sm:h-[calc(100vh-100px)] lg:h-[calc(100vh-90px)] w-80 overflow-y-auto border-r border-hadona-yellow-dark bg-hadona-yellow pl-[48px] pr-[48px] py-6 z-50" style={{ backgroundColor: '#EDD947' }}>
       {title && (
         <h2 className="mb-6 text-base font-bold text-gray-900">
           {title}

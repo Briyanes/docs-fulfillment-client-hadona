@@ -26,10 +26,10 @@ export default function ShareButtons({ title, description }: ShareButtonsProps) 
   const [copied, setCopied] = useState(false)
   const [pageTitle, setPageTitle] = useState('')
 
-  // Get page title from document
+  // Get page title from document (fallback if title prop is not provided)
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const docTitle = document.title || title || 'Hadona Docs'
+    if (typeof window !== 'undefined' && !title) {
+      const docTitle = document.title
       setPageTitle(docTitle.replace(' - Hadona Docs', '').replace(' | Hadona Docs', ''))
     }
   }, [title])
@@ -46,7 +46,7 @@ export default function ShareButtons({ title, description }: ShareButtonsProps) 
   const copyLink = async () => {
     try {
       const url = getFullUrl()
-      const articleTitle = pageTitle || 'Artikel Dokumentasi'
+      const articleTitle = title || pageTitle || ''
       const articleDesc = description || ''
 
       const shareText = articleDesc
@@ -60,7 +60,7 @@ export default function ShareButtons({ title, description }: ShareButtonsProps) 
       console.error('Failed to copy:', err)
       // Fallback for older browsers
       const url = getFullUrl()
-      const articleTitle = pageTitle || 'Artikel Dokumentasi'
+      const articleTitle = title || pageTitle || ''
       const articleDesc = description || ''
 
       const shareText = articleDesc
@@ -81,7 +81,7 @@ export default function ShareButtons({ title, description }: ShareButtonsProps) 
   // Share via WhatsApp
   const shareViaWhatsApp = () => {
     const url = getFullUrl()
-    const articleTitle = pageTitle || 'Artikel Dokumentasi'
+    const articleTitle = title || pageTitle || ''
     const articleDesc = description || ''
 
     const text = articleDesc
