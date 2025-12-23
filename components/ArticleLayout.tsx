@@ -12,6 +12,7 @@ interface ArticleLayoutProps {
   prevTitle?: string
   nextHref?: string
   nextTitle?: string
+  description?: string
   children: React.ReactNode
 }
 
@@ -23,6 +24,7 @@ export default function ArticleLayout({
   prevTitle,
   nextHref,
   nextTitle,
+  description,
   children,
 }: ArticleLayoutProps) {
   return (
@@ -39,7 +41,7 @@ export default function ArticleLayout({
         </Link>
           <h1 className="text-3xl sm:text-4xl font-bold">{title}</h1>
       </div>
-        <ShareButtons title={title} />
+        <ShareButtons title={title} description={description} />
         <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">{children}</div>
       {(prevHref || nextHref) && (
         <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-gray-200">

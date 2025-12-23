@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const articleTemplate = (title, categoryHref, categoryName, prevHref, prevTitle, nextHref, nextTitle) => `import ArticleLayout from '@/components/ArticleLayout'
+const articleTemplate = (title, categoryHref, categoryName, prevHref, prevTitle, nextHref, nextTitle, description) => `import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
@@ -13,6 +13,7 @@ export default function Page() {
       ${prevTitle ? `prevTitle="${prevTitle}"` : ''}
       ${nextHref ? `nextHref="${nextHref}"` : ''}
       ${nextTitle ? `nextTitle="${nextTitle}"` : ''}
+      ${description ? `description="${description}"` : ''}
     >
       <p>Konten akan ditambahkan di sini.</p>
     </ArticleLayout>
@@ -187,7 +188,8 @@ categories.forEach((category) => {
       prevArticle ? `${category.href}/${prevArticle.slug}` : null,
       prevArticle ? prevArticle.title : null,
       nextArticle ? `${category.href}/${nextArticle.slug}` : null,
-      nextArticle ? nextArticle.title : null
+      nextArticle ? nextArticle.title : null,
+      article.description || null
     )
 
     fs.writeFileSync(filePath, content)

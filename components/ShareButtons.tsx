@@ -18,9 +18,10 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 
 interface ShareButtonsProps {
   title?: string
+  description?: string
 }
 
-export default function ShareButtons({ title }: ShareButtonsProps) {
+export default function ShareButtons({ title, description }: ShareButtonsProps) {
   const pathname = usePathname()
   const [copied, setCopied] = useState(false)
   const [pageTitle, setPageTitle] = useState('')
@@ -45,14 +46,29 @@ export default function ShareButtons({ title }: ShareButtonsProps) {
   const copyLink = async () => {
     try {
       const url = getFullUrl()
-      await navigator.clipboard.writeText(url)
+      const articleTitle = pageTitle || 'Artikel Dokumentasi'
+      const articleDesc = description || ''
+
+      const shareText = articleDesc
+        ? `${articleTitle}\n\n${articleDesc}\n\n${url}`
+        : `${articleTitle}\n\n${url}`
+
+      await navigator.clipboard.writeText(shareText)
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
     } catch (err) {
       console.error('Failed to copy:', err)
       // Fallback for older browsers
+      const url = getFullUrl()
+      const articleTitle = pageTitle || 'Artikel Dokumentasi'
+      const articleDesc = description || ''
+
+      const shareText = articleDesc
+        ? `${articleTitle}\n\n${articleDesc}\n\n${url}`
+        : `${articleTitle}\n\n${url}`
+
       const textArea = document.createElement('textarea')
-      textArea.value = getFullUrl()
+      textArea.value = shareText
       document.body.appendChild(textArea)
       textArea.select()
       document.execCommand('copy')
@@ -66,7 +82,12 @@ export default function ShareButtons({ title }: ShareButtonsProps) {
   const shareViaWhatsApp = () => {
     const url = getFullUrl()
     const articleTitle = pageTitle || 'Artikel Dokumentasi'
-    const text = `📚 ${articleTitle}\n\n${url}`
+    const articleDesc = description || ''
+
+    const text = articleDesc
+      ? `📚 ${articleTitle}\n\n${articleDesc}\n\n${url}`
+      : `📚 ${articleTitle}\n\n${url}`
+
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text)}`
     window.open(whatsappUrl, '_blank')
   }
