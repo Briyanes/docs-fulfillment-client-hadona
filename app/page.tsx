@@ -86,9 +86,9 @@ export default function HomePage() {
         {/* Hero Section */}
         <div className="w-full px-3 sm:px-4 lg:px-[48px] pt-[65px] pb-8 sm:pt-12 sm:pb-12 lg:pt-[85px] lg:pb-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-bold text-gray-900 mb-6 lg:mb-8 leading-[1.5]">
+            <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-bold text-gray-900 mb-4 lg:mb-8 leading-[1.5]">
               Dokumentasi Lengkap
-              <span className="text-hadona-primary block mt-2 lg:mt-8">Hadona Digital Media</span>
+              <span className="text-hadona-primary block mt-0 lg:mt-8">Hadona Digital Media</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-800 mb-2 lg:mb-2 max-w-3xl mx-auto leading-loose py-2">
               Panduan komprehensif untuk Client Agency dan Client Whitelist dalam mengoptimalkan kampanye Meta Ads dan Google Ads
