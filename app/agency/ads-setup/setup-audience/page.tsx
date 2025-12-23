@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Users, Target, Eye, RefreshCw, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Setup Audience"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Tutorial setup dan konfigurasi audience targeting untuk kampanye Meta Ads"
       prevHref="/agency/ads-setup/mengatur-budget"
       prevTitle="Mengatur Budget"
       nextHref="/agency/ads-setup/instagram-ads"
@@ -372,6 +373,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

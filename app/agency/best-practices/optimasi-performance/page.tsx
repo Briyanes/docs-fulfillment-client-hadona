@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { TrendingUp, Target, BarChart3, Zap, Lightbulb, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Optimasi Performance"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Strategi optimasi performance campaign Meta Ads untuk ROI maksimal"
       prevHref="/agency/best-practices/keamanan-akun"
       prevTitle="Keamanan Akun"
       nextHref="/agency/best-practices/budget-management"
@@ -390,6 +391,6 @@ export default function Page() {
           konsultasi strategi optimasi yang sesuai dengan bisnis Anda.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

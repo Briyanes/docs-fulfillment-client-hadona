@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Event Mapping"
       categoryHref="/whitelist/google-integration"
       categoryName="Google Integration"
+      description="Tutorial memetakan events dari Meta Pixel ke GA4 untuk analisis terpadu"
       prevHref="/whitelist/google-integration/authentication"
       prevTitle="Authentication & Access"
       nextHref="/whitelist/google-integration/verifikasi"
@@ -165,6 +166,6 @@ export default function Page() {
         <li>Cek data layer variables di GTM</li>
         <li>Verify parameter values tidak null atau undefined</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Users, MessageSquare, Award, Calendar, BookOpen, Heart } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Community"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Bergabung dengan komunitas Hadona untuk belajar dan berbagi pengalaman"
       prevHref="/agency/best-practices/updates"
       prevTitle="Updates & Changelog"
     >
@@ -343,6 +344,6 @@ export default function Page() {
           belajar dan berkembang bersama. Jangan ragu untuk berpartisipasi dan berkontribusi.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

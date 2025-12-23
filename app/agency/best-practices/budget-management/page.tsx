@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { DollarSign, TrendingUp, PieChart, AlertCircle, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Budget Management"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Panduan mengelola dan mengoptimalkan budget iklan Meta secara efektif"
       prevHref="/agency/best-practices/optimasi-performance"
       prevTitle="Optimasi Performance"
       nextHref="/agency/best-practices/content-strategy"
@@ -385,6 +386,6 @@ export default function Page() {
           bisnis Anda. Hubungi support kami untuk konsultasi.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

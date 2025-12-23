@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Verifikasi Integration"
       categoryHref="/whitelist/google-integration"
       categoryName="Google Integration"
+      description="Cara verifikasi integrasi GA4 untuk memastikan data terkirim dengan benar"
       prevHref="/whitelist/google-integration/event-mapping"
       prevTitle="Event Mapping"
       nextHref="/whitelist/google-integration/custom-dimensions"
@@ -154,6 +155,6 @@ export default function Page() {
         <li><strong>Weekly:</strong> Review standard reports untuk anomalies</li>
         <li><strong>Monthly:</strong> Full audit tracking setup</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

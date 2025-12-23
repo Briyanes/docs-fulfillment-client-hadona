@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Custom Reports"
       categoryHref="/whitelist/monitoring"
       categoryName="Monitoring"
+      description="Panduan membuat custom reports di GA4 untuk analisis spesifik"
       prevHref="/whitelist/monitoring/interpretasi-metrics"
       prevTitle="Interpretasi Metrics"
       nextHref="/whitelist/monitoring/alerts"
@@ -56,6 +57,6 @@ export default function Page() {
         <li>Regularly review dan update reports</li>
         <li>Share reports dengan stakeholders</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

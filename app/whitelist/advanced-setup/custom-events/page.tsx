@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Custom Events"
       categoryHref="/whitelist/advanced-setup"
       categoryName="Advanced Setup"
+      description="Tutorial membuat custom events untuk tracking yang spesifik"
       prevHref="/whitelist/advanced-setup/conversions-api"
       prevTitle="Conversions API"
       nextHref="/whitelist/advanced-setup/server-side-tracking"
@@ -45,6 +46,6 @@ export default function Page() {
         <li>Document all custom events</li>
         <li>Test thoroughly sebelum production</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

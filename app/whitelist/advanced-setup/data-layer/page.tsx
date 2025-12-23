@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Data Layer"
       categoryHref="/whitelist/advanced-setup"
       categoryName="Advanced Setup"
+      description="Tutorial implementasi data layer untuk tracking yang terstruktur"
       prevHref="/whitelist/advanced-setup/advanced-events"
       prevTitle="Advanced Event Tracking"
       nextHref="/whitelist/advanced-setup/privacy-compliance"
@@ -46,6 +47,6 @@ dataLayer.push({
         <li>Document data layer schema</li>
         <li>Validate data sebelum push</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

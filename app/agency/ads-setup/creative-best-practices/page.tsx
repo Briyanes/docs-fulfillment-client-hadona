@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Image, Video, Palette, Type, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Creative Best Practices"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Panduan membuat creative iklan Meta yang menarik dan efektif"
       prevHref="/agency/ads-setup/instagram-whatsapp-linking"
       prevTitle="Instagram & WhatsApp Linking"
       nextHref="/agency/ads-setup/optimasi-campaign"
@@ -362,6 +363,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

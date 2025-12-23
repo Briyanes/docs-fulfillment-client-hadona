@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Facebook, Link2, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Menautkan Facebook Page"
       categoryHref="/agency/business-manager"
       categoryName="Business Manager"
+      description="Tutorial menghubungkan Facebook Page ke Business Manager untuk iklan dan management"
       prevHref="/agency/business-manager/verifikasi"
       prevTitle="Verifikasi Business Manager"
       nextHref="/agency/business-manager/menautkan-instagram"
@@ -355,6 +356,6 @@ export default function Page() {
           untuk menghindari kehilangan akses
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

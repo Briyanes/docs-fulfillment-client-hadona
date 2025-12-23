@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { FlaskConical, Target, Image, Users, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="A/B Testing"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Tutorial setup dan menjalankan A/B testing untuk campaign Meta Ads"
       prevHref="/agency/ads-setup/optimasi-campaign"
       prevTitle="Optimasi Campaign"
       nextHref="/agency/ads-setup/reporting-analytics"
@@ -345,6 +346,6 @@ export default function Page() {
           tests secara berkala untuk maximize ROI.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

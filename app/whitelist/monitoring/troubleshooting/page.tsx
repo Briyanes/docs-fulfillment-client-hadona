@@ -1,15 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Troubleshooting Monitoring"
       categoryHref="/whitelist/monitoring"
       categoryName="Monitoring"
+      description="Panduan mengatasi masalah monitoring data dan analytics"
       prevHref="/whitelist/monitoring/data-export"
       prevTitle="Data Export"
-      
-      
     >
       <h2>Common Monitoring Issues</h2>
       
@@ -45,6 +44,6 @@ export default function Page() {
         <li>Review filters dan segments</li>
         <li>Check untuk errors di browser console</li>
       </ol>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

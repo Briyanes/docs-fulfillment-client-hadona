@@ -1,4 +1,4 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import CodeBlock from '@/components/CodeBlock'
@@ -6,10 +6,11 @@ import { FlaskConical, CheckCircle2, AlertTriangle, Play, Eye } from 'lucide-rea
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Testing Pixel"
       categoryHref="/whitelist/pixel-setup"
       categoryName="Pixel Setup"
+      description="Tutorial testing Meta Pixel untuk memastikan tracking berfungsi dengan benar"
       prevHref="/whitelist/pixel-setup/verifikasi"
       prevTitle="Verifikasi Instalasi"
       nextHref="/whitelist/pixel-setup/troubleshooting"
@@ -487,6 +488,6 @@ fbq('track', 'Download', {
           Troubleshooting Pixel untuk solusi masalah umum.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

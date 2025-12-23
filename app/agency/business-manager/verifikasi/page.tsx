@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Shield, FileText, Clock, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Verifikasi Business Manager"
       categoryHref="/agency/business-manager"
       categoryName="Business Manager"
+      description="Cara verifikasi identitas Business Manager untuk keamanan dan akses penuh fitur Meta Ads"
       prevHref="/agency/business-manager/membuat-business-manager"
       prevTitle="Membuat Business Manager"
       nextHref="/agency/business-manager/menautkan-page"
@@ -315,6 +316,6 @@ export default function Page() {
           sebelum mendapatkan hasil review pertama
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

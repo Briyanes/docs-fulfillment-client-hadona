@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Link2, Instagram, MessageCircle, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Instagram & WhatsApp Linking"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Tutorial menghubungkan Instagram dan WhatsApp untuk kampanye yang terintegrasi"
       prevHref="/agency/ads-setup/whatsapp-ads"
       prevTitle="WhatsApp Ads"
       nextHref="/agency/ads-setup/creative-best-practices"
@@ -402,6 +403,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

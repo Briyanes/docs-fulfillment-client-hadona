@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Advanced Event Tracking"
       categoryHref="/whitelist/advanced-setup"
       categoryName="Advanced Setup"
+      description="Panduan advanced event tracking untuk data yang lebih detail"
       prevHref="/whitelist/advanced-setup/webhooks"
       prevTitle="Webhooks Setup"
       nextHref="/whitelist/advanced-setup/data-layer"
@@ -48,6 +49,6 @@ export default function Page() {
         <li>Document all events</li>
         <li>Test thoroughly</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

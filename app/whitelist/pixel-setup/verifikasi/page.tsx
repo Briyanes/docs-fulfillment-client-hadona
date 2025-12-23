@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { CheckCircle2, AlertCircle, Search, Eye, Activity } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Verifikasi Instalasi"
       categoryHref="/whitelist/pixel-setup"
       categoryName="Pixel Setup"
+      description="Cara verifikasi instalasi Meta Pixel untuk memastikan tracking berfungsi"
       prevHref="/whitelist/pixel-setup/instalasi-partner"
       prevTitle="Instalasi via Partner"
       nextHref="/whitelist/pixel-setup/testing"
@@ -471,6 +472,6 @@ export default function Page() {
           tracking berfungsi dengan baik.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

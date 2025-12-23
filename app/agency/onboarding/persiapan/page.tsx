@@ -1,11 +1,11 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { FileText, Users, Shield, Globe, CheckCircle2, AlertCircle } from 'lucide-react'
 
 export default function PersiapanPage() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Persiapan"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
@@ -410,7 +410,7 @@ export default function PersiapanPage() {
           tim Hadona akan memandu Anda melalui proses setup dan menjawab semua pertanyaan Anda.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }
 

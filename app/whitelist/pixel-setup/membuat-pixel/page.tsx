@@ -1,4 +1,4 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import CodeBlock from '@/components/CodeBlock'
@@ -6,10 +6,11 @@ import { CheckCircle2, AlertCircle, ExternalLink } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Membuat Meta Pixel"
       categoryHref="/whitelist/pixel-setup"
       categoryName="Pixel Setup"
+      description="Panduan langkah demi langkah membuat Meta Pixel di Events Manager"
       prevHref="/whitelist/pixel-setup/pengenalan"
       prevTitle="Pengenalan Meta Pixel"
       nextHref="/whitelist/pixel-setup/instalasi-manual"
@@ -292,6 +293,6 @@ fbq('track', 'PageView');
           berikutnya untuk panduan instalasi manual atau instalasi via partner integration.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

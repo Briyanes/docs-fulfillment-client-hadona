@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Troubleshooting Sync"
       categoryHref="/whitelist/data-sync"
       categoryName="Data Sync"
+      description="Panduan mengatasi masalah sinkronisasi data ke GA4"
       prevHref="/whitelist/data-sync/data-validation"
       prevTitle="Data Validation"
       nextHref="/whitelist/data-sync/monitoring"
@@ -166,6 +167,6 @@ export default function Page() {
         <li><strong>Error Handling:</strong> Implement proper error handling</li>
         <li><strong>Alerts:</strong> Setup alerts untuk sync failures</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

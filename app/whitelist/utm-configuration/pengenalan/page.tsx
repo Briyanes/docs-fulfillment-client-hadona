@@ -1,13 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Pengenalan UTM"
       categoryHref="/whitelist/utm-configuration"
       categoryName="UTM Configuration"
-      
-      
+      description="Pengenalan UTM parameters dan manfaatnya untuk tracking campaign"
       nextHref="/whitelist/utm-configuration/setup-meta-ads"
       nextTitle="Setup UTM untuk Meta Ads"
     >
@@ -129,6 +128,6 @@ export default function Page() {
       <p>
         Setelah memahami dasar-dasar UTM, langkah selanjutnya adalah setup UTM untuk Meta Ads campaigns. Ini akan memastikan semua traffic dari Meta Ads dapat di-track dengan akurat.
       </p>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

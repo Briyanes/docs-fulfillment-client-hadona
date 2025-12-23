@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Custom Dimensions"
       categoryHref="/whitelist/google-integration"
       categoryName="Google Integration"
+      description="Panduan membuat custom dimensions untuk analisis GA4 yang lebih detail"
       prevHref="/whitelist/google-integration/verifikasi"
       prevTitle="Verifikasi Integration"
       nextHref="/whitelist/google-integration/troubleshooting"
@@ -163,6 +164,6 @@ export default function Page() {
         <li>Cek untuk typos atau case sensitivity issues</li>
         <li>Verify data dikirim dengan benar dari website</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

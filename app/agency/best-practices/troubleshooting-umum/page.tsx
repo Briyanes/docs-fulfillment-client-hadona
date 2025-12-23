@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { AlertTriangle, Search, Wrench, CheckCircle2, XCircle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Troubleshooting Umum"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Panduan menyelesaikan masalah umum dalam kampanye Meta Ads"
       prevHref="/agency/best-practices/content-strategy"
       prevTitle="Content Strategy"
       nextHref="/agency/best-practices/faq"
@@ -400,6 +401,6 @@ export default function Page() {
           support Hadona. Kami siap membantu Anda menyelesaikan masalah kampanye iklan Anda.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

@@ -1,10 +1,10 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { CheckCircle2, Rocket, Users, BarChart3, Shield } from 'lucide-react'
 
 export default function SelamatDatangPage() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Selamat Datang"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
@@ -146,7 +146,7 @@ export default function SelamatDatangPage() {
           lanjut tentang mengapa Hadona adalah pilihan terbaik untuk bisnis Anda.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }
 

@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { AlertTriangle, CheckCircle2, XCircle, Info } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Troubleshooting BM"
       categoryHref="/agency/business-manager"
       categoryName="Business Manager"
+      description="Solusi masalah umum yang terjadi pada Business Manager dan cara fix-nya"
       prevHref="/agency/business-manager/2fa"
       prevTitle="Two-Factor Authentication"
     >
@@ -436,6 +437,6 @@ export default function Page() {
           kampanye iklan Anda.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

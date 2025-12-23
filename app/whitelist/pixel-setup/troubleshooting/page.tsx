@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import CodeBlock from '@/components/CodeBlock'
 import { AlertTriangle, CheckCircle2, XCircle, Search, RefreshCw, Shield } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Troubleshooting Pixel"
       categoryHref="/whitelist/pixel-setup"
       categoryName="Pixel Setup"
+      description="Panduan mengatasi masalah umum pada Meta Pixel dan tracking"
       prevHref="/whitelist/pixel-setup/testing"
       prevTitle="Testing Pixel"
     >
@@ -486,6 +487,6 @@ fbq('track', 'Purchase', {
           atau hubungi tim support Hadona untuk bantuan lebih lanjut.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

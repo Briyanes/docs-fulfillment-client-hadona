@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Authentication & Access"
       categoryHref="/whitelist/google-integration"
       categoryName="Google Integration"
+      description="Panduan mengatur authentication dan access control di GA4"
       prevHref="/whitelist/google-integration/linking-google-ads"
       prevTitle="Linking Google Ads"
       nextHref="/whitelist/google-integration/event-mapping"
@@ -127,6 +128,6 @@ export default function Page() {
         <li>Clear browser cache</li>
         <li>Pastikan tidak ada conflict dengan organization policies</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

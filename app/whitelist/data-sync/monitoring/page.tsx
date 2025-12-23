@@ -1,15 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Monitoring Sync Status"
       categoryHref="/whitelist/data-sync"
       categoryName="Data Sync"
+      description="Tutorial monitoring status sinkronisasi data secara real-time"
       prevHref="/whitelist/data-sync/troubleshooting"
       prevTitle="Troubleshooting Sync"
-      
-      
     >
       <h2>Apa itu Monitoring Sync Status?</h2>
       <p>
@@ -141,7 +140,7 @@ async function checkSyncStatus() {
         <li><strong>Document Issues:</strong> Dokumentasikan semua issues dan resolutions</li>
         <li><strong>Continuous Improvement:</strong> Improve monitoring based on learnings</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }
 

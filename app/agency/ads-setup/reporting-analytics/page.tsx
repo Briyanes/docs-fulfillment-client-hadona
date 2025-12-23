@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { BarChart3, TrendingUp, Eye, Download, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Reporting & Analytics"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Panduan menggunakan reporting tools untuk analisis performa campaign Meta"
       prevHref="/agency/ads-setup/ab-testing"
       prevTitle="A/B Testing"
       nextHref="/agency/ads-setup/troubleshooting"
@@ -335,6 +336,6 @@ export default function Page() {
           bottlenecks
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

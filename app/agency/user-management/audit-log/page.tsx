@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { FileText, Search, Filter, Download, Clock, User, Shield, AlertCircle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Audit Log"
       categoryHref="/agency/user-management"
       categoryName="User Management"
+      description="Tutorial menggunakan audit log untuk melacak aktivitas dan keamanan"
       prevHref="/agency/user-management/role-permission"
       prevTitle="Role & Permission"
       nextHref="/agency/user-management/monitoring"
@@ -384,6 +385,6 @@ export default function Page() {
           kesalahan untuk memberikan training tambahan.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

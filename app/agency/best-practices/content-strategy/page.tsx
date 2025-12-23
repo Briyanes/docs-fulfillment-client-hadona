@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Image, Video, PenTool, Target, CheckCircle2, Lightbulb } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Content Strategy"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Strategi pembuatan konten iklan yang menarik dan menghasilkan konversi"
       prevHref="/agency/best-practices/budget-management"
       prevTitle="Budget Management"
       nextHref="/agency/best-practices/troubleshooting-umum"
@@ -392,6 +393,6 @@ export default function Page() {
           Anda. Hubungi support kami untuk konsultasi.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Troubleshooting GA4"
       categoryHref="/whitelist/google-integration"
       categoryName="Google Integration"
+      description="Panduan mengatasi masalah umum pada integrasi GA4"
       prevHref="/whitelist/google-integration/custom-dimensions"
       prevTitle="Custom Dimensions"
       nextHref="/whitelist/google-integration/best-practices"
@@ -219,6 +220,6 @@ gtag('event', 'Purchase'); // Wrong case`}</code></pre>
         <li><strong>GA4 Community:</strong> <a href="https://support.google.com/analytics/community" target="_blank" rel="noopener noreferrer">Analytics Community Forum</a></li>
         <li><strong>Contact Support:</strong> Jika menggunakan GA4 360, contact support team</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

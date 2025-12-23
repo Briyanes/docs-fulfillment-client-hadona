@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Target, BarChart3, ShoppingCart, Users, Zap, Shield } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Pengenalan Meta Pixel"
       categoryHref="/whitelist/pixel-setup"
       categoryName="Pixel Setup"
+      description="Pengenalan Meta Pixel dan manfaat tracking untuk kampanye iklan"
       nextHref="/whitelist/pixel-setup/membuat-pixel"
       nextTitle="Membuat Meta Pixel"
     >
@@ -251,6 +252,6 @@ export default function Page() {
         Setelah memahami konsep dasar Meta Pixel, Anda siap untuk membuat pixel pertama Anda. Lanjutkan
         ke artikel berikutnya untuk panduan step-by-step membuat Meta Pixel.
       </p>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

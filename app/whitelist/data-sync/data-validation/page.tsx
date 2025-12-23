@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Data Validation"
       categoryHref="/whitelist/data-sync"
       categoryName="Data Sync"
+      description="Tutorial validasi data untuk memastikan akurasi sinkronisasi"
       prevHref="/whitelist/data-sync/mapping-events"
       prevTitle="Mapping Events"
       nextHref="/whitelist/data-sync/troubleshooting"
@@ -267,6 +268,6 @@ async function validateData() {
       <p>
         Setelah data validation setup, langkah selanjutnya adalah memahami troubleshooting untuk mengatasi issues yang mungkin muncul selama proses sync.
       </p>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

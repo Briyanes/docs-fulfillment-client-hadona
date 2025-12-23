@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Shield, Users, Eye, Settings, Lock, CheckCircle2, XCircle, AlertCircle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Role & Permission"
       categoryHref="/agency/user-management"
       categoryName="User Management"
+      description="Panduan memahami dan mengatur role serta permission user untuk keamanan"
       prevHref="/agency/user-management/mengatur-akses"
       prevTitle="Mengatur Akses User"
       nextHref="/agency/user-management/audit-log"
@@ -392,6 +393,6 @@ export default function Page() {
           Manager). Anda selalu dapat meningkatkan role nanti jika diperlukan.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

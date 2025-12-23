@@ -1,16 +1,17 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Building2, Shield, Users, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Membuat Business Manager"
       categoryHref="/agency/business-manager"
       categoryName="Business Manager"
       nextHref="/agency/business-manager/verifikasi"
       nextTitle="Verifikasi Business Manager"
+      description="Panduan lengkap langkah demi langkah membuat Business Manager untuk mengelola aset iklan Facebook & Instagram"
     >
       <div className="mb-8">
         <p className="text-xl text-gray-700">
@@ -238,6 +239,6 @@ export default function Page() {
           pembuatan untuk menghindari pembatasan fitur.
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

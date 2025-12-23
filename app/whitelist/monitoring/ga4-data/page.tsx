@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Melihat Data di GA4"
       categoryHref="/whitelist/monitoring"
       categoryName="Monitoring"
+      description="Panduan melihat dan menganalisis data di Google Analytics 4"
       prevHref="/whitelist/monitoring/events-manager"
       prevTitle="Melihat Data di Events Manager"
       nextHref="/whitelist/monitoring/interpretasi-metrics"
@@ -154,6 +155,6 @@ export default function Page() {
         <li><strong>Compare Periods:</strong> Always compare dengan previous periods</li>
         <li><strong>Document Insights:</strong> Dokumentasikan findings dan insights</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

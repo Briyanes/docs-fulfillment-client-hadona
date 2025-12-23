@@ -1,13 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Conversions API"
       categoryHref="/whitelist/advanced-setup"
       categoryName="Advanced Setup"
-      
-      
+      description="Panduan implementasi Conversions API untuk server-side tracking"
       nextHref="/whitelist/advanced-setup/custom-events"
       nextTitle="Custom Events"
     >
@@ -78,6 +77,6 @@ app.post('/webhook/meta-conversions', async (req, res) => {
         <li>Handle errors dan retries</li>
         <li>Monitor API usage dan limits</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

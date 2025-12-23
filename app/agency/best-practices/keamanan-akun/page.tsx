@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Shield, Lock, Key, Eye, AlertTriangle, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Keamanan Akun"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Panduan lengkap keamanan akun untuk melindungi aset digital Meta"
       nextHref="/agency/best-practices/optimasi-performance"
       nextTitle="Optimasi Performance"
     >
@@ -282,6 +283,6 @@ export default function Page() {
           24/7.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { TrendingUp, Target, BarChart3, Zap, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Optimasi Campaign"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Strategi dan teknik optimasi campaign Meta Ads untuk hasil maksimal"
       prevHref="/agency/ads-setup/creative-best-practices"
       prevTitle="Creative Best Practices"
       nextHref="/agency/ads-setup/ab-testing"
@@ -281,6 +282,6 @@ export default function Page() {
           dengan creative yang sesuai.
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

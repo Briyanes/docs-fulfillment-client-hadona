@@ -1,4 +1,4 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import CodeBlock from '@/components/CodeBlock'
@@ -6,10 +6,11 @@ import { Code, FileCode, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Instalasi Manual"
       categoryHref="/whitelist/pixel-setup"
       categoryName="Pixel Setup"
+      description="Tutorial instalasi Meta Pixel manual dengan menambahkan code ke website"
       prevHref="/whitelist/pixel-setup/membuat-pixel"
       prevTitle="Membuat Meta Pixel"
       nextHref="/whitelist/pixel-setup/instalasi-partner"
@@ -423,6 +424,6 @@ fbq('track', 'PageView');\`}
           Verifikasi Instalasi untuk memastikan pixel bekerja dengan benar.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

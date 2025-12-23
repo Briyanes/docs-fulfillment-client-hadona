@@ -1,13 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Melihat Data di Events Manager"
       categoryHref="/whitelist/monitoring"
       categoryName="Monitoring"
-      
-      
+      description="Tutorial melihat dan menganalisis data di Meta Events Manager"
       nextHref="/whitelist/monitoring/ga4-data"
       nextTitle="Melihat Data di GA4"
     >
@@ -147,6 +146,6 @@ export default function Page() {
         <li><strong>Data Quality:</strong> Monitor dan improve data quality score</li>
         <li><strong>Documentation:</strong> Dokumentasikan semua events dan parameters</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { DollarSign, TrendingUp, Calendar, AlertTriangle, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Mengatur Budget"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Panduan mengatur budget dan bid strategy untuk campaign Meta Ads yang optimal"
       prevHref="/agency/ads-setup/membuat-campaign"
       prevTitle="Membuat Campaign"
       nextHref="/agency/ads-setup/setup-audience"
@@ -317,6 +318,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

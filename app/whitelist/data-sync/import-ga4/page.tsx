@@ -1,13 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Import Data ke GA4"
       categoryHref="/whitelist/data-sync"
       categoryName="Data Sync"
-      
-      
+      description="Panduan import data dari eksternal ke GA4 untuk analisis yang lengkap"
       nextHref="/whitelist/data-sync/auto-sync"
       nextTitle="Auto-Sync Setup"
     >
@@ -115,7 +114,7 @@ export default function Page() {
     "currency": "USD"
   }
 }`}</code></pre>
-    </DocLayout>
+    </ArticleLayout>
   )
 }
 

@@ -1,11 +1,11 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Clock, CheckCircle2, AlertCircle } from 'lucide-react'
 
 export default function ProsesOnboardingPage() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Proses Onboarding"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
@@ -358,7 +358,7 @@ export default function ProsesOnboardingPage() {
           mempelajari apa saja yang perlu Anda persiapkan sebelum memulai.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }
 

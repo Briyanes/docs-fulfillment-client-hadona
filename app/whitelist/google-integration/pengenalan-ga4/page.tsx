@@ -1,13 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Pengenalan GA4"
       categoryHref="/whitelist/google-integration"
       categoryName="Google Integration"
-      
-      
+      description="Pengenalan Google Analytics 4 dan fitur-fitur utama untuk analisis"
       nextHref="/whitelist/google-integration/setup-ga4"
       nextTitle="Setup GA4 Property"
     >
@@ -66,6 +65,6 @@ export default function Page() {
       <p>
         Setelah memahami dasar-dasar GA4, langkah selanjutnya adalah melakukan setup GA4 Property. Mari kita lanjutkan ke artikel berikutnya untuk panduan setup yang lebih detail.
       </p>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

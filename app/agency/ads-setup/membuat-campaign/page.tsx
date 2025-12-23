@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Rocket, Target, Image, CheckCircle2, TrendingUp } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Membuat Campaign"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Tutorial langkah demi langkah membuat campaign iklan Meta dengan struktur yang tepat"
       prevHref="/agency/ads-setup/setup-ads-manager"
       prevTitle="Setup Ads Manager"
       nextHref="/agency/ads-setup/mengatur-budget"
@@ -396,6 +397,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

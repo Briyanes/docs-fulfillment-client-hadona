@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Setup UTM untuk Meta Ads"
       categoryHref="/whitelist/utm-configuration"
       categoryName="UTM Configuration"
+      description="Panduan setup UTM parameters untuk kampanye Meta Ads"
       prevHref="/whitelist/utm-configuration/pengenalan"
       prevTitle="Pengenalan UTM"
       nextHref="/whitelist/utm-configuration/utm-source"
@@ -157,6 +158,6 @@ utm_content=video_ad_001`}</code></pre>
         <li><strong>Test Before Launch:</strong> Selalu test UTM sebelum campaign launch</li>
         <li><strong>Consistent Naming:</strong> Gunakan naming convention yang konsisten</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

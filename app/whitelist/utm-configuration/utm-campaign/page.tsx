@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Parameter utm_campaign"
       categoryHref="/whitelist/utm-configuration"
       categoryName="UTM Configuration"
+      description="Panduan parameter utm_campaign untuk tracking nama kampanye"
       prevHref="/whitelist/utm-configuration/utm-medium"
       prevTitle="Parameter utm_medium"
       nextHref="/whitelist/utm-configuration/utm-id"
@@ -137,6 +138,6 @@ Examples:
 - conversion_shoes_women_q1_2024
 - awareness_brand_general_summer_2024
 - retargeting_cart_abandoners_all_2024`}</code></pre>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

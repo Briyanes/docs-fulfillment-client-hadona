@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Trash2, AlertTriangle, Shield, UserX, CheckCircle2, XCircle, Lock } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Menghapus User"
       categoryHref="/agency/user-management"
       categoryName="User Management"
+      description="Tutorial menghapus user dari platform dengan aman dan benar"
       prevHref="/agency/user-management/monitoring"
       prevTitle="Monitoring Aktivitas"
     >
@@ -402,6 +403,6 @@ export default function Page() {
           dihapus, beberapa data mungkin tidak dapat diakses lagi.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

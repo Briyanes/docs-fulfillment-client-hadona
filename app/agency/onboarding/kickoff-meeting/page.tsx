@@ -1,11 +1,11 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Video, Users, Calendar, FileText, CheckCircle2, MessageSquare } from 'lucide-react'
 
 export default function KickoffMeetingPage() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Kickoff Meeting"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
@@ -435,7 +435,7 @@ export default function KickoffMeetingPage() {
           Selamat memulai perjalanan digital marketing Anda bersama Hadona! 🚀
         </p>
       </div>
-    </DocLayout>
+    </ArticleLayout>
   )
 }
 

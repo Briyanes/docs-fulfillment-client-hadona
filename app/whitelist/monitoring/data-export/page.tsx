@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Data Export"
       categoryHref="/whitelist/monitoring"
       categoryName="Monitoring"
+      description="Panduan export data dari GA4 untuk analisis lebih lanjut"
       prevHref="/whitelist/monitoring/alerts"
       prevTitle="Alerts & Notifications"
       nextHref="/whitelist/monitoring/troubleshooting"
@@ -55,6 +56,6 @@ export default function Page() {
         <li>Document export schedules</li>
         <li>Store exports securely</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

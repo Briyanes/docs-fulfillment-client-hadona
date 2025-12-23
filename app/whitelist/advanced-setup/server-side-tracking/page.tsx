@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Server-Side Tracking"
       categoryHref="/whitelist/advanced-setup"
       categoryName="Advanced Setup"
+      description="Panduan implementasi server-side tracking untuk better data quality"
       prevHref="/whitelist/advanced-setup/custom-events"
       prevTitle="Custom Events"
       nextHref="/whitelist/advanced-setup/webhooks"
@@ -45,6 +46,6 @@ Browser → Server → GA4 Measurement Protocol`}</code></pre>
         <li>Hash user data untuk privacy</li>
         <li>Monitor performance</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

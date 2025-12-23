@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Book, Video, FileText, ExternalLink, Download, Link as LinkIcon } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Resources"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Kumpulan resources untuk mengoptimalkan kampanye iklan Meta"
       prevHref="/agency/best-practices/kontak-support"
       prevTitle="Kontak Support"
       nextHref="/agency/best-practices/updates"
@@ -381,6 +382,6 @@ export default function Page() {
           berkala untuk updates terbaru.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

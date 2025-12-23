@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Privacy & Compliance"
       categoryHref="/whitelist/advanced-setup"
       categoryName="Advanced Setup"
+      description="Panduan privacy dan compliance untuk tracking yang sesuai regulasi"
       prevHref="/whitelist/advanced-setup/data-layer"
       prevTitle="Data Layer"
       nextHref="/whitelist/advanced-setup/performance"
@@ -62,6 +63,6 @@ export default function Page() {
         <li>Document data processing activities</li>
         <li>Regular compliance audits</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

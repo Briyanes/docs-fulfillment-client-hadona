@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Auto-Sync Setup"
       categoryHref="/whitelist/data-sync"
       categoryName="Data Sync"
+      description="Tutorial setup auto-sync untuk transfer data otomatis ke GA4"
       prevHref="/whitelist/data-sync/import-ga4"
       prevTitle="Import Data ke GA4"
       nextHref="/whitelist/data-sync/mapping-events"
@@ -199,6 +200,6 @@ app.post('/webhook/meta-pixel', async (req, res) => {
       <p>
         Setelah auto-sync setup, langkah selanjutnya adalah mapping events dengan benar untuk memastikan semua events ter-sync dengan akurat.
       </p>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

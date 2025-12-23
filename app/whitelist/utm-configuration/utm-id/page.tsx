@@ -1,15 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Parameter utm_id"
       categoryHref="/whitelist/utm-configuration"
       categoryName="UTM Configuration"
+      description="Panduan parameter utm_id untuk tracking ID kampanye"
       prevHref="/whitelist/utm-configuration/utm-campaign"
       prevTitle="Parameter utm_campaign"
-      
-      
     >
       <h2>Apa itu utm_id?</h2>
       <p>
@@ -154,6 +153,6 @@ https://example.com?utm_source=google&utm_medium=cpc&utm_campaign=summer_sale&ut
         <li>Test implementation sebelum production</li>
         <li>Consider apakah utm_content sudah cukup untuk kebutuhan Anda</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

@@ -1,15 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Performance Optimization"
       categoryHref="/whitelist/advanced-setup"
       categoryName="Advanced Setup"
+      description="Tutorial optimasi performa tracking untuk website yang cepat"
       prevHref="/whitelist/advanced-setup/privacy-compliance"
       prevTitle="Privacy & Compliance"
-      
-      
     >
       <h2>Performance Optimization</h2>
       <p>
@@ -60,6 +59,6 @@ export default function Page() {
         <li>Monitor performance impact</li>
         <li>Optimize continuously</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

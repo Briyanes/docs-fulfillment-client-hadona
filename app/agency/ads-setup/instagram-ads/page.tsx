@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Instagram, Image, Video, CheckCircle2, TrendingUp } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Instagram Ads"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Panduan membuat dan mengoptimalkan iklan Instagram untuk campaign Meta Ads"
       prevHref="/agency/ads-setup/setup-audience"
       prevTitle="Setup Audience"
       nextHref="/agency/ads-setup/whatsapp-ads"
@@ -420,6 +421,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

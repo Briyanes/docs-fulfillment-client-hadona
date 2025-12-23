@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Instagram, Link2, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Menautkan Instagram Account"
       categoryHref="/agency/business-manager"
       categoryName="Business Manager"
+      description="Cara menghubungkan akun Instagram Business ke Business Manager untuk Instagram Ads"
       prevHref="/agency/business-manager/menautkan-page"
       prevTitle="Menautkan Facebook Page"
       nextHref="/agency/business-manager/menautkan-ad-account"
@@ -342,6 +343,6 @@ export default function Page() {
           keamanan ekstra
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

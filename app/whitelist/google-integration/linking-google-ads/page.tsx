@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Linking Google Ads"
       categoryHref="/whitelist/google-integration"
       categoryName="Google Integration"
+      description="Tutorial menghubungkan Google Ads dengan GA4 untuk analisis terintegrasi"
       prevHref="/whitelist/google-integration/setup-ga4"
       prevTitle="Setup GA4 Property"
       nextHref="/whitelist/google-integration/authentication"
@@ -102,6 +103,6 @@ export default function Page() {
         <li>Pastikan auto-tagging aktif di Google Ads</li>
         <li>Pastikan GA4 sudah menerima data dari website</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

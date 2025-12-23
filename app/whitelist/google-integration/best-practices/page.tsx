@@ -1,15 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Best Practices"
       categoryHref="/whitelist/google-integration"
       categoryName="Google Integration"
+      description="Best practices untuk integrasi dan penggunaan GA4 yang optimal"
       prevHref="/whitelist/google-integration/troubleshooting"
       prevTitle="Troubleshooting GA4"
-      
-      
     >
       <h2>Best Practices untuk GA4 Integration</h2>
       <p>
@@ -212,6 +211,6 @@ export default function Page() {
       <p>
         Mengikuti best practices ini akan memastikan bahwa GA4 integration Anda optimal, maintainable, dan memberikan value untuk bisnis. Ingat bahwa setup GA4 adalah ongoing process yang memerlukan regular monitoring dan optimization.
       </p>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

@@ -1,10 +1,10 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Zap, Shield, TrendingUp, HeadphonesIcon, Globe, BarChart3 } from 'lucide-react'
 
 export default function MengapaHadonaPage() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Mengapa Hadona"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
@@ -169,7 +169,7 @@ export default function MengapaHadonaPage() {
           onboarding untuk memulai perjalanan Anda bersama kami.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }
 

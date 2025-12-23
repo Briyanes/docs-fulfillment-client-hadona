@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { ShoppingBag, Store, Globe, Package, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Instalasi via Partner"
       categoryHref="/whitelist/pixel-setup"
       categoryName="Pixel Setup"
+      description="Panduan instalasi Meta Pixel via platform partner e-commerce dan CMS"
       prevHref="/whitelist/pixel-setup/instalasi-manual"
       prevTitle="Instalasi Manual"
       nextHref="/whitelist/pixel-setup/verifikasi"
@@ -435,6 +436,6 @@ export default function Page() {
           untuk memastikan pixel bekerja dengan benar dan semua event ter-track dengan baik.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

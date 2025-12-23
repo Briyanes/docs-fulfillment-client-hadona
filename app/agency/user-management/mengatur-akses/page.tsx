@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Settings, Shield, Lock, Eye, Edit, Trash2, CheckCircle2, AlertCircle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Mengatur Akses User"
       categoryHref="/agency/user-management"
       categoryName="User Management"
+      description="Tutorial mengubah dan mengelola akses user untuk keamanan dan kontrol"
       prevHref="/agency/user-management/menambahkan-team"
       prevTitle="Menambahkan Team Member"
       nextHref="/agency/user-management/role-permission"
@@ -314,6 +315,6 @@ export default function Page() {
           resmi (email bisnis) untuk konfirmasi perubahan akses penting.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

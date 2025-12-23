@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { MessageCircle, Send, Users, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="WhatsApp Ads"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Panduan membuat iklan WhatsApp untuk lead generation dan customer service"
       prevHref="/agency/ads-setup/instagram-ads"
       prevTitle="Instagram Ads"
       nextHref="/agency/ads-setup/instagram-whatsapp-linking"
@@ -405,6 +406,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

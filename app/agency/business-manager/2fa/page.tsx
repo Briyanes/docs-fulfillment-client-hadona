@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Shield, Smartphone, Key, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Two-Factor Authentication"
       categoryHref="/agency/business-manager"
       categoryName="Business Manager"
+      description="Cara mengaktifkan 2FA untuk keamanan ekstra akun Business Manager"
       prevHref="/agency/business-manager/permission"
       prevTitle="Mengatur Permission"
       nextHref="/agency/business-manager/troubleshooting"
@@ -426,6 +427,6 @@ export default function Page() {
           jika mengganti nomor telepon atau perangkat
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

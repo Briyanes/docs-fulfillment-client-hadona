@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { DollarSign, Plus, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Menautkan Ad Account"
       categoryHref="/agency/business-manager"
       categoryName="Business Manager"
+      description="Panduan menautkan Ad Account ke Business Manager untuk management iklan terpusat"
       prevHref="/agency/business-manager/menautkan-instagram"
       prevTitle="Menautkan Instagram Account"
       nextHref="/agency/business-manager/permission"
@@ -444,6 +445,6 @@ export default function Page() {
           pengeluaran iklan
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

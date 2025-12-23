@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { HelpCircle, ChevronDown } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="FAQ"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Pertanyaan yang sering diajukan seputar platform dan kampanye Meta"
       prevHref="/agency/best-practices/troubleshooting-umum"
       prevTitle="Troubleshooting Umum"
       nextHref="/agency/best-practices/kontak-support"
@@ -310,6 +311,6 @@ export default function Page() {
           Hadona. Kami siap membantu Anda 24/7 melalui berbagai channel yang tersedia.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

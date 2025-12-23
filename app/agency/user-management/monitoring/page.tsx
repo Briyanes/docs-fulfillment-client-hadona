@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Activity, Users, Clock, AlertTriangle, TrendingUp, Eye, Bell } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Monitoring Aktivitas"
       categoryHref="/agency/user-management"
       categoryName="User Management"
+      description="Panduan monitoring aktivitas user real-time untuk keamanan dan analisis"
       prevHref="/agency/user-management/audit-log"
       prevTitle="Audit Log"
       nextHref="/agency/user-management/menghapus-user"
@@ -398,6 +399,6 @@ export default function Page() {
           saling melengkapi untuk manajemen keamanan dan efisiensi yang optimal.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

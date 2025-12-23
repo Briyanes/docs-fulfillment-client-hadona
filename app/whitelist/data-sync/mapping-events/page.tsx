@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Mapping Events"
       categoryHref="/whitelist/data-sync"
       categoryName="Data Sync"
+      description="Panduan mapping events untuk sinkronisasi data yang tepat"
       prevHref="/whitelist/data-sync/auto-sync"
       prevTitle="Auto-Sync Setup"
       nextHref="/whitelist/data-sync/data-validation"
@@ -177,6 +178,6 @@ export default function Page() {
         <li>Check event parameters sudah ter-map dengan benar</li>
         <li>Compare data dengan Meta Pixel Events Manager</li>
       </ol>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

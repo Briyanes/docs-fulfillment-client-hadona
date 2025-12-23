@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Interpretasi Metrics"
       categoryHref="/whitelist/monitoring"
       categoryName="Monitoring"
+      description="Tutorial interpretasi metrics GA4 untuk insight yang actionable"
       prevHref="/whitelist/monitoring/ga4-data"
       prevTitle="Melihat Data di GA4"
       nextHref="/whitelist/monitoring/custom-reports"
@@ -67,6 +68,6 @@ export default function Page() {
         <li><strong>Segment Analysis:</strong> Analyze metrics per segment</li>
         <li><strong>Avoid Vanity Metrics:</strong> Focus pada metrics yang actionable</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

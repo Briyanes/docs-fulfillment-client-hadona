@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Users, Mail, Shield, CheckCircle2, AlertCircle, UserPlus } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Menambahkan Team Member"
       categoryHref="/agency/user-management"
       categoryName="User Management"
+      description="Panduan menambahkan anggota tim ke platform untuk kolaborasi yang efektif"
       nextHref="/agency/user-management/mengatur-akses"
       nextTitle="Mengatur Akses User"
     >
@@ -340,6 +341,6 @@ export default function Page() {
           penting.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

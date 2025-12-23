@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Mail, MessageCircle, Phone, Clock, Headphones } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Kontak Support"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Cara menghubungi tim support Hadona untuk bantuan 24/7"
       prevHref="/agency/best-practices/faq"
       prevTitle="FAQ"
       nextHref="/agency/best-practices/resources"
@@ -328,6 +329,6 @@ export default function Page() {
           bantuan.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

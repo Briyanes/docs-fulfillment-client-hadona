@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Parameter utm_source"
       categoryHref="/whitelist/utm-configuration"
       categoryName="UTM Configuration"
+      description="Panduan parameter utm_source untuk tracking sumber traffic"
       prevHref="/whitelist/utm-configuration/setup-meta-ads"
       prevTitle="Setup UTM untuk Meta Ads"
       nextHref="/whitelist/utm-configuration/utm-medium"
@@ -117,6 +118,6 @@ export default function Page() {
         <li>Review data secara berkala untuk detect inconsistencies</li>
         <li>Gunakan UTM builder tools untuk avoid typos</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

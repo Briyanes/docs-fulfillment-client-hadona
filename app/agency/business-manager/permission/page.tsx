@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Users, Shield, CheckCircle2, AlertTriangle } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Mengatur Permission"
       categoryHref="/agency/business-manager"
       categoryName="Business Manager"
+      description="Panduan mengatur hak akses dan permission untuk team member di Business Manager"
       prevHref="/agency/business-manager/menautkan-ad-account"
       prevTitle="Menautkan Ad Account"
       nextHref="/agency/business-manager/2fa"
@@ -465,6 +466,6 @@ export default function Page() {
           Manager
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

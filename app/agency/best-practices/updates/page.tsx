@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Calendar, Sparkles, AlertCircle, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Updates & Changelog"
       categoryHref="/agency/best-practices"
       categoryName="Best Practices"
+      description="Informasi terbaru seputar fitur dan update platform Hadona"
       prevHref="/agency/best-practices/resources"
       prevTitle="Resources"
       nextHref="/agency/best-practices/community"
@@ -293,6 +294,6 @@ export default function Page() {
           teknis lebih detail tentang versi dan compatibility, hubungi tim support kami.
         </p>
       </Callout>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

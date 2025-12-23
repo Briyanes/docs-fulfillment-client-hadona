@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Alerts & Notifications"
       categoryHref="/whitelist/monitoring"
       categoryName="Monitoring"
+      description="Tutorial setup alerts dan notifications untuk monitoring otomatis"
       prevHref="/whitelist/monitoring/custom-reports"
       prevTitle="Custom Reports"
       nextHref="/whitelist/monitoring/data-export"
@@ -47,6 +48,6 @@ export default function Page() {
         <li>Review alerts regularly</li>
         <li>Update alerts berdasarkan learnings</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Webhooks Setup"
       categoryHref="/whitelist/advanced-setup"
       categoryName="Advanced Setup"
+      description="Tutorial setup webhooks untuk real-time data processing"
       prevHref="/whitelist/advanced-setup/server-side-tracking"
       prevTitle="Server-Side Tracking"
       nextHref="/whitelist/advanced-setup/advanced-events"
@@ -40,6 +41,6 @@ export default function Page() {
         <li>Use authentication tokens</li>
         <li>Validate payload structure</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

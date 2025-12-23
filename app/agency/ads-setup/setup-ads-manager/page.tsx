@@ -1,14 +1,15 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Settings, Target, BarChart3, CheckCircle2 } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Setup Ads Manager"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Panduan lengkap setup awal Ads Manager untuk membuat dan mengelola kampanye iklan Meta"
       nextHref="/agency/ads-setup/membuat-campaign"
       nextTitle="Membuat Campaign"
     >
@@ -311,6 +312,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

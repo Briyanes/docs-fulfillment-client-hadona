@@ -1,11 +1,12 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Parameter utm_medium"
       categoryHref="/whitelist/utm-configuration"
       categoryName="UTM Configuration"
+      description="Panduan parameter utm_medium untuk tracking medium marketing"
       prevHref="/whitelist/utm-configuration/utm-source"
       prevTitle="Parameter utm_source"
       nextHref="/whitelist/utm-configuration/utm-campaign"
@@ -128,6 +129,6 @@ export default function Page() {
         <li>Document semua medium values yang digunakan</li>
         <li>Review data secara berkala untuk detect inconsistencies</li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }

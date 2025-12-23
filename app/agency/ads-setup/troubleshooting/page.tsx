@@ -1,13 +1,14 @@
-import DocLayout from '@/components/DocLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { AlertCircle, XCircle, Clock, TrendingDown } from 'lucide-react'
 
 export default function Page() {
   return (
-    <DocLayout
+    <ArticleLayout
       title="Troubleshooting Ads"
       categoryHref="/agency/ads-setup"
       categoryName="Ads Setup"
+      description="Panduan mengatasi masalah umum pada campaign Meta Ads"
       prevHref="/agency/ads-setup/reporting-analytics"
       prevTitle="Reporting & Analytics"
     >
@@ -336,6 +337,6 @@ export default function Page() {
           <strong>Documentation:</strong> Document semua changes dan issues untuk future reference
         </li>
       </ul>
-    </DocLayout>
+    </ArticleLayout>
   )
 }
