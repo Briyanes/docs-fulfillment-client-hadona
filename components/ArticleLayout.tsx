@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import ShareButtons from './ShareButtons'
 import HelpAndFollow from './HelpAndFollow'
 import TableOfContentsWrapper from './TableOfContentsWrapper'
