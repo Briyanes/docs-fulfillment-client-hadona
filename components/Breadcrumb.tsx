@@ -13,7 +13,7 @@ interface BreadcrumbProps {
 
 export default function Breadcrumb({ items, currentItem }: BreadcrumbProps) {
   return (
-    <nav className="mb-6 sm:mb-8" aria-label="Breadcrumb">
+    <nav className="mt-4 sm:mt-6 mb-6 sm:mb-8" aria-label="Breadcrumb">
       <ol className="flex items-center gap-2 text-sm text-gray-600 flex-wrap">
         {items.map((item, index) => (
           <li key={item.href} className="flex items-center gap-2">
