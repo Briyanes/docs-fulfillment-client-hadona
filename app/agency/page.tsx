@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, BookOpen, Settings, Users, Shield, Lightbulb } from 'lucide-react'
+import { ArrowRight, BookOpen, Settings, Users, Lightbulb } from 'lucide-react'
 
 export default function AgencyPage() {
   const categories = [
@@ -58,25 +58,23 @@ export default function AgencyPage() {
             <Link
               key={category.href}
               href={category.href}
-              className="group rounded-xl border-2 border-gray-200 bg-white p-4 sm:p-6 transition-all hover:border-hadona-primary hover:shadow-lg"
+              className="group rounded-xl border-2 border-gray-200 bg-white p-4 sm:p-6 transition-all hover:border-hadona-primary hover:shadow-lg text-center"
             >
-              <div className="mb-3 sm:mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-0">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="rounded-lg bg-hadona-primary/10 p-1.5 sm:p-2">
-                    <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-hadona-primary" />
-                  </div>
-                  <h2 className="text-lg sm:text-xl font-bold text-gray-900">
-                    {category.title}
-                  </h2>
+              <div className="mb-3 sm:mb-4 flex flex-col items-center justify-center gap-2">
+                <div className="rounded-lg bg-hadona-primary/10 p-2">
+                  <Icon className="h-5 w-5 text-hadona-primary" />
                 </div>
-                <span className="rounded-full bg-gray-100 px-2 sm:px-3 py-1 text-xs sm:text-sm text-gray-600 self-start sm:self-auto">
+                <h2 className="text-lg sm:text-xl font-bold text-gray-900">
+                  {category.title}
+                </h2>
+                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs sm:text-sm text-gray-600">
                   {category.count} artikel
                 </span>
               </div>
               <p className="mb-3 sm:mb-4 text-sm sm:text-base text-gray-600">
                 {category.description}
               </p>
-              <div className="flex items-center gap-2 text-hadona-primary">
+              <div className="flex items-center justify-center gap-2 text-hadona-primary">
                 <span className="text-sm font-medium">Lihat dokumentasi</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </div>
