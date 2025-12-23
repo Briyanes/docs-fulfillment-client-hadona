@@ -86,7 +86,7 @@ export default function HomePage() {
         {/* Hero Section */}
         <div className="w-full px-3 sm:px-4 lg:px-[48px] pt-[65px] pb-8 sm:pt-12 sm:pb-12 lg:pt-[85px] lg:pb-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-bold text-gray-900 mb-2 lg:mb-3 leading-[1.5]">
+            <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-bold text-gray-900 mb-2 lg:mb-3 leading-[2.4]">
               Dokumentasi Lengkap<br />
               <span className="text-hadona-primary block">Hadona Digital Media</span>
             </h1>
