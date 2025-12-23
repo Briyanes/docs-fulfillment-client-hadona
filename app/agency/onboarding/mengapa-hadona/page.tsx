@@ -8,6 +8,7 @@ export default function MengapaHadonaPage() {
       title="Mengapa Hadona"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
+      description="Kenapa memilih Hadona sebagai partner digital agency untuk bisnis Anda"
       prevHref="/agency/onboarding/selamat-datang"
       prevTitle="Selamat Datang"
       nextHref="/agency/onboarding/proses-onboarding"

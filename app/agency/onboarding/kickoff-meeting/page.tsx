@@ -9,6 +9,7 @@ export default function KickoffMeetingPage() {
       title="Kickoff Meeting"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
+      description="Panduan kickoff meeting pertama untuk memulai project"
       prevHref="/agency/onboarding/persiapan"
       prevTitle="Persiapan"
     >

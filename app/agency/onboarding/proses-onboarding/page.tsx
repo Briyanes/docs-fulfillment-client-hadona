@@ -9,6 +9,7 @@ export default function ProsesOnboardingPage() {
       title="Proses Onboarding"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
+      description="Alur proses onboarding dari awal hingga project berjalan"
       prevHref="/agency/onboarding/mengapa-hadona"
       prevTitle="Mengapa Hadona"
       nextHref="/agency/onboarding/persiapan"

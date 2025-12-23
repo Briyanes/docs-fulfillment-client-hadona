@@ -9,6 +9,7 @@ export default function PersiapanPage() {
       title="Persiapan"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
+      description="Persiapan yang perlu dilakukan sebelum memulai onboarding"
       prevHref="/agency/onboarding/proses-onboarding"
       prevTitle="Proses Onboarding"
       nextHref="/agency/onboarding/kickoff-meeting"

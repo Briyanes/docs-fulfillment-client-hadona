@@ -8,6 +8,7 @@ export default function SelamatDatangPage() {
       title="Selamat Datang"
       categoryHref="/agency/onboarding"
       categoryName="Onboarding"
+      description="Selamat datang di Hadona! Panduan awal untuk memulai kerjasama dengan kami"
       nextHref="/agency/onboarding/mengapa-hadona"
       nextTitle="Mengapa Hadona"
     >
