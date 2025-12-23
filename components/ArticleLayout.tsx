@@ -38,10 +38,10 @@ export default function ArticleLayout({
     <div className="flex gap-12 items-start">
       {/* Main Content */}
       <article className="flex-1 min-w-0">
+        <Breadcrumb items={breadcrumbItems} currentItem={title} />
         <div className="mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold">{title}</h1>
         </div>
-        <Breadcrumb items={breadcrumbItems} currentItem={title} />
         <ShareButtons title={title} description={description} />
         <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">{children}</div>
       {(prevHref || nextHref) && (
