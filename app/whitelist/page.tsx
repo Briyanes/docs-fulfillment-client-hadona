@@ -66,20 +66,20 @@ export default function WhitelistPage() {
             <Link
               key={category.href}
               href={category.href}
-              className="group rounded-xl border-2 border-gray-200 bg-white p-4 sm:p-6 transition-all hover:border-hadona-primary hover:shadow-lg text-center"
+              className="group rounded-xl border-2 border-gray-200 bg-white p-5 sm:p-6 transition-all hover:border-hadona-primary hover:shadow-lg text-center"
             >
-              <div className="mb-3 sm:mb-4 flex flex-col items-center justify-center gap-2">
-                <div className="rounded-lg bg-hadona-primary/10 p-2">
-                  <Icon className="h-5 w-5 text-hadona-primary" />
+              <div className="mb-4 sm:mb-5 flex flex-col items-center justify-center gap-3">
+                <div className="rounded-lg bg-hadona-primary/10 p-2.5">
+                  <Icon className="h-6 w-6 text-hadona-primary" />
                 </div>
                 <h2 className="text-lg sm:text-xl font-bold text-gray-900">
                   {category.title}
                 </h2>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs sm:text-sm text-gray-600">
+                <span className="rounded-full bg-gray-100 px-3 py-1.5 text-xs sm:text-sm text-gray-600">
                   {category.count} artikel
                 </span>
               </div>
-              <p className="mb-3 sm:mb-4 text-sm sm:text-base text-gray-600">
+              <p className="mb-4 sm:mb-5 text-sm sm:text-base text-gray-600 leading-relaxed">
                 {category.description}
               </p>
               <div className="flex items-center justify-center gap-2 text-hadona-primary">
