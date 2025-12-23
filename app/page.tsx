@@ -1,9 +1,15 @@
 import Link from 'next/link'
 import Sidebar from '@/components/Sidebar'
-import { homeSidebarItems } from '@/lib/content'
+import { agencySidebarItems, whitelistSidebarItems } from '@/lib/content'
 import HelpAndFollow from '@/components/HelpAndFollow'
 
 export default function HomePage() {
+  // Combine all sidebar items for homepage
+  const allSidebarItems = [
+    ...agencySidebarItems,
+    ...whitelistSidebarItems
+  ]
+
   const quickLinks = [
     {
       title: 'Client Agency',
@@ -74,7 +80,7 @@ export default function HomePage() {
   return (
     <div className="w-full flex items-start">
       <div className="hidden lg:block flex-shrink-0 self-stretch">
-        <Sidebar items={homeSidebarItems} title="Documentation" />
+        <Sidebar items={allSidebarItems} title="Documentation" />
       </div>
       <div className="flex-1 min-w-0">
         {/* Hero Section */}
