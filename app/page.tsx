@@ -86,14 +86,14 @@ export default function HomePage() {
         {/* Hero Section */}
         <div className="w-full px-3 sm:px-4 lg:px-[48px] pt-[65px] pb-8 sm:pt-12 sm:pb-12 lg:pt-[85px] lg:pb-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-bold text-gray-900 mb-4 lg:mb-6 leading-[1.5]">
-              Dokumentasi Lengkap<br className="lg:block" />
-              <span className="text-hadona-primary block mt-1 lg:mt-2">Hadona Digital Media</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-bold text-gray-900 mb-2 lg:mb-3 leading-[1.5]">
+              Dokumentasi Lengkap<br />
+              <span className="text-hadona-primary block">Hadona Digital Media</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 max-w-3xl mx-auto leading-loose py-3">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-2 max-w-3xl mx-auto leading-loose py-2">
               Panduan komprehensif untuk Client Agency dan Client Whitelist dalam mengoptimalkan kampanye Meta Ads dan Google Ads
             </p>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-500 mb-4 max-w-2xl mx-auto leading-loose py-3">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-500 mb-4 max-w-2xl mx-auto leading-loose py-2">
               Dokumentasi ini dibuat untuk memberikan panduan lengkap, step-by-step, dan best practices dalam setup, konfigurasi, dan optimasi platform Meta Ads (Facebook & Instagram Ads) serta Google Ads untuk memaksimalkan performa kampanye digital marketing Anda.
             </p>
           </div>
