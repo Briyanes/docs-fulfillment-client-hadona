@@ -4,7 +4,7 @@
   "description": "Documentation site for Hadona Digital Media - Client Agency and Client Whitelist guides",
   "private": true,
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "next dev",
