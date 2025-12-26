@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'id_ID',
     url: 'https://docs.hadona.id',
-    siteName: 'Hadona Docs',
-    title: 'Hadona Docs - Dokumentasi Lengkap untuk Client Agency & Whitelist',
+    siteName: 'docs.hadona.id',
+    title: 'Dokumentasi Lengkap untuk Client Agency & Whitelist - Hadona',
     description:
       'Dokumentasi lengkap untuk Client Agency dan Client Whitelist Hadona Digital Media. Panduan setup, best practices, dan troubleshooting.',
     images: [
