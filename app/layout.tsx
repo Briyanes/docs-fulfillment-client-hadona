@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  alternates: {
+    canonical: 'https://docs.hadona.id',
+  },
   openGraph: {
     type: 'website',
     locale: 'id_ID',
@@ -53,12 +56,21 @@ export const metadata: Metadata = {
     title: 'Hadona Docs - Dokumentasi Lengkap untuk Client Agency & Whitelist',
     description:
       'Dokumentasi lengkap untuk Client Agency dan Client Whitelist Hadona Digital Media. Panduan setup, best practices, dan troubleshooting.',
+    images: [
+      {
+        url: '/icon.png',
+        width: 1200,
+        height: 630,
+        alt: 'Hadona Docs - Dokumentasi Lengkap untuk Client Agency & Whitelist',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Hadona Docs - Dokumentasi Lengkap',
     description:
       'Dokumentasi lengkap untuk Client Agency dan Client Whitelist Hadona Digital Media.',
+    images: ['/icon.png'],
   },
   robots: {
     index: true,
