@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/agency',
     '/agency/onboarding',
     '/agency/business-manager',
+    '/agency/business-manager/linking-fanspage',
     '/agency/user-management',
     '/agency/ads-setup',
     '/agency/best-practices',

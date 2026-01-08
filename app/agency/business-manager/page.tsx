@@ -7,6 +7,7 @@ export default function BusinessManagerPage() {
     { title: 'Verifikasi Business Manager', href: '/agency/business-manager/verifikasi' },
     { title: 'Menautkan Facebook Page', href: '/agency/business-manager/menautkan-page' },
     { title: 'Menautkan Instagram Account', href: '/agency/business-manager/menautkan-instagram' },
+    { title: 'Linking Fanspage', href: '/agency/business-manager/linking-fanspage' },
     { title: 'Menautkan Ad Account', href: '/agency/business-manager/menautkan-ad-account' },
     { title: 'Mengatur Permission', href: '/agency/business-manager/permission' },
     { title: 'Two-Factor Authentication', href: '/agency/business-manager/2fa' },
