@@ -12,8 +12,8 @@ export default function Page() {
       description="Panduan menautkan Ad Account ke Business Manager untuk management iklan terpusat"
       prevHref="/agency/business-manager/menautkan-instagram"
       prevTitle="Menautkan Instagram Account"
-      nextHref="/agency/business-manager/permission"
-      nextTitle="Mengatur Permission"
+      nextHref="/agency/business-manager/menambahkan-people-ad-account"
+      nextTitle="Menambahkan People ke Ad Account"
     >
       <div className="mb-8">
         <p className="text-xl text-gray-700">

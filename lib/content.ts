@@ -39,6 +39,7 @@ export const agencySidebarItems = [
       { title: 'Menautkan Instagram Account', href: '/agency/business-manager/menautkan-instagram' },
       { title: 'Linking Fanspage', href: '/agency/business-manager/linking-fanspage' },
       { title: 'Menautkan Ad Account', href: '/agency/business-manager/menautkan-ad-account' },
+      { title: 'Menambahkan People ke Ad Account', href: '/agency/business-manager/menambahkan-people-ad-account' },
       { title: 'Mengatur Permission', href: '/agency/business-manager/permission' },
       { title: 'Two-Factor Authentication', href: '/agency/business-manager/2fa' },
       { title: 'Troubleshooting BM', href: '/agency/business-manager/troubleshooting' },

@@ -10,8 +10,8 @@ export default function Page() {
       categoryHref="/agency/business-manager"
       categoryName="Business Manager"
       description="Panduan mengatur hak akses dan permission untuk team member di Business Manager"
-      prevHref="/agency/business-manager/menautkan-ad-account"
-      prevTitle="Menautkan Ad Account"
+      prevHref="/agency/business-manager/menambahkan-people-ad-account"
+      prevTitle="Menambahkan People ke Ad Account"
       nextHref="/agency/business-manager/2fa"
       nextTitle="Two-Factor Authentication"
     >

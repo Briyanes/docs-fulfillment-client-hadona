@@ -78,6 +78,10 @@ const articleMeta: Record<string, { description: string; keywords: string[] }> =
     description: 'Cara menautkan Ad Account ke Business Manager.',
     keywords: ['ad account', 'akun iklan', 'ads', 'connect', 'hubungkan', 'tautkan', 'iklan'],
   },
+  '/agency/business-manager/menambahkan-people-ad-account': {
+    description: 'Panduan menambahkan orang dan mengatur permission di Ad Account Meta untuk kolaborasi tim.',
+    keywords: ['add people', 'tambah orang', 'menambahkan user', 'akses ad account', 'permission ad account', 'assign people', 'admin advertiser analyst', 'team collaboration', 'add users'],
+  },
   '/agency/business-manager/permission': {
     description: 'Mengatur permission dan akses di Business Manager.',
     keywords: ['izin', 'akses', 'hak', 'role', 'admin', 'editor', 'moderator', 'atur'],
