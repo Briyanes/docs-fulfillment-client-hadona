@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Melihat Data di Events Manager',
+  description: 'Tutorial melihat dan menganalisis data di Meta Events Manager',
+  keywords: ['events manager', 'kelola event', 'monitoring', 'meta', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Melihat Data di Events Manager | Hadona Docs',
+    description: 'Tutorial melihat dan menganalisis data di Meta Events Manager',
+    url: 'https://docs.hadona.id/whitelist/monitoring/events-manager',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Image, Video, Palette, Type, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Creative Best Practices',
+  description: 'Panduan membuat creative iklan Meta yang menarik dan efektif',
+  keywords: ['creative best practices', 'desain iklan', 'kreatif', 'konten iklan', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Creative Best Practices | Hadona Docs',
+    description: 'Panduan membuat creative iklan Meta yang menarik dan efektif',
+    url: 'https://docs.hadona.id/agency/ads-setup/creative-best-practices',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

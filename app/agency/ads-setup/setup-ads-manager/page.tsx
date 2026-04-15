@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Settings, Target, BarChart3, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Setup Ads Manager',
+  description: 'Panduan lengkap setup awal Ads Manager untuk membuat dan mengelola kampanye iklan Meta',
+  keywords: ['setup ads manager', 'ads manager', 'meta ads', 'setup iklan', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Setup Ads Manager | Hadona Docs',
+    description: 'Panduan lengkap setup awal Ads Manager untuk membuat dan mengelola kampanye iklan Meta',
+    url: 'https://docs.hadona.id/agency/ads-setup/setup-ads-manager',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

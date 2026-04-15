@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Performance Optimization',
+  description: 'Tutorial optimasi performa tracking untuk website yang cepat',
+  keywords: ['performance', 'performa', 'optimasi', 'tracking', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Performance Optimization | Hadona Docs',
+    description: 'Tutorial optimasi performa tracking untuk website yang cepat',
+    url: 'https://docs.hadona.id/whitelist/advanced-setup/performance',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

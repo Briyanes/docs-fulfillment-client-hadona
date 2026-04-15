@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { AlertTriangle, CheckCircle2, XCircle, Info } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Troubleshooting BM',
+  description: 'Solusi masalah umum yang terjadi pada Business Manager dan cara fix-nya',
+  keywords: ['troubleshooting', 'masalah', 'error', 'solusi', 'bantuan', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Troubleshooting BM | Hadona Docs',
+    description: 'Solusi masalah umum yang terjadi pada Business Manager dan cara fix-nya',
+    url: 'https://docs.hadona.id/agency/business-manager/troubleshooting',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

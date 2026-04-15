@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Authentication & Access',
+  description: 'Panduan mengatur authentication dan access control di GA4',
+  keywords: ['authentication', 'autentikasi', 'ga4', 'google', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Authentication & Access | Hadona Docs',
+    description: 'Panduan mengatur authentication dan access control di GA4',
+    url: 'https://docs.hadona.id/whitelist/google-integration/authentication',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

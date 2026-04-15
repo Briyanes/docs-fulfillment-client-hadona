@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { BarChart3, TrendingUp, Eye, Download, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Reporting & Analytics',
+  description: 'Panduan menggunakan reporting tools untuk analisis performa campaign Meta',
+  keywords: ['reporting analytics', 'laporan iklan', 'analitik', 'meta ads', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Reporting & Analytics | Hadona Docs',
+    description: 'Panduan menggunakan reporting tools untuk analisis performa campaign Meta',
+    url: 'https://docs.hadona.id/agency/ads-setup/reporting-analytics',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

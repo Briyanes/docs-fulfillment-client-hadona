@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Monitoring Sync Status',
+  description: 'Tutorial monitoring status sinkronisasi data secara real-time',
+  keywords: ['monitoring', 'pemantauan', 'performa', 'analytics', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Monitoring Sync Status | Hadona Docs',
+    description: 'Tutorial monitoring status sinkronisasi data secara real-time',
+    url: 'https://docs.hadona.id/whitelist/data-sync/monitoring',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

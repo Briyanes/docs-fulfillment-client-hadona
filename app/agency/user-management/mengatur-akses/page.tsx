@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Settings, Shield, Lock, Eye, Edit, Trash2, CheckCircle2, AlertCircle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Mengatur Akses User',
+  description: 'Tutorial mengubah dan mengelola akses user untuk keamanan dan kontrol',
+  keywords: ['mengatur akses', 'akses user', 'permission', 'user management', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Mengatur Akses User | Hadona Docs',
+    description: 'Tutorial mengubah dan mengelola akses user untuk keamanan dan kontrol',
+    url: 'https://docs.hadona.id/agency/user-management/mengatur-akses',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

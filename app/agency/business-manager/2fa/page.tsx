@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Shield, Smartphone, Key, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Two-Factor Authentication',
+  description: 'Cara mengaktifkan 2FA untuk keamanan ekstra akun Business Manager',
+  keywords: ['2fa', 'two factor authentication', 'keamanan akun', 'verifikasi dua langkah', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Two-Factor Authentication | Hadona Docs',
+    description: 'Cara mengaktifkan 2FA untuk keamanan ekstra akun Business Manager',
+    url: 'https://docs.hadona.id/agency/business-manager/2fa',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

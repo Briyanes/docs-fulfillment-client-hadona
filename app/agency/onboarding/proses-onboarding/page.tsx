@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Clock, CheckCircle2, AlertCircle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Proses Onboarding',
+  description: 'Alur proses onboarding dari awal hingga project berjalan',
+  keywords: ['proses onboarding', 'alur', 'tahapan', 'klien baru', 'hadona', 'agency'],
+  openGraph: {
+    title: 'Proses Onboarding | Hadona Docs',
+    description: 'Alur proses onboarding dari awal hingga project berjalan',
+    url: 'https://docs.hadona.id/agency/onboarding/proses-onboarding',
+  },
+}
+
 export default function ProsesOnboardingPage() {
   return (
     <ArticleLayout

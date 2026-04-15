@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { DollarSign, TrendingUp, PieChart, AlertCircle, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Budget Management',
+  description: 'Panduan mengelola dan mengoptimalkan budget iklan Meta secara efektif',
+  keywords: ['budget management', 'kelola anggaran', 'budget iklan', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Budget Management | Hadona Docs',
+    description: 'Panduan mengelola dan mengoptimalkan budget iklan Meta secara efektif',
+    url: 'https://docs.hadona.id/agency/best-practices/budget-management',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

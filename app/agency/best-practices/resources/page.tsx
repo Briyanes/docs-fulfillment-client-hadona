@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Book, Video, FileText, ExternalLink, Download, Link as LinkIcon } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Resources',
+  description: 'Kumpulan resources untuk mengoptimalkan kampanye iklan Meta',
+  keywords: ['resources', 'sumber daya', 'panduan', 'tools', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Resources | Hadona Docs',
+    description: 'Kumpulan resources untuk mengoptimalkan kampanye iklan Meta',
+    url: 'https://docs.hadona.id/agency/best-practices/resources',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

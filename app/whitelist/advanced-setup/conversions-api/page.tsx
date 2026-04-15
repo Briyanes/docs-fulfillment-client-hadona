@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Conversions API',
+  description: 'Panduan implementasi Conversions API untuk server-side tracking',
+  keywords: ['conversions api', 'capi', 'server side', 'meta', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Conversions API | Hadona Docs',
+    description: 'Panduan implementasi Conversions API untuk server-side tracking',
+    url: 'https://docs.hadona.id/whitelist/advanced-setup/conversions-api',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

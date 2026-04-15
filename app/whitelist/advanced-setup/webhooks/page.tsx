@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Webhooks Setup',
+  description: 'Tutorial setup webhooks untuk real-time data processing',
+  keywords: ['webhooks', 'webhook', 'integrasi', 'advanced', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Webhooks Setup | Hadona Docs',
+    description: 'Tutorial setup webhooks untuk real-time data processing',
+    url: 'https://docs.hadona.id/whitelist/advanced-setup/webhooks',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Users, Shield, CheckCircle2, AlertTriangle, UserPlus } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Menambahkan People ke Ad Account',
+  description: 'Panduan menambahkan orang dan mengatur permission di Ad Account Meta untuk kolaborasi tim',
+  keywords: ['menambahkan people', 'ad account', 'akses', 'tim', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Menambahkan People ke Ad Account | Hadona Docs',
+    description: 'Panduan menambahkan orang dan mengatur permission di Ad Account Meta untuk kolaborasi tim',
+    url: 'https://docs.hadona.id/agency/business-manager/menambahkan-people-ad-account',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

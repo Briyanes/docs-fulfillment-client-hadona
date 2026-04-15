@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Users, MessageSquare, Award, Calendar, BookOpen, Heart } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Community',
+  description: 'Bergabung dengan komunitas Hadona untuk belajar dan berbagi pengalaman',
+  keywords: ['community', 'komunitas', 'hadona', 'agency'],
+  openGraph: {
+    title: 'Community | Hadona Docs',
+    description: 'Bergabung dengan komunitas Hadona untuk belajar dan berbagi pengalaman',
+    url: 'https://docs.hadona.id/agency/best-practices/community',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

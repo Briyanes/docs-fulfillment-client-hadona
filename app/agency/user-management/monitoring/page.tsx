@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Activity, Users, Clock, AlertTriangle, TrendingUp, Eye, Bell } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Monitoring Aktivitas',
+  description: 'Panduan monitoring aktivitas user real-time untuk keamanan dan analisis',
+  keywords: ['monitoring', 'pemantauan', 'performa', 'analytics', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Monitoring Aktivitas | Hadona Docs',
+    description: 'Panduan monitoring aktivitas user real-time untuk keamanan dan analisis',
+    url: 'https://docs.hadona.id/agency/user-management/monitoring',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

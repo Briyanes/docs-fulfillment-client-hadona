@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Users, Shield, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Mengatur Permission',
+  description: 'Panduan mengatur hak akses dan permission untuk team member di Business Manager',
+  keywords: ['permission', 'izin akses', 'role', 'business manager', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Mengatur Permission | Hadona Docs',
+    description: 'Panduan mengatur hak akses dan permission untuk team member di Business Manager',
+    url: 'https://docs.hadona.id/agency/business-manager/permission',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

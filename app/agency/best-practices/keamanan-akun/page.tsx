@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Shield, Lock, Key, Eye, AlertTriangle, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Keamanan Akun',
+  description: 'Panduan lengkap keamanan akun untuk melindungi aset digital Meta',
+  keywords: ['keamanan akun', 'keamanan', 'akun aman', 'meta', 'security', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Keamanan Akun | Hadona Docs',
+    description: 'Panduan lengkap keamanan akun untuk melindungi aset digital Meta',
+    url: 'https://docs.hadona.id/agency/best-practices/keamanan-akun',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

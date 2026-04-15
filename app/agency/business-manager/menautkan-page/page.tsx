@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Facebook, Link2, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Menautkan Facebook Page',
+  description: 'Tutorial menghubungkan Facebook Page ke Business Manager untuk iklan dan management',
+  keywords: ['menautkan page', 'facebook page', 'business manager', 'halaman', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Menautkan Facebook Page | Hadona Docs',
+    description: 'Tutorial menghubungkan Facebook Page ke Business Manager untuk iklan dan management',
+    url: 'https://docs.hadona.id/agency/business-manager/menautkan-page',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

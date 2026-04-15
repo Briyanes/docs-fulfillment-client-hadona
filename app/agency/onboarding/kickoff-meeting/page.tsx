@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Video, Users, Calendar, FileText, CheckCircle2, MessageSquare } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Kickoff Meeting',
+  description: 'Panduan kickoff meeting pertama untuk memulai project',
+  keywords: ['kickoff meeting', 'pertemuan awal', 'meeting', 'onboarding', 'jadwal', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Kickoff Meeting | Hadona Docs',
+    description: 'Panduan kickoff meeting pertama untuk memulai project',
+    url: 'https://docs.hadona.id/agency/onboarding/kickoff-meeting',
+  },
+}
+
 export default function KickoffMeetingPage() {
   return (
     <ArticleLayout

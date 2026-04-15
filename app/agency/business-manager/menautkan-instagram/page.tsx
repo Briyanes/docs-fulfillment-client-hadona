@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Instagram, Link2, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Menautkan Instagram Account',
+  description: 'Cara menghubungkan akun Instagram Business ke Business Manager untuk Instagram Ads',
+  keywords: ['menautkan instagram', 'instagram', 'business manager', 'akun ig', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Menautkan Instagram Account | Hadona Docs',
+    description: 'Cara menghubungkan akun Instagram Business ke Business Manager untuk Instagram Ads',
+    url: 'https://docs.hadona.id/agency/business-manager/menautkan-instagram',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

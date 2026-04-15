@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Trash2, AlertTriangle, Shield, UserX, CheckCircle2, XCircle, Lock } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Menghapus User',
+  description: 'Tutorial menghapus user dari platform dengan aman dan benar',
+  keywords: ['menghapus user', 'hapus akun', 'user management', 'remove user', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Menghapus User | Hadona Docs',
+    description: 'Tutorial menghapus user dari platform dengan aman dan benar',
+    url: 'https://docs.hadona.id/agency/user-management/menghapus-user',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { TrendingUp, Target, BarChart3, Zap, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Optimasi Campaign',
+  description: 'Strategi dan teknik optimasi campaign Meta Ads untuk hasil maksimal',
+  keywords: ['optimasi campaign', 'optimasi iklan', 'performa', 'meta ads', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Optimasi Campaign | Hadona Docs',
+    description: 'Strategi dan teknik optimasi campaign Meta Ads untuk hasil maksimal',
+    url: 'https://docs.hadona.id/agency/ads-setup/optimasi-campaign',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

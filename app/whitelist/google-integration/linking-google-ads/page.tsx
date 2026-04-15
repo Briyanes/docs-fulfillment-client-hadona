@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Linking Google Ads',
+  description: 'Tutorial menghubungkan Google Ads dengan GA4 untuk analisis terintegrasi',
+  keywords: ['linking google ads', 'google ads', 'ga4', 'hubungkan', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Linking Google Ads | Hadona Docs',
+    description: 'Tutorial menghubungkan Google Ads dengan GA4 untuk analisis terintegrasi',
+    url: 'https://docs.hadona.id/whitelist/google-integration/linking-google-ads',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

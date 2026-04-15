@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Auto-Sync Setup',
+  description: 'Tutorial setup auto-sync untuk transfer data otomatis ke GA4',
+  keywords: ['auto sync', 'sinkronisasi otomatis', 'data sync', 'ga4', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Auto-Sync Setup | Hadona Docs',
+    description: 'Tutorial setup auto-sync untuk transfer data otomatis ke GA4',
+    url: 'https://docs.hadona.id/whitelist/data-sync/auto-sync',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

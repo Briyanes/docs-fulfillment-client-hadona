@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Setup GA4 Property',
+  description: 'Panduan langkah demi langkah membuat dan mengatur GA4 property',
+  keywords: ['setup ga4', 'google analytics 4', 'ga4', 'konfigurasi', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Setup GA4 Property | Hadona Docs',
+    description: 'Panduan langkah demi langkah membuat dan mengatur GA4 property',
+    url: 'https://docs.hadona.id/whitelist/google-integration/setup-ga4',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

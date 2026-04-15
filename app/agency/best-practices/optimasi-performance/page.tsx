@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { TrendingUp, Target, BarChart3, Zap, Lightbulb, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Optimasi Performance',
+  description: 'Strategi optimasi performance campaign Meta Ads untuk ROI maksimal',
+  keywords: ['optimasi performance', 'performa iklan', 'roas', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Optimasi Performance | Hadona Docs',
+    description: 'Strategi optimasi performance campaign Meta Ads untuk ROI maksimal',
+    url: 'https://docs.hadona.id/agency/best-practices/optimasi-performance',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

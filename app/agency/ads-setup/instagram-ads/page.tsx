@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Instagram, Image, Video, CheckCircle2, TrendingUp } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Instagram Ads',
+  description: 'Panduan membuat dan mengoptimalkan iklan Instagram untuk campaign Meta Ads',
+  keywords: ['instagram ads', 'iklan instagram', 'ig ads', 'meta ads', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Instagram Ads | Hadona Docs',
+    description: 'Panduan membuat dan mengoptimalkan iklan Instagram untuk campaign Meta Ads',
+    url: 'https://docs.hadona.id/agency/ads-setup/instagram-ads',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

@@ -4,6 +4,19 @@ import StepGuide from '@/components/StepGuide'
 import CodeBlock from '@/components/CodeBlock'
 import { CheckCircle2, AlertCircle, ExternalLink } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Membuat Meta Pixel',
+  description: 'Panduan langkah demi langkah membuat Meta Pixel di Events Manager',
+  keywords: ['membuat pixel', 'pixel baru', 'meta pixel', 'facebook pixel', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Membuat Meta Pixel | Hadona Docs',
+    description: 'Panduan langkah demi langkah membuat Meta Pixel di Events Manager',
+    url: 'https://docs.hadona.id/whitelist/pixel-setup/membuat-pixel',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

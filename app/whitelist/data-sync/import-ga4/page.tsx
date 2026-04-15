@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Import Data ke GA4',
+  description: 'Panduan import data dari eksternal ke GA4 untuk analisis yang lengkap',
+  keywords: ['import ga4', 'sinkronisasi data', 'ga4', 'data sync', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Import Data ke GA4 | Hadona Docs',
+    description: 'Panduan import data dari eksternal ke GA4 untuk analisis yang lengkap',
+    url: 'https://docs.hadona.id/whitelist/data-sync/import-ga4',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

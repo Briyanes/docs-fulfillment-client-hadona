@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Zap, Shield, TrendingUp, HeadphonesIcon, Globe, BarChart3 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Mengapa Hadona',
+  description: 'Kenapa memilih Hadona sebagai partner digital agency untuk bisnis Anda',
+  keywords: ['mengapa hadona', 'keunggulan', 'benefit', 'agency', 'digital media', 'hadona'],
+  openGraph: {
+    title: 'Mengapa Hadona | Hadona Docs',
+    description: 'Kenapa memilih Hadona sebagai partner digital agency untuk bisnis Anda',
+    url: 'https://docs.hadona.id/agency/onboarding/mengapa-hadona',
+  },
+}
+
 export default function MengapaHadonaPage() {
   return (
     <ArticleLayout

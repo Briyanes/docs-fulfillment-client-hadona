@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { ShoppingBag, Store, Globe, Package, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Instalasi via Partner',
+  description: 'Panduan instalasi Meta Pixel via platform partner e-commerce dan CMS',
+  keywords: ['instalasi partner', 'pixel partner', 'instalasi pixel', 'gtm', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Instalasi via Partner | Hadona Docs',
+    description: 'Panduan instalasi Meta Pixel via platform partner e-commerce dan CMS',
+    url: 'https://docs.hadona.id/whitelist/pixel-setup/instalasi-partner',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

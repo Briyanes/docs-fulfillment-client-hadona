@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Server-Side Tracking',
+  description: 'Panduan implementasi server-side tracking untuk better data quality',
+  keywords: ['server side tracking', 'server tracking', 'capi', 'advanced', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Server-Side Tracking | Hadona Docs',
+    description: 'Panduan implementasi server-side tracking untuk better data quality',
+    url: 'https://docs.hadona.id/whitelist/advanced-setup/server-side-tracking',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

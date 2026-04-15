@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Troubleshooting Sync',
+  description: 'Panduan mengatasi masalah sinkronisasi data ke GA4',
+  keywords: ['troubleshooting', 'masalah', 'error', 'solusi', 'bantuan', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Troubleshooting Sync | Hadona Docs',
+    description: 'Panduan mengatasi masalah sinkronisasi data ke GA4',
+    url: 'https://docs.hadona.id/whitelist/data-sync/troubleshooting',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

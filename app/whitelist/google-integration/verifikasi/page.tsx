@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Verifikasi Integration',
+  description: 'Cara verifikasi integrasi GA4 untuk memastikan data terkirim dengan benar',
+  keywords: ['verifikasi', 'verifikasi bisnis', 'business manager', 'meta', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Verifikasi Integration | Hadona Docs',
+    description: 'Cara verifikasi integrasi GA4 untuk memastikan data terkirim dengan benar',
+    url: 'https://docs.hadona.id/whitelist/google-integration/verifikasi',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

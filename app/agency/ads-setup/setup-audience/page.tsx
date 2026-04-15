@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Users, Target, Eye, RefreshCw, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Setup Audience',
+  description: 'Tutorial setup dan konfigurasi audience targeting untuk kampanye Meta Ads',
+  keywords: ['setup audience', 'target audiens', 'iklan', 'meta ads', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Setup Audience | Hadona Docs',
+    description: 'Tutorial setup dan konfigurasi audience targeting untuk kampanye Meta Ads',
+    url: 'https://docs.hadona.id/agency/ads-setup/setup-audience',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Data Layer',
+  description: 'Tutorial implementasi data layer untuk tracking yang terstruktur',
+  keywords: ['data layer', 'gtm', 'tracking', 'advanced', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Data Layer | Hadona Docs',
+    description: 'Tutorial implementasi data layer untuk tracking yang terstruktur',
+    url: 'https://docs.hadona.id/whitelist/advanced-setup/data-layer',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

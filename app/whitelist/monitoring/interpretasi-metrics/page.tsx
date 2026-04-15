@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Interpretasi Metrics',
+  description: 'Tutorial interpretasi metrics GA4 untuk insight yang actionable',
+  keywords: ['interpretasi metrics', 'metrik', 'monitoring', 'analytics', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Interpretasi Metrics | Hadona Docs',
+    description: 'Tutorial interpretasi metrics GA4 untuk insight yang actionable',
+    url: 'https://docs.hadona.id/whitelist/monitoring/interpretasi-metrics',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

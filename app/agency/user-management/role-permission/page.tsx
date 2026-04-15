@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Shield, Users, Eye, Settings, Lock, CheckCircle2, XCircle, AlertCircle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Role & Permission',
+  description: 'Panduan memahami dan mengatur role serta permission user untuk keamanan',
+  keywords: ['role permission', 'hak akses', 'admin', 'user management', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Role & Permission | Hadona Docs',
+    description: 'Panduan memahami dan mengatur role serta permission user untuk keamanan',
+    url: 'https://docs.hadona.id/agency/user-management/role-permission',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

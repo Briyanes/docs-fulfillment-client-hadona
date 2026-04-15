@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { DollarSign, TrendingUp, Calendar, AlertTriangle, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Mengatur Budget',
+  description: 'Panduan mengatur budget dan bid strategy untuk campaign Meta Ads yang optimal',
+  keywords: ['mengatur budget', 'anggaran iklan', 'budget', 'meta ads', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Mengatur Budget | Hadona Docs',
+    description: 'Panduan mengatur budget dan bid strategy untuk campaign Meta Ads yang optimal',
+    url: 'https://docs.hadona.id/agency/ads-setup/mengatur-budget',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

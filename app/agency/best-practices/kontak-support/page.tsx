@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Mail, MessageCircle, Phone, Clock, Headphones } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Kontak Support',
+  description: 'Cara menghubungi tim support Hadona untuk bantuan 24/7',
+  keywords: ['kontak support', 'bantuan', 'support', 'hadona', 'agency'],
+  openGraph: {
+    title: 'Kontak Support | Hadona Docs',
+    description: 'Cara menghubungi tim support Hadona untuk bantuan 24/7',
+    url: 'https://docs.hadona.id/agency/best-practices/kontak-support',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

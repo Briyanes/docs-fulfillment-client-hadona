@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Custom Dimensions',
+  description: 'Panduan membuat custom dimensions untuk analisis GA4 yang lebih detail',
+  keywords: ['custom dimensions', 'dimensi kustom', 'ga4', 'analytics', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Custom Dimensions | Hadona Docs',
+    description: 'Panduan membuat custom dimensions untuk analisis GA4 yang lebih detail',
+    url: 'https://docs.hadona.id/whitelist/google-integration/custom-dimensions',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

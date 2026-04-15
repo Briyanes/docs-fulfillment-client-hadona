@@ -1,7 +1,19 @@
+import type { Metadata } from 'next'
 import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { CheckCircle2, LayoutDashboard, Bell, Settings, BarChart3, FileText, Headphones } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Registrasi & Pengenalan Dashboard Hadona',
+  description: 'Panduan lengkap aktivasi akun Client Whitelist dan pengenalan fitur-fitur utama dashboard Hadona Digital Media.',
+  keywords: ['registrasi', 'dashboard', 'aktivasi akun', 'client whitelist', 'hadona', 'onboarding'],
+  openGraph: {
+    title: 'Registrasi & Pengenalan Dashboard Hadona | Hadona Docs',
+    description: 'Panduan lengkap aktivasi akun Client Whitelist dan pengenalan fitur-fitur utama dashboard Hadona Digital Media.',
+    url: 'https://docs.hadona.id/whitelist/onboarding/registrasi-dashboard',
+  },
+}
 
 export default function RegistrasiDashboardPage() {
   return (

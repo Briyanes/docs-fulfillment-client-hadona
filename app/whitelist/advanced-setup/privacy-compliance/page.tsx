@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privacy & Compliance',
+  description: 'Panduan privacy dan compliance untuk tracking yang sesuai regulasi',
+  keywords: ['privacy compliance', 'privasi', 'gdpr', 'cookie', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Privacy & Compliance | Hadona Docs',
+    description: 'Panduan privacy dan compliance untuk tracking yang sesuai regulasi',
+    url: 'https://docs.hadona.id/whitelist/advanced-setup/privacy-compliance',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

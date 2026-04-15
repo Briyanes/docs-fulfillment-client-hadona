@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Link2, Instagram, MessageCircle, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Instagram & WhatsApp Linking',
+  description: 'Tutorial menghubungkan Instagram dan WhatsApp untuk kampanye yang terintegrasi',
+  keywords: ['instagram whatsapp linking', 'linking', 'ig wa', 'hubungkan', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Instagram & WhatsApp Linking | Hadona Docs',
+    description: 'Tutorial menghubungkan Instagram dan WhatsApp untuk kampanye yang terintegrasi',
+    url: 'https://docs.hadona.id/agency/ads-setup/instagram-whatsapp-linking',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

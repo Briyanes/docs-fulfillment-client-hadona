@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Troubleshooting Monitoring',
+  description: 'Panduan mengatasi masalah monitoring data dan analytics',
+  keywords: ['troubleshooting', 'masalah', 'error', 'solusi', 'bantuan', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Troubleshooting Monitoring | Hadona Docs',
+    description: 'Panduan mengatasi masalah monitoring data dan analytics',
+    url: 'https://docs.hadona.id/whitelist/monitoring/troubleshooting',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

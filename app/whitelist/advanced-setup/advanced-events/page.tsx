@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Advanced Event Tracking',
+  description: 'Panduan advanced event tracking untuk data yang lebih detail',
+  keywords: ['advanced events', 'event lanjutan', 'tracking', 'pixel', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Advanced Event Tracking | Hadona Docs',
+    description: 'Panduan advanced event tracking untuk data yang lebih detail',
+    url: 'https://docs.hadona.id/whitelist/advanced-setup/advanced-events',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

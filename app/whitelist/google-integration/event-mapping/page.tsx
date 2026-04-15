@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Event Mapping',
+  description: 'Tutorial memetakan events dari Meta Pixel ke GA4 untuk analisis terpadu',
+  keywords: ['event mapping', 'pemetaan event', 'ga4', 'tracking', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Event Mapping | Hadona Docs',
+    description: 'Tutorial memetakan events dari Meta Pixel ke GA4 untuk analisis terpadu',
+    url: 'https://docs.hadona.id/whitelist/google-integration/event-mapping',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

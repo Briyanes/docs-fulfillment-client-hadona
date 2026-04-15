@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { CheckCircle2, AlertCircle, Search, Eye, Activity } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Verifikasi Instalasi',
+  description: 'Cara verifikasi instalasi Meta Pixel untuk memastikan tracking berfungsi',
+  keywords: ['verifikasi', 'verifikasi bisnis', 'business manager', 'meta', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Verifikasi Instalasi | Hadona Docs',
+    description: 'Cara verifikasi instalasi Meta Pixel untuk memastikan tracking berfungsi',
+    url: 'https://docs.hadona.id/whitelist/pixel-setup/verifikasi',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

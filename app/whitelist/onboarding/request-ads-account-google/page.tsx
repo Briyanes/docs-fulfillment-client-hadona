@@ -1,7 +1,19 @@
+import type { Metadata } from 'next'
 import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { CheckCircle2, Clock, AlertCircle, ExternalLink, FileCheck, Globe } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Request Google Ads Account (Whitelist)',
+  description: 'Cara mengajukan permintaan Google Ads Account untuk Client Whitelist — langkah demi langkah melalui dashboard Hadona.',
+  keywords: ['google ads', 'request akun iklan', 'client whitelist', 'hadona', 'google search ads', 'youtube ads'],
+  openGraph: {
+    title: 'Request Google Ads Account (Whitelist) | Hadona Docs',
+    description: 'Cara mengajukan permintaan Google Ads Account untuk Client Whitelist — langkah demi langkah melalui dashboard Hadona.',
+    url: 'https://docs.hadona.id/whitelist/onboarding/request-ads-account-google',
+  },
+}
 
 export default function RequestAdsAccountGooglePage() {
   return (

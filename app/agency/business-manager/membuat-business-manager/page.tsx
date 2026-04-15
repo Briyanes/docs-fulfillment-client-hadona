@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Building2, Shield, Users, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Membuat Business Manager',
+  description: 'Panduan lengkap langkah demi langkah membuat Business Manager untuk mengelola aset iklan Facebook & Instagram',
+  keywords: ['business manager', 'buat bm', 'meta business', 'facebook business', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Membuat Business Manager | Hadona Docs',
+    description: 'Panduan lengkap langkah demi langkah membuat Business Manager untuk mengelola aset iklan Facebook & Instagram',
+    url: 'https://docs.hadona.id/agency/business-manager/membuat-business-manager',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

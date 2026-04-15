@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Users, Mail, Shield, CheckCircle2, AlertCircle, UserPlus } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Menambahkan Team Member',
+  description: 'Panduan menambahkan anggota tim ke platform untuk kolaborasi yang efektif',
+  keywords: ['menambahkan team', 'tambah anggota', 'user management', 'tim', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Menambahkan Team Member | Hadona Docs',
+    description: 'Panduan menambahkan anggota tim ke platform untuk kolaborasi yang efektif',
+    url: 'https://docs.hadona.id/agency/user-management/menambahkan-team',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

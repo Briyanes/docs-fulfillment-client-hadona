@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { MessageCircle, Send, Users, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'WhatsApp Ads',
+  description: 'Panduan membuat iklan WhatsApp untuk lead generation dan customer service',
+  keywords: ['whatsapp ads', 'iklan whatsapp', 'wa ads', 'click to wa', 'agency', 'hadona'],
+  openGraph: {
+    title: 'WhatsApp Ads | Hadona Docs',
+    description: 'Panduan membuat iklan WhatsApp untuk lead generation dan customer service',
+    url: 'https://docs.hadona.id/agency/ads-setup/whatsapp-ads',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

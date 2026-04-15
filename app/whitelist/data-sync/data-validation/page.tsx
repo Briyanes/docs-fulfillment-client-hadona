@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Data Validation',
+  description: 'Tutorial validasi data untuk memastikan akurasi sinkronisasi',
+  keywords: ['data validation', 'validasi data', 'ga4', 'data sync', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Data Validation | Hadona Docs',
+    description: 'Tutorial validasi data untuk memastikan akurasi sinkronisasi',
+    url: 'https://docs.hadona.id/whitelist/data-sync/data-validation',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

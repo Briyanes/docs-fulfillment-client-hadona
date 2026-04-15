@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { FlaskConical, Target, Image, Users, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'A/B Testing',
+  description: 'Tutorial setup dan menjalankan A/B testing untuk campaign Meta Ads',
+  keywords: ['ab testing', 'split test', 'eksperimen iklan', 'meta ads', 'agency', 'hadona'],
+  openGraph: {
+    title: 'A/B Testing | Hadona Docs',
+    description: 'Tutorial setup dan menjalankan A/B testing untuk campaign Meta Ads',
+    url: 'https://docs.hadona.id/agency/ads-setup/ab-testing',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

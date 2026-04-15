@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { AlertCircle, XCircle, Clock, TrendingDown } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Troubleshooting Ads',
+  description: 'Panduan mengatasi masalah umum pada campaign Meta Ads',
+  keywords: ['troubleshooting', 'masalah', 'error', 'solusi', 'bantuan', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Troubleshooting Ads | Hadona Docs',
+    description: 'Panduan mengatasi masalah umum pada campaign Meta Ads',
+    url: 'https://docs.hadona.id/agency/ads-setup/troubleshooting',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

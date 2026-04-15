@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Pengenalan UTM',
+  description: 'Pengenalan UTM parameters dan manfaatnya untuk tracking campaign',
+  keywords: ['pengenalan', 'pixel', 'meta pixel', 'tracking', 'pengenalan ga4', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Pengenalan UTM | Hadona Docs',
+    description: 'Pengenalan UTM parameters dan manfaatnya untuk tracking campaign',
+    url: 'https://docs.hadona.id/whitelist/utm-configuration/pengenalan',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Alerts & Notifications',
+  description: 'Tutorial setup alerts dan notifications untuk monitoring otomatis',
+  keywords: ['alerts', 'notifikasi', 'monitoring', 'peringatan', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Alerts & Notifications | Hadona Docs',
+    description: 'Tutorial setup alerts dan notifications untuk monitoring otomatis',
+    url: 'https://docs.hadona.id/whitelist/monitoring/alerts',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

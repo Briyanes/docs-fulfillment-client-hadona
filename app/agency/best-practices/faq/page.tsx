@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { HelpCircle, ChevronDown } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'FAQ',
+  description: 'Pertanyaan yang sering diajukan seputar platform dan kampanye Meta',
+  keywords: ['faq', 'pertanyaan', 'tanya jawab', 'agency', 'hadona'],
+  openGraph: {
+    title: 'FAQ | Hadona Docs',
+    description: 'Pertanyaan yang sering diajukan seputar platform dan kampanye Meta',
+    url: 'https://docs.hadona.id/agency/best-practices/faq',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

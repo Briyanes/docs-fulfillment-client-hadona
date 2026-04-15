@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Custom Reports',
+  description: 'Panduan membuat custom reports di GA4 untuk analisis spesifik',
+  keywords: ['custom reports', 'laporan kustom', 'monitoring', 'analytics', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Custom Reports | Hadona Docs',
+    description: 'Panduan membuat custom reports di GA4 untuk analisis spesifik',
+    url: 'https://docs.hadona.id/whitelist/monitoring/custom-reports',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

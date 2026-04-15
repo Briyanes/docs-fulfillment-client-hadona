@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { FileText, Search, Filter, Download, Clock, User, Shield, AlertCircle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Audit Log',
+  description: 'Tutorial menggunakan audit log untuk melacak aktivitas dan keamanan',
+  keywords: ['audit log', 'riwayat aktivitas', 'log aktivitas', 'user management', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Audit Log | Hadona Docs',
+    description: 'Tutorial menggunakan audit log untuk melacak aktivitas dan keamanan',
+    url: 'https://docs.hadona.id/agency/user-management/audit-log',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

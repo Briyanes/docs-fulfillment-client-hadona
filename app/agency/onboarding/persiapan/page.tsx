@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { FileText, Users, Shield, Globe, CheckCircle2, AlertCircle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Persiapan',
+  description: 'Persiapan yang perlu dilakukan sebelum memulai onboarding',
+  keywords: ['persiapan', 'dokumen', 'syarat', 'onboarding', 'kebutuhan', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Persiapan | Hadona Docs',
+    description: 'Persiapan yang perlu dilakukan sebelum memulai onboarding',
+    url: 'https://docs.hadona.id/agency/onboarding/persiapan',
+  },
+}
+
 export default function PersiapanPage() {
   return (
     <ArticleLayout

@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { CheckCircle2, Rocket, Users, BarChart3, Shield } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Selamat Datang',
+  description: 'Selamat datang di Hadona! Panduan awal untuk memulai kerjasama dengan kami',
+  keywords: ['selamat datang', 'hadona', 'onboarding', 'mulai', 'client agency', 'agency'],
+  openGraph: {
+    title: 'Selamat Datang | Hadona Docs',
+    description: 'Selamat datang di Hadona! Panduan awal untuk memulai kerjasama dengan kami',
+    url: 'https://docs.hadona.id/agency/onboarding/selamat-datang',
+  },
+}
+
 export default function SelamatDatangPage() {
   return (
     <ArticleLayout

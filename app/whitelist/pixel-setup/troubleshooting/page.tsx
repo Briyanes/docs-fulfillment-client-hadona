@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import CodeBlock from '@/components/CodeBlock'
 import { AlertTriangle, CheckCircle2, XCircle, Search, RefreshCw, Shield } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Troubleshooting Pixel',
+  description: 'Panduan mengatasi masalah umum pada Meta Pixel dan tracking',
+  keywords: ['troubleshooting', 'masalah', 'error', 'solusi', 'bantuan', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Troubleshooting Pixel | Hadona Docs',
+    description: 'Panduan mengatasi masalah umum pada Meta Pixel dan tracking',
+    url: 'https://docs.hadona.id/whitelist/pixel-setup/troubleshooting',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

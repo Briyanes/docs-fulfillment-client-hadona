@@ -4,6 +4,19 @@ import Callout from '@/components/Callout'
 import Image from 'next/image'
 import { Facebook, Instagram, Video, Users, Settings, ExternalLink } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Linking Fanspage',
+  description: 'Tutorial lengkap cara menghubungkan Instagram Business ke Facebook Fanspage dan setup Advertiser Hadona',
+  keywords: ['linking fanspage', 'hubungkan halaman', 'facebook page', 'fanspage', 'tutorial linked', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Linking Fanspage | Hadona Docs',
+    description: 'Tutorial lengkap cara menghubungkan Instagram Business ke Facebook Fanspage dan setup Advertiser Hadona',
+    url: 'https://docs.hadona.id/agency/business-manager/linking-fanspage',
+  },
+}
+
 export default function LinkingFanspagePage() {
   return (
     <ArticleLayout

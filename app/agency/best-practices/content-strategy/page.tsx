@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Image, Video, PenTool, Target, CheckCircle2, Lightbulb } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Content Strategy',
+  description: 'Strategi pembuatan konten iklan yang menarik dan menghasilkan konversi',
+  keywords: ['content strategy', 'strategi konten', 'konten iklan', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Content Strategy | Hadona Docs',
+    description: 'Strategi pembuatan konten iklan yang menarik dan menghasilkan konversi',
+    url: 'https://docs.hadona.id/agency/best-practices/content-strategy',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

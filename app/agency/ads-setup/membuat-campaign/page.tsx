@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Rocket, Target, Image, CheckCircle2, TrendingUp } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Membuat Campaign',
+  description: 'Tutorial langkah demi langkah membuat campaign iklan Meta dengan struktur yang tepat',
+  keywords: ['membuat campaign', 'campaign baru', 'iklan', 'meta ads', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Membuat Campaign | Hadona Docs',
+    description: 'Tutorial langkah demi langkah membuat campaign iklan Meta dengan struktur yang tepat',
+    url: 'https://docs.hadona.id/agency/ads-setup/membuat-campaign',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

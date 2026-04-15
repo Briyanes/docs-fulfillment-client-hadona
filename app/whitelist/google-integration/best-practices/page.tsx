@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Best Practices',
+  description: 'Best practices untuk integrasi dan penggunaan GA4 yang optimal',
+  keywords: ['best practices', 'praktik terbaik', 'ga4', 'tracking', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Best Practices | Hadona Docs',
+    description: 'Best practices untuk integrasi dan penggunaan GA4 yang optimal',
+    url: 'https://docs.hadona.id/whitelist/google-integration/best-practices',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

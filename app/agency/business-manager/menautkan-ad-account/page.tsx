@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { DollarSign, Plus, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Menautkan Ad Account',
+  description: 'Panduan menautkan Ad Account ke Business Manager untuk management iklan terpusat',
+  keywords: ['menautkan ad account', 'akun iklan', 'business manager', 'meta ads', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Menautkan Ad Account | Hadona Docs',
+    description: 'Panduan menautkan Ad Account ke Business Manager untuk management iklan terpusat',
+    url: 'https://docs.hadona.id/agency/business-manager/menautkan-ad-account',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

@@ -3,6 +3,19 @@ import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
 import { Shield, FileText, Clock, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Verifikasi Business Manager',
+  description: 'Cara verifikasi identitas Business Manager untuk keamanan dan akses penuh fitur Meta Ads',
+  keywords: ['verifikasi', 'verifikasi bisnis', 'business manager', 'meta', 'agency', 'hadona'],
+  openGraph: {
+    title: 'Verifikasi Business Manager | Hadona Docs',
+    description: 'Cara verifikasi identitas Business Manager untuk keamanan dan akses penuh fitur Meta Ads',
+    url: 'https://docs.hadona.id/agency/business-manager/verifikasi',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

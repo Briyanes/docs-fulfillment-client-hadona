@@ -4,6 +4,19 @@ import StepGuide from '@/components/StepGuide'
 import CodeBlock from '@/components/CodeBlock'
 import { Code, FileCode, CheckCircle2, AlertTriangle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Instalasi Manual',
+  description: 'Tutorial instalasi Meta Pixel manual dengan menambahkan code ke website',
+  keywords: ['instalasi manual', 'pixel manual', 'code pixel', 'website', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Instalasi Manual | Hadona Docs',
+    description: 'Tutorial instalasi Meta Pixel manual dengan menambahkan code ke website',
+    url: 'https://docs.hadona.id/whitelist/pixel-setup/instalasi-manual',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

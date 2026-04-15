@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Calendar, Sparkles, AlertCircle, CheckCircle2 } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Updates & Changelog',
+  description: 'Informasi terbaru seputar fitur dan update platform Hadona',
+  keywords: ['updates', 'update terbaru', 'changelog', 'hadona', 'agency'],
+  openGraph: {
+    title: 'Updates & Changelog | Hadona Docs',
+    description: 'Informasi terbaru seputar fitur dan update platform Hadona',
+    url: 'https://docs.hadona.id/agency/best-practices/updates',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

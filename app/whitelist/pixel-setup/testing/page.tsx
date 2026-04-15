@@ -4,6 +4,19 @@ import StepGuide from '@/components/StepGuide'
 import CodeBlock from '@/components/CodeBlock'
 import { FlaskConical, CheckCircle2, AlertTriangle, Play, Eye } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Testing Pixel',
+  description: 'Tutorial testing Meta Pixel untuk memastikan tracking berfungsi dengan benar',
+  keywords: ['testing pixel', 'test pixel', 'event test tool', 'pixel', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Testing Pixel | Hadona Docs',
+    description: 'Tutorial testing Meta Pixel untuk memastikan tracking berfungsi dengan benar',
+    url: 'https://docs.hadona.id/whitelist/pixel-setup/testing',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Mapping Events',
+  description: 'Panduan mapping events untuk sinkronisasi data yang tepat',
+  keywords: ['mapping events', 'event sync', 'data sync', 'ga4', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Mapping Events | Hadona Docs',
+    description: 'Panduan mapping events untuk sinkronisasi data yang tepat',
+    url: 'https://docs.hadona.id/whitelist/data-sync/mapping-events',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

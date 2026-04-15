@@ -2,6 +2,19 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import { Target, BarChart3, ShoppingCart, Users, Zap, Shield } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Pengenalan Meta Pixel',
+  description: 'Pengenalan Meta Pixel dan manfaat tracking untuk kampanye iklan',
+  keywords: ['pengenalan', 'pixel', 'meta pixel', 'tracking', 'pengenalan ga4', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Pengenalan Meta Pixel | Hadona Docs',
+    description: 'Pengenalan Meta Pixel dan manfaat tracking untuk kampanye iklan',
+    url: 'https://docs.hadona.id/whitelist/pixel-setup/pengenalan',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout

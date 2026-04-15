@@ -1,5 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Data Export',
+  description: 'Panduan export data dari GA4 untuk analisis lebih lanjut',
+  keywords: ['data export', 'ekspor data', 'monitoring', 'analytics', 'whitelist', 'hadona', 'client whitelist'],
+  openGraph: {
+    title: 'Data Export | Hadona Docs',
+    description: 'Panduan export data dari GA4 untuk analisis lebih lanjut',
+    url: 'https://docs.hadona.id/whitelist/monitoring/data-export',
+  },
+}
+
 export default function Page() {
   return (
     <ArticleLayout
