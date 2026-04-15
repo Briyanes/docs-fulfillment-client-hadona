@@ -1,7 +1,19 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Sidebar from '@/components/Sidebar'
 import { agencySidebarItems, whitelistSidebarItems } from '@/lib/content'
 import HelpAndFollow from '@/components/HelpAndFollow'
+
+export const metadata: Metadata = {
+  title: 'Dokumentasi Hadona — Client Agency & Whitelist',
+  description: 'Pusat dokumentasi resmi Hadona Digital Media. Panduan lengkap untuk Client Agency (Meta Ads, Business Manager) dan Client Whitelist (Pixel Setup, GA4, UTM).',
+  keywords: ['hadona', 'dokumentasi', 'client agency', 'client whitelist', 'meta ads', 'google analytics', 'pixel', 'digital media'],
+  openGraph: {
+    title: 'Dokumentasi Hadona — Client Agency & Whitelist',
+    description: 'Pusat dokumentasi resmi Hadona Digital Media. Panduan lengkap untuk Client Agency dan Client Whitelist.',
+    url: 'https://docs.hadona.id',
+  },
+}
 
 export default function HomePage() {
   // Combine all sidebar items for homepage

@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'User Management',
+  description: 'Panduan User Management Hadona — menambahkan tim, mengatur role & permission, akses user, dan audit log aktivitas.',
+  keywords: ['user management', 'tim', 'role', 'permission', 'akses', 'audit log', 'hadona'],
+  openGraph: {
+    title: 'User Management | Hadona Docs',
+    description: 'Panduan User Management Hadona — menambahkan tim, mengatur role & permission, akses user, dan audit log aktivitas.',
+    url: 'https://docs.hadona.id/agency/user-management',
+  },
+}
 
 export default function UserManagementPage() {
   const articles = [

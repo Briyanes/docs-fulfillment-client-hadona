@@ -581,14 +581,16 @@ export function searchArticles(query: string): SearchArticle[] {
  */
 export function getPopularArticles(): SearchArticle[] {
   const popularPaths = [
+    '/agency/onboarding/selamat-datang',
     '/agency/business-manager/membuat-business-manager',
     '/agency/business-manager/linking-fanspage',
     '/agency/ads-setup/membuat-campaign',
-    '/agency/onboarding/selamat-datang',
+    '/agency/best-practices/faq',
+    '/whitelist/onboarding/registrasi-dashboard',
+    '/whitelist/onboarding/request-ads-account-meta',
     '/whitelist/pixel-setup/pengenalan',
     '/whitelist/google-integration/setup-ga4',
-    '/agency/best-practices/faq',
-    '/agency/business-manager/menautkan-page',
+    '/whitelist/utm-configuration/pengenalan',
   ]
 
   return allSearchArticles.filter(a => popularPaths.includes(a.path))

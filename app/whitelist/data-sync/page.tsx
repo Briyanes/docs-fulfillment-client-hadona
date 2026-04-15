@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Data Sync',
+  description: 'Panduan sinkronisasi data — import GA4, auto sync, mapping events, validasi data, monitoring, dan troubleshooting.',
+  keywords: ['data sync', 'sinkronisasi', 'ga4', 'import', 'auto sync', 'mapping events', 'validasi'],
+  openGraph: {
+    title: 'Data Sync | Hadona Docs',
+    description: 'Panduan sinkronisasi data — import GA4, auto sync, mapping events, validasi data, monitoring, dan troubleshooting.',
+    url: 'https://docs.hadona.id/whitelist/data-sync',
+  },
+}
 
 export default function DataSyncPage() {
   const articles = [

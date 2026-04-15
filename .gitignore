@@ -60,3 +60,6 @@ resources.pak
 
 # Claude Code
 .claude/
+
+# One-off scripts (not needed in production)
+scripts/add-metadata.js

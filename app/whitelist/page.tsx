@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, Code, BarChart3, Link2, Database, Zap, Eye, UserPlus } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Client Whitelist',
+  description: 'Dokumentasi lengkap untuk Client Whitelist Hadona — onboarding, Pixel Setup, UTM Configuration, Google Analytics 4, Data Sync, Monitoring, dan Advanced Setup.',
+  keywords: ['client whitelist', 'hadona', 'pixel setup', 'utm', 'ga4', 'google analytics', 'data sync', 'monitoring'],
+  openGraph: {
+    title: 'Client Whitelist | Hadona Docs',
+    description: 'Dokumentasi lengkap untuk Client Whitelist Hadona — onboarding, Pixel Setup, UTM Configuration, Google Analytics 4, Data Sync, Monitoring, dan Advanced Setup.',
+    url: 'https://docs.hadona.id/whitelist',
+  },
+}
 
 export default function WhitelistPage() {
   const categories = [

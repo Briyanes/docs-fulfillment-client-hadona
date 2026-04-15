@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Advanced Setup',
+  description: 'Panduan advanced setup tracking — Conversions API, server-side tracking, custom events, data layer, webhooks, performance, dan privacy compliance.',
+  keywords: ['advanced setup', 'conversions api', 'server side tracking', 'custom events', 'data layer', 'webhooks', 'privacy'],
+  openGraph: {
+    title: 'Advanced Setup | Hadona Docs',
+    description: 'Panduan advanced setup tracking — Conversions API, server-side tracking, custom events, data layer, webhooks, performance, dan privacy compliance.',
+    url: 'https://docs.hadona.id/whitelist/advanced-setup',
+  },
+}
 
 export default function AdvancedSetupPage() {
   const articles = [

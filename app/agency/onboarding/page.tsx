@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Onboarding Client Agency',
+  description: 'Panduan onboarding untuk Client Agency Hadona — selamat datang, proses onboarding, persiapan, dan kickoff meeting.',
+  keywords: ['onboarding', 'client agency', 'hadona', 'mulai', 'kickoff', 'persiapan'],
+  openGraph: {
+    title: 'Onboarding Client Agency | Hadona Docs',
+    description: 'Panduan onboarding untuk Client Agency Hadona — selamat datang, proses onboarding, persiapan, dan kickoff meeting.',
+    url: 'https://docs.hadona.id/agency/onboarding',
+  },
+}
 
 export default function OnboardingPage() {
   const articles = [

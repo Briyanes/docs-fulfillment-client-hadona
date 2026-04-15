@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Monitoring',
+  description: 'Panduan monitoring performa — Events Manager, data GA4, interpretasi metrics, custom reports, alerts, dan ekspor data.',
+  keywords: ['monitoring', 'events manager', 'ga4', 'metrics', 'custom reports', 'alerts', 'analytics'],
+  openGraph: {
+    title: 'Monitoring | Hadona Docs',
+    description: 'Panduan monitoring performa — Events Manager, data GA4, interpretasi metrics, custom reports, alerts, dan ekspor data.',
+    url: 'https://docs.hadona.id/whitelist/monitoring',
+  },
+}
 
 export default function MonitoringPage() {
   const articles = [

@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Best Practices',
+  description: 'Best practices untuk Client Agency Hadona — strategi konten, budget management, optimasi performa, keamanan akun, FAQ, dan kontak support.',
+  keywords: ['best practices', 'strategi konten', 'budget', 'optimasi', 'keamanan akun', 'faq', 'support'],
+  openGraph: {
+    title: 'Best Practices | Hadona Docs',
+    description: 'Best practices untuk Client Agency Hadona — strategi konten, budget management, optimasi performa, keamanan akun, FAQ, dan kontak support.',
+    url: 'https://docs.hadona.id/agency/best-practices',
+  },
+}
 
 export default function BestPracticesPage() {
   const articles = [

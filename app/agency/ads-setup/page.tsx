@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Ads Setup',
+  description: 'Panduan setup iklan Meta Ads — membuat campaign, setup audience, mengatur budget, Instagram Ads, WhatsApp Ads, A/B testing, dan optimasi kampanye.',
+  keywords: ['ads setup', 'meta ads', 'campaign', 'audience', 'budget', 'instagram ads', 'whatsapp ads', 'optimasi'],
+  openGraph: {
+    title: 'Ads Setup | Hadona Docs',
+    description: 'Panduan setup iklan Meta Ads — membuat campaign, setup audience, mengatur budget, Instagram Ads, WhatsApp Ads, A/B testing, dan optimasi kampanye.',
+    url: 'https://docs.hadona.id/agency/ads-setup',
+  },
+}
 
 export default function AdsSetupPage() {
   const articles = [

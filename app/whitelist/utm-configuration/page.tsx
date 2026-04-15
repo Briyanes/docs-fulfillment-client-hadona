@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'UTM Configuration',
+  description: 'Panduan konfigurasi UTM tracking — UTM source, medium, campaign, ID, dan setup UTM untuk Meta Ads.',
+  keywords: ['utm', 'utm configuration', 'utm source', 'utm medium', 'utm campaign', 'tracking', 'analytics'],
+  openGraph: {
+    title: 'UTM Configuration | Hadona Docs',
+    description: 'Panduan konfigurasi UTM tracking — UTM source, medium, campaign, ID, dan setup UTM untuk Meta Ads.',
+    url: 'https://docs.hadona.id/whitelist/utm-configuration',
+  },
+}
 
 export default function UTMConfigurationPage() {
   const articles = [

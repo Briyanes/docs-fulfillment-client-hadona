@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, UserPlus, MonitorSmartphone, Facebook, Chrome } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Onboarding Client Whitelist',
+  description: 'Panduan onboarding Client Whitelist Hadona — registrasi & pengenalan dashboard, request Meta Ads Account, dan request Google Ads Account.',
+  keywords: ['onboarding', 'client whitelist', 'registrasi', 'dashboard', 'meta ads', 'google ads', 'hadona'],
+  openGraph: {
+    title: 'Onboarding Client Whitelist | Hadona Docs',
+    description: 'Panduan onboarding Client Whitelist Hadona — registrasi & pengenalan dashboard, request Meta Ads Account, dan request Google Ads Account.',
+    url: 'https://docs.hadona.id/whitelist/onboarding',
+  },
+}
 
 export default function WhitelistOnboardingPage() {
   const articles = [

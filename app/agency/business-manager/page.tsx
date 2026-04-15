@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Business Manager',
+  description: 'Panduan lengkap Meta Business Manager — membuat BM, menautkan Fanspage, Instagram, Ad Account, mengatur permission, 2FA, dan verifikasi bisnis.',
+  keywords: ['business manager', 'meta', 'facebook', 'fanspage', 'ad account', 'permission', '2fa', 'verifikasi'],
+  openGraph: {
+    title: 'Business Manager | Hadona Docs',
+    description: 'Panduan lengkap Meta Business Manager — membuat BM, menautkan Fanspage, Instagram, Ad Account, mengatur permission, 2FA, dan verifikasi bisnis.',
+    url: 'https://docs.hadona.id/agency/business-manager',
+  },
+}
 
 export default function BusinessManagerPage() {
   const articles = [

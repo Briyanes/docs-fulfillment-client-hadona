@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Pixel Setup',
+  description: 'Panduan setup Meta Pixel — pengenalan pixel, membuat pixel, instalasi via partner & manual, verifikasi, testing, dan troubleshooting.',
+  keywords: ['pixel setup', 'meta pixel', 'facebook pixel', 'instalasi', 'tracking', 'verifikasi'],
+  openGraph: {
+    title: 'Pixel Setup | Hadona Docs',
+    description: 'Panduan setup Meta Pixel — pengenalan pixel, membuat pixel, instalasi via partner & manual, verifikasi, testing, dan troubleshooting.',
+    url: 'https://docs.hadona.id/whitelist/pixel-setup',
+  },
+}
 
 export default function PixelSetupPage() {
   const articles = [

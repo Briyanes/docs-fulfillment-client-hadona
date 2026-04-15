@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Google Integration',
+  description: 'Panduan integrasi Google Analytics 4 — setup GA4, authentication, linking Google Ads, event mapping, custom dimensions, dan troubleshooting.',
+  keywords: ['google integration', 'ga4', 'google analytics 4', 'google ads', 'event mapping', 'tracking'],
+  openGraph: {
+    title: 'Google Integration | Hadona Docs',
+    description: 'Panduan integrasi Google Analytics 4 — setup GA4, authentication, linking Google Ads, event mapping, custom dimensions, dan troubleshooting.',
+    url: 'https://docs.hadona.id/whitelist/google-integration',
+  },
+}
 
 export default function GoogleIntegrationPage() {
   const articles = [

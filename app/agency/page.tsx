@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, BookOpen, Settings, Users, Lightbulb } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Client Agency',
+  description: 'Dokumentasi lengkap untuk Client Agency Hadona — onboarding, Business Manager, User Management, Ads Setup, dan best practices Meta Ads.',
+  keywords: ['client agency', 'hadona', 'meta ads', 'business manager', 'ads setup', 'onboarding'],
+  openGraph: {
+    title: 'Client Agency | Hadona Docs',
+    description: 'Dokumentasi lengkap untuk Client Agency Hadona — onboarding, Business Manager, User Management, Ads Setup, dan best practices Meta Ads.',
+    url: 'https://docs.hadona.id/agency',
+  },
+}
 
 export default function AgencyPage() {
   const categories = [
