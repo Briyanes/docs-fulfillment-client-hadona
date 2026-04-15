@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/icon.png',
-        width: 150  ,
+        width: 150,
         height: 150,
         alt: 'Hadona Docs - Dokumentasi Lengkap untuk Client Agency & Whitelist',
       },

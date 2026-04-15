@@ -134,6 +134,27 @@ export default function SearchBox() {
     return () => clearTimeout(debounceTimer)
   }, [query])
 
+  const handleResultClick = useCallback((result: SearchResult) => {
+    const href = result.path || (result.category_slug
+      ? `/${result.type}/${result.category_slug}/${result.slug}`
+      : `/${result.type}/${result.slug}`)
+
+    router.push(href)
+    setIsOpen(false)
+    setShowPopular(false)
+    setQuery('')
+    setMeta(null)
+    inputRef.current?.blur()
+  }, [router])
+
+  const handleFocus = useCallback(() => {
+    if (query.length >= 2) {
+      setIsOpen(true)
+    } else {
+      setShowPopular(true)
+    }
+  }, [query])
+
   // Keyboard navigation
   useEffect(() => {
     const totalItems = results.length > 0 ? results.length : (showPopular ? popularArticles.length : suggestions.length)
@@ -159,28 +180,7 @@ export default function SearchBox() {
       document.addEventListener('keydown', handleKeyDown)
       return () => document.removeEventListener('keydown', handleKeyDown)
     }
-  }, [isOpen, showPopular, results, suggestions, popularArticles, selectedIndex])
-
-  const handleResultClick = useCallback((result: SearchResult) => {
-    const href = result.path || (result.category_slug
-      ? `/${result.type}/${result.category_slug}/${result.slug}`
-      : `/${result.type}/${result.slug}`)
-
-    router.push(href)
-    setIsOpen(false)
-    setShowPopular(false)
-    setQuery('')
-    setMeta(null)
-    inputRef.current?.blur()
-  }, [router])
-
-  const handleFocus = useCallback(() => {
-    if (query.length >= 2) {
-      setIsOpen(true)
-    } else {
-      setShowPopular(true)
-    }
-  }, [query])
+  }, [isOpen, showPopular, results, suggestions, popularArticles, selectedIndex, handleResultClick])
 
   const renderResultItem = useCallback((result: SearchResult, index: number, isSelected: boolean) => {
     return (

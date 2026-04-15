@@ -1,12 +1,5 @@
 require('dotenv').config();
 
-require('dotenv').config(); // Tambahkan ini di baris pertama
-
-// Import paket Anthropic
-const Anthropic = require('@anthropic-ai/claude-code');
-
-// ... kode lainnya ...
-
 // Import paket Anthropic
 const Anthropic = require('@anthropic-ai/claude-code');
 

@@ -213,6 +213,20 @@ const articleMeta: Record<string, { description: string; keywords: string[] }> =
     keywords: ['community', 'komunitas', 'grup', 'group', 'forum', 'diskusi'],
   },
 
+  // === WHITELIST - ONBOARDING ===
+  '/whitelist/onboarding/registrasi-dashboard': {
+    description: 'Panduan lengkap aktivasi akun Client Whitelist dan pengenalan fitur-fitur utama dashboard Hadona Digital Media.',
+    keywords: ['registrasi', 'daftar', 'aktivasi', 'dashboard', 'login', 'akun baru', 'onboarding', 'whitelist', 'mulai', 'pertama'],
+  },
+  '/whitelist/onboarding/request-ads-account-meta': {
+    description: 'Cara mengajukan permintaan Meta Ads Account (Facebook & Instagram Ads) untuk Client Whitelist melalui dashboard Hadona.',
+    keywords: ['request', 'meta ads', 'facebook ads', 'instagram ads', 'akun iklan', 'ajukan', 'whitelist', 'permohonan', 'buat akun iklan', 'ads account'],
+  },
+  '/whitelist/onboarding/request-ads-account-google': {
+    description: 'Cara mengajukan permintaan Google Ads Account untuk Client Whitelist melalui dashboard Hadona.',
+    keywords: ['request', 'google ads', 'akun iklan google', 'ajukan', 'whitelist', 'permohonan', 'google account', 'ads account', 'google search ads'],
+  },
+
   // === WHITELIST - PIXEL SETUP ===
   '/whitelist/pixel-setup/pengenalan': {
     description: 'Pengenalan tentang Meta Pixel dan fungsinya.',

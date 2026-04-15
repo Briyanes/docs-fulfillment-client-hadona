@@ -22,14 +22,14 @@ export default function TableOfContents() {
     if (typeof window === 'undefined' || !mounted) return
 
     // Wait for DOM to be ready
+    let retryCount = 0
     const extractHeadings = () => {
       try {
         const articleContent = document.querySelector('.prose')
         if (!articleContent) {
           // Retry after a short delay if prose not found (max 3 seconds)
-          const retryCount = (extractHeadings as any).retryCount || 0
           if (retryCount < 30) {
-            (extractHeadings as any).retryCount = retryCount + 1
+            retryCount++
             setTimeout(extractHeadings, 100)
           }
           return

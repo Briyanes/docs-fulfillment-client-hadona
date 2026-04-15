@@ -95,6 +95,15 @@ export const agencySidebarItems = [
 
 export const whitelistSidebarItems = [
   {
+    title: 'Onboarding',
+    href: '/whitelist/onboarding',
+    children: [
+      { title: 'Registrasi & Dashboard', href: '/whitelist/onboarding/registrasi-dashboard' },
+      { title: 'Request Meta Ads Account', href: '/whitelist/onboarding/request-ads-account-meta' },
+      { title: 'Request Google Ads Account', href: '/whitelist/onboarding/request-ads-account-google' },
+    ],
+  },
+  {
     title: 'Pixel Setup',
     href: '/whitelist/pixel-setup',
     children: [

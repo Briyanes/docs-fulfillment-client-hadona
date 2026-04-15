@@ -1,8 +1,15 @@
 import Link from 'next/link'
-import { ArrowRight, Code, BarChart3, Link2, Database, Zap, Eye } from 'lucide-react'
+import { ArrowRight, Code, BarChart3, Link2, Database, Zap, Eye, UserPlus } from 'lucide-react'
 
 export default function WhitelistPage() {
   const categories = [
+    {
+      title: 'Onboarding',
+      href: '/whitelist/onboarding',
+      icon: UserPlus,
+      description: 'Registrasi akun, request Meta Ads Account, dan request Google Ads Account',
+      count: 3,
+    },
     {
       title: 'Pixel Setup',
       href: '/whitelist/pixel-setup',
