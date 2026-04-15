@@ -1,7 +1,7 @@
 import ArticleLayout from '@/components/ArticleLayout'
 import Callout from '@/components/Callout'
 import StepGuide from '@/components/StepGuide'
-import { CheckCircle2, Clock, AlertCircle, ExternalLink, Video, FileCheck, Globe } from 'lucide-react'
+import { CheckCircle2, Clock, AlertCircle, ExternalLink, FileCheck, Globe } from 'lucide-react'
 
 export default function RequestAdsAccountGooglePage() {
   return (
@@ -21,19 +21,17 @@ export default function RequestAdsAccountGooglePage() {
         </p>
       </div>
 
-      {/* Video Tutorial Banner */}
-      <div className="my-6 flex items-start gap-4 rounded-xl border-2 border-hadona-primary/30 bg-hadona-primary/5 p-5">
-        <div className="flex-shrink-0 rounded-lg bg-hadona-primary p-2.5">
-          <Video className="h-5 w-5 text-white" />
-        </div>
-        <div>
-          <p className="font-semibold text-gray-900 mb-1">Video Tutorial Tersedia</p>
-          <p className="text-sm text-gray-600">
-            Panduan ini dilengkapi dengan video tutorial{' '}
-            <strong>"Tutorial Req Ads Acc WL Google"</strong>. Ikuti langkah-langkah di video
-            tersebut bersamaan dengan membaca panduan ini.
-          </p>
-        </div>
+      {/* Video Tutorial */}
+      <div className="my-6">
+        <p className="font-semibold text-gray-900 mb-2">Video Tutorial: Request Google Ads Account</p>
+        <video
+          className="w-full rounded-xl border border-gray-200"
+          controls
+          preload="metadata"
+        >
+          <source src="/video/Tutorial Req Ads Acc WL Google.mp4" type="video/mp4" />
+          Browser Anda tidak mendukung pemutaran video.
+        </video>
       </div>
 
       <h2>Apa itu Google Ads Account Request?</h2>
